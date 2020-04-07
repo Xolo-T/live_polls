@@ -1,0 +1,14 @@
+.header{
+    background-color: white;
+    /* height: 100px; */
+    padding-top: 30px;
+    padding-left: 10px;
+    color: #007acc;
+}
+body{
+    background-color: #DCDCDC;
+}
+
+.my_blue{
+    color: #007acc;
+}
