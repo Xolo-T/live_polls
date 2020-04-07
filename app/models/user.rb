@@ -13,15 +13,20 @@
 
 class User < ApplicationRecord
     validates :username, presence: true, uniqueness: true
-    validates :email, presence: true, uniqueness: true
+    # validates :email, presence: true, uniqueness: true
     validates :password_digest, presence: true
     validates :session_token, presence: true
     validates :password, length:{ minimum: 6, allow_nil: true}
 
     after_initialize :ensure_session_token
 
-    attr_reader :password
-    attr_accessor :email  #not sure if I will need this
+    attr_reader :password, :email
+    # attr_accessor :email  #not sure if I will need this
+
+    # def email=(email)
+    #     # @email=email
+    #     self.email=email
+    # end
 
     def password=(password)
         @password = password
@@ -32,7 +37,7 @@ class User < ApplicationRecord
         BCrypt::Password.new(self.password_digest).is_password?(password)
     end
 
-    def find_by_credentials(username, password)
+    def self.find_by_credentials(username, password)
         user = User.find_by(username: username)
 
         return nil if user.nil?
