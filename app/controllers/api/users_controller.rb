@@ -3,7 +3,7 @@ class Api::UsersController < ApplicationController
     skip_before_action :verify_authenticity_token
 
     def create
-        debugger
+        # debugger
         @user = User.new(user_params)
         if @user.save!
             login!(@user)
@@ -17,7 +17,7 @@ class Api::UsersController < ApplicationController
 
     def index
         @users = User.all
-        debugger
+        # debugger
         render json: @users
     end
 

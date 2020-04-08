@@ -5,6 +5,7 @@ class SignupForm extends React.Component {
         super(props);
         this.state = {
             username: '',
+            email: '',
             password: ''
         };
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -18,8 +19,8 @@ class SignupForm extends React.Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        const user = Object.assign({}, this.state);
-        this.props.processForm(user);
+        this.props.processForm(this.state)
+            .then(() => this.props.history.push('/'));
     }
 
     renderErrors() {
@@ -51,6 +52,7 @@ class SignupForm extends React.Component {
                                 className="login-input"
                             />
                         </label>
+                        <br/>
                         <label>Email:
                             <input type="text"
                                 value={this.state.email}
