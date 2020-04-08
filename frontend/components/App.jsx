@@ -4,6 +4,7 @@ import { Route } from 'react-router-dom';
 import GreetingContainer from "./greeting/greeting_container";
 import SignupFormContainer from './session/signup_form_container';
 import LoginFormContainer from './session/login_form_container';
+import Polls  from './polls/polls_index';
 
 const App = () => (
     <div>
@@ -13,6 +14,7 @@ const App = () => (
         </header>
         <Route path="/login" component={LoginFormContainer} />
         <Route path="/signup" component={SignupFormContainer} />
+        <Route path="/polls" component={Polls} />
     </div>
 );
 
