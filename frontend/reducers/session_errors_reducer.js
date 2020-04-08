@@ -1,5 +1,5 @@
-import RECEIVE_SESSION_ERRORS from '../actions/session_actions';
-import RECEIVE_CURRENT_USER from '../actions/session_actions';
+import {RECEIVE_SESSION_ERRORS} from '../actions/session_actions';
+import {RECEIVE_CURRENT_USER} from '../actions/session_actions';
 
 export default (oldState = [], action) => {
     Object.freeze(oldState);
