@@ -1,0 +1,11 @@
+import React from 'react';
+
+export default ( () => {
+    return (
+        <div>
+            <h1> Since you are a member, you will live forever die!</h1>
+            <h3>We will <strong>SOON!</strong> drop cool polls</h3>
+            <p>But since you will be alive, we will take our time! </p>
+        </div>
+    );
+});
