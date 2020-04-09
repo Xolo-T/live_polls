@@ -11,7 +11,6 @@ import { AuthRoute, ProtectedRoute } from "../util/route_util";
 const App = () => (
     <div>
         <header>
-            <h1 className='header'>Welcome to LivePolls</h1>
             <GreetingContainer />
         </header>
         {/* <Route path="/login" component={LoginFormContainer} /> */}
