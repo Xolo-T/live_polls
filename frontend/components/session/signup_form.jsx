@@ -26,9 +26,9 @@ class SignupForm extends React.Component {
 
     renderErrors() {
         return (
-            <ul>
+            <ul className='session-input-errors'>
                 {this.props.errors.map((error, i) => (
-                    <li key={`error-${i}`}>
+                    <li key={`error-${i}`} >
                         {error}
                     </li>
                 ))}
