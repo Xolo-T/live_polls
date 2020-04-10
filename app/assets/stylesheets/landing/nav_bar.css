@@ -22,6 +22,9 @@
     align-items: center;
     height: 70px;
 }
+.header-logo{
+    color: #007acc !important;
+}
 .logo{
     display: inline;
     /* background-color: red; */

@@ -4,6 +4,17 @@ html, body, div, ul, p  {
    margin-block-end: 0px;
    margin-block-start: 0px;
  }
+ html, body{
+    height: 100%;
+    width: 100%;
+ }
+
+ #root{
+   height: 100%;
+ }
+ .rendered-body{
+   height: 100%;
+ }
 
  a{
      text-decoration: none;

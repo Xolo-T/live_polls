@@ -1,0 +1,48 @@
+.login-form-container{
+    height: 100%;
+}
+.session-form-main{
+    display: flex;
+    flex: row;
+    /* height: 1000px; */
+    height: 100%;
+}
+.session-side-div{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    padding-top: 14%;
+    align-items: center;
+    width: 33%;
+    /* height: 850px; */
+    background-color: #fff;
+}
+.session-form-div{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    padding-top: 10%;
+    align-items: center;
+    width: 67%;
+    background: linear-gradient(284.67deg,#00497a,#007acc 83.92%);
+}
+.session-form-div h1{
+    color: #fff;
+    /* margin-top: 30%; */
+}
+
+.login-form-box{
+    background-color: #fff;
+    width: 200px;
+    padding: 2rem;
+    border-radius: 4px;
+    color: #373737;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.sign-up-div-img{
+    width: 275px;
+    height: 165px;
+}

@@ -8,7 +8,7 @@ const LandingPage = () => (
         <header className='header'>
             <div className='header-logo-nav'>
                 <Link className='logo' to='/'>
-                    <h1 >Live Polls</h1>
+                    <h1 className='header-logo'>Live Polls</h1>
                 </Link>
                 <div className='header-nav'>
                     <a className='header-nav-link'>How it works</a>
