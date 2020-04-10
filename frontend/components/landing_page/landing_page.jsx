@@ -72,31 +72,120 @@ const LandingPage = () => (
             <div className='media-div'> 
                 {/* <iframe width="628" height="426" src="https://www.youtube.com/embed/ARe9FupzuOA" frameBorder="0" allowFullScreen></iframe> */}
                 {/* <iframe width="628" height="426" src={`https://www.youtube.com/embed/dT3aZ5Ph8e8&t=4s`} frameBorder="10" allowFullScreen></iframe> */}
-                <iframe width="628" height="426" src={`https://www.youtube.com/embed/dT3aZ5Ph8e8`} frameBorder="10" allowFullScreen></iframe>  
+                <iframe width="628" height="426" src={`https://www.youtube.com/embed/dT3aZ5Ph8e8`} frameBorder="8" allowFullScreen></iframe>  
             </div>
             <div className='who-needs-this'>
-                <p>Wwho needs this</p>
+                <h1>Over 75% of the Fortune 500 trust the site we cloned</h1>
+                <p>They also help over 300,000 educators facilitate
+                     tough discussions in classrooms worldwide</p>
+                <div className='logos-div'>
+                    {/* <img src='window.alllogosUrl' /> */}
+                    <img className='logo-div-img' src={window.applelogoUrl}/>
+                    <img className='logo-div-img' src={window.attlogoUrl}/>
+                    <img className='logo-div-img' src={window.cocacolalogoUrl}/>
+                    <img className='logo-div-img' src={window.googlelogoUrl}/>
+                    <img className='logo-div-img' src={window.hplogoUrl}/>
+                    <img className='logo-div-img' src={window.jpmorganlogoUrl}/>
+                    <img className='logo-div-img' src={window.mlynchlogoUrl}/>
+                    <img className='logo-div-img' src={window.microsoftlogoUrl}/>
+                    <img className='logo-div-img' src={window.navylogoUrl}/>
+                    <img className='logo-div-img' src={window.spotifylogoUrl}/>
+                    <img className='logo-div-img' src={window.targetlogoUrl}/>
+                    <img className='logo-div-img' src={window.verizonlogoUrl} />
+                </div>
             </div>
             <div className='sign-up-div'>
-                <p>Sign up for your free account.</p>
+                <h1>Sign up for your free account.</h1>
+                <Link className='footer-signup' to="/signup">Sign up now
+                    </Link>
             </div>
             <div className='intergration-div'>
-                <h1>Poll Everywhere slideware integrations</h1>
-                <p>Poll Everywhere works in PowerPoint, Keynote, and Google Slides</p>
+                <div className='intergration-title-div'>
+                    <h1>Poll Everywhere slideware integrations</h1>
+                    <p>Poll Everywhere works in PowerPoint, Keynote, and Google
+                         Slides</p>
+                </div>
+                <div className='slides-intergrsation-div'>
+                    
+                    <div className='power-point-div'>
+                        <img className='power-point-div-img' src={window.powerpointUrl} />
+                        <div className='power-point-div-content'>
+                            <h4>POWERPOINT</h4>
+                            <p>Easily add Poll Everywhere to your presentations</p>
+                        </div>
+                    </div>
+                    <div className='power-point-div'>
+                        <img className='power-point-div-img' src={window.keynoteUrl} />
+                        <div className='power-point-div-content'>
+                            <h4>KEYNOTE</h4>
+                            <p>Easily add Poll Everywhere to your presentations</p>
+                        </div>
+                    </div>
+                    <div className='power-point-div'>
+                        <img className='power-point-div-img' src={window.googleslidesUrl} />
+                        <div className='power-point-div-content'>
+                            <h4>GOOGLE SLIDES</h4>
+                            <p>Easily add Poll Everywhere to your presentations</p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            <div className='intergration-div'>
-                <p>Poll Everywhere works in PowerPoint, Keynote, and Google Slides</p>
-            </div>
-            <div className='intergration-images-div'>
-                <p>Images will drop here</p>
+            {/* <div className='after-intergration-div'>
+                <p>, Keynote, and Google Slides</p>
+            </div> */}
+            <div className='the-rest-div'>
+                <div className='last-logo'>
+                    <h1> Live Polls </h1>
+                </div>
+                <div className='last-section'>
+                    <div className='last-section-divs'>
+                        <h4>Services</h4>
+                        <p>Events</p>
+                        <p>Learning {'&'} Development</p>
+                        <p>K-12</p>
+                        <p>Higher-ed</p>
+                        <p>International</p>
+                        <p>Enterprise</p>
+                    </div>
+                    <div className='last-section-divs'>
+                        <h4>Presentation apps</h4>
+                        <p>PowerPoint</p>
+                        <p>Keynote</p>
+                        <p>Google Slides</p>
+                    </div>
+                    <div className='last-section-divs'>
+                        <h4>Mobile apps</h4>
+                        <p>iOS</p>
+                        <p>Android</p>
+                    </div>
+                    <div className='last-section-divs'>
+                        <h4>Supprot</h4>
+                        <p>Plans {"&"} pricing</p>
+                        <p>Premium features</p>
+                        <p>How it works</p>
+                        <p>Support</p>
+                        <p>Case studies</p>
+                        <p>Guides</p>
+                        <p>Video guide</p>
+                        <p>Webinars</p>
+                    </div>
+                    <div className='last-section-divs'>
+                        <h4>Company</h4>
+                        <p>About</p>
+                        <p>Blog</p>
+                        <p>Jobs</p>
+                        <p>Security</p>
+                    </div>
+                </div>
             </div>
         </main>
-        <footer>
-            <div className='sign-up-div'>
-                <p>Poll Everywhere works in PowerPoint, Keynote, and Google Slides</p>
+        <footer className='footer'>
+            <div>
+
             </div>
-            <div className='sign-up-div'>
-                <p>Poll Everywhere works in PowerPoint, Keynote, and Google Slides</p>
+            <div>
+
             </div>
         </footer>
     </div>

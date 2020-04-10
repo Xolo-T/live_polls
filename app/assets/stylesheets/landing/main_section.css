@@ -1,6 +1,11 @@
 a, button{
     cursor: pointer;
 }
+
+h1{
+    color: #4f4f4f;
+}
+
 .intro-div, .seond-intro-div, .who-needs-this{
     height: 300px;
     /* background-color: #f9f9f9; */
@@ -115,4 +120,113 @@ a, button{
 }
 .who-needs-this{
     background-color: #f9f9f9;
+}
+
+.sign-up-div{
+    display: flex;
+    flex-direction:column;
+    color: #4f4f4f;
+}
+
+
+
+.footer-signup{
+    /* background-color: #008a00 !important; */
+    border: 1px solid #007acc;
+    color: #007acc;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5%;
+    padding: 5px;
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    cursor: pointer;
+    
+}
+
+.intergration-div{
+    display: flex;
+    flex-direction:column;
+    /* justify-content: center; */
+    padding-top: 10px;
+    background-color: #fff !important;
+    margin-top: 0px;
+}
+
+.intergration-title-div{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.after-intergration-div{
+    background-color: yellow;
+}
+
+.slides-intergrsation-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.power-point-div-img{
+    height: 48px;
+    width: 48px;
+}
+
+.power-point-div{
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+    /* padding-right: 20px; */
+    padding: 10px;
+    font-size: 13px;
+    background-color: hsl(0, 0%, 94%);
+    margin-bottom: 20px;
+    margin-right: 15px;
+    /* border: 2px solid black; */
+}
+.power-point-div h4{
+    padding: 0px;
+    margin: 0px;
+    /* padding-left: 3px; */
+}
+
+.power-point-div-content{
+    padding-left: 10px;
+}
+.the-rest-div{
+    height: 300px;
+    background-color: #f9f9f9;
+}
+
+.the-rest-div{
+    padding-top: 20px;
+    height: 400px;
+}
+.last-logo{
+    padding-left: 200px;
+}
+.last-section{
+    height: 400px;
+    /* background-color: chartreuse; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.last-section-divs{
+    width: 150px;
+    /* height: 350px; */
+    /* background-color: blue !important; */
+    /* border-bottom: 2px solid black; */
+    margin-right: 10px;
+}
+.footer{
+    background-color: #efefef;
+    height: 40px;
+    padding: 30px 0px;
 }
