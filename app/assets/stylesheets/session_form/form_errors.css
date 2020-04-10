@@ -1,0 +1,15 @@
+/* .session-input-errors{
+    display: flex;
+    justify-content: center;
+} */
+.login-form-box li{
+    color:#fff;
+    list-style-type: none;
+    background-color: rgb(255, 96, 96);
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
