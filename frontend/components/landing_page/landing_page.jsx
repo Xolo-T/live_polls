@@ -136,7 +136,9 @@ const LandingPage = () => (
             </div> */}
             <div className='the-rest-div'>
                 <div className='last-logo'>
-                    <h1> Live Polls </h1>
+                    <Link to='/'>
+                        <h1 className='header-logo'>Live Polls</h1>
+                    </Link>
                 </div>
                 <div className='last-section'>
                     <div className='last-section-divs'>

@@ -80,6 +80,7 @@
 .logos-div{
     height: 350px;
     width: 70%;
+    max-width: 960px;
     padding-top: 30px;
 }
 .logo-div-img{
