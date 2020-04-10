@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom';
 import LandingPage from "../landing_page/landing_page";
 import UserHomePage from "../user/home";
 
-const Greeting = ({ currentUser, logout }) => {
+const Greeting = ({ currentUser, logout, login }) => {
     const sessionLinks = () => (
         // <nav className="login-signup">
         //     <Link to="/login">Login</Link>
         //         &nbsp;or&nbsp;
         //     <Link to="/signup">Sign up!</Link>
         // </nav>
-        <LandingPage />
+        <LandingPage login={login}/>
 
     );
     const personalGreeting = () => (

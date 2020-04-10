@@ -22,9 +22,9 @@ const UserHomePage = ({ currentUser, logout }) => {
                     {/* <Link className='nav-session-link' to="/login">Login</Link> */}
                 </nav>
             </header>
-            <main className='session-form-main'>
-                    <h2 className="header-name">Hi, {currentUser.username}!</h2>
-                    <h5>You can check out anytime but, you can never leave!</h5>
+            <main className='home-main-div'>
+                    <h1 className="header-name">Hi, {currentUser.username}!</h1>
+                    <h3>You can check out anytime but, you can never leave!</h3>
                 {/* <section className='session-form-div'>
                     
                 </section> */}
