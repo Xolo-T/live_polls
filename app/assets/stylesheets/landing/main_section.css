@@ -2,9 +2,9 @@ a, button{
     cursor: pointer;
 }
 
-h1{
+/* h1{
     color: #4f4f4f;
-}
+} */
 
 .intro-div, .seond-intro-div, .who-needs-this{
     height: 300px;
@@ -135,10 +135,10 @@ h1{
     cursor: pointer;
     border-radius: 5%;
     padding: 5px;
-    padding-top: 0.5rem;
     padding-right: 1rem;
     padding-bottom: 0.5rem;
     padding-left: 1rem;
+    padding-top: 0.5rem;
     cursor: pointer;
     
 }
@@ -210,6 +210,9 @@ h1{
     padding-left: 85px;
     width: 885px;
     /* background-color: yellow; */
+}
+.last-logo h1{
+    color: #007acc;
 }
 .last-section{
     height: 400px;

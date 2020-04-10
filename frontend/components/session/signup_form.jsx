@@ -60,34 +60,37 @@ class SignupForm extends React.Component {
                 </header>
                 <main className='session-form-main'>
                     <section className='session-form-div'>
-                            <h1>Welcome to LivePolls!</h1>
+                            <h1>You wont regret this!</h1>
                             <br />
                         <form onSubmit={this.handleSubmit} className="login-form-box">
                             {/* Please {this.props.formType} or {this.props.navLink} */}
                             {this.renderErrors()}
                             <div className="login-form">
                                 <br />
-                                <label>Username:
+                                <label>
                                     <input type="text"
                                         value={this.state.username}
                                         onChange={this.update('username')}
-                                        className="login-input"
+                                        className="login-input "
+                                        placeholder="Username"
                                     />
                                 </label>
                                 <br/>
-                                <label>Email:
+                                <label>
                                     <input type="text"
                                         value={this.state.email}
                                         onChange={this.update('email')}
                                         className="login-input"
+                                        placeholder="Email"
                                     />
                                 </label>
                                 <br />
-                                <label>Password:
+                                <label>
                                     <input type="password"
                                         value={this.state.password}
                                         onChange={this.update('password')}
                                         className="login-input"
+                                        placeholder="Password"
                                     />
                                 </label>
                                 <br />

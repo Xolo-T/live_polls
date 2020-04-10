@@ -22,14 +22,14 @@
     align-items: center;
     height: 70px;
 }
-.header-logo{
+/* .header-logo{
     color: #007acc !important;
-}
+} */
 .logo{
     display: inline;
     /* background-color: red; */
     padding-left: 40px;
-    color: #007acc;
+    color: #007acc !important;
     margin-right: 40px;
 }
 
