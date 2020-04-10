@@ -1,0 +1,118 @@
+a, button{
+    cursor: pointer;
+}
+.intro-div, .seond-intro-div, .who-needs-this{
+    height: 300px;
+    /* background-color: #f9f9f9; */
+    background-color: rgb(239, 239, 239);
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro-div{
+    height: 525px;
+}
+.intro-div-text-content-div{
+    width: 480px;
+}
+.intro-div-text-content-div > h1{
+    color: #007acc !important;
+    font-weight: 900;
+    font-size: 2.875em;
+    line-height: 1;
+}
+
+.intro-div-text-content-div > p{
+    margin-top: .75rem;
+    font-size: 1.375em;
+    line-height: 1.19;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: #4f4f4f;
+}
+.computer-img{
+    height: 400px;
+    width: 485px;
+}
+.into-signup{
+    background-color: #008a00 !important;
+    color: #fff !important;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5%;
+    padding: 5px;
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    cursor: pointer;
+    
+}
+
+
+.blue-band{
+    display: flex;
+    justify-content: center;
+    background-color: #007acc;
+    padding: 20px;
+    color: white;
+}
+.blue-band p{
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.blue-band-signup{
+    color: #4f4f4f;
+    background-color: #efefef;
+    font-weight: 600;
+    font-size: .85em;
+    padding: .25rem .75rem;
+    cursor: pointer;
+}
+
+.media-div{
+    height: 500px;
+    background-color: #eaeff5;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sign-up-div{
+    height: 200px;
+    background-color: #f0f0f0;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seond-intro-div{
+    height: 390px;
+    background-color: #f9f9f9;
+    padding-bottom: 50px;
+}
+.second-intro-div-content{
+    /* background-color: violet; */
+    width: 302px;
+    height: 320px;
+    padding-right: 25px;
+    margin-top: 70px;
+}
+
+.remote-img{
+    width: 150px;
+    height: 150px;
+}
+
+.second-intr-div p{
+
+}
+.who-needs-this{
+    background-color: #f9f9f9;
+}

@@ -1,4 +1,4 @@
-body{
+.landing-page-full{
     background-color: #DCDCDC;
     font-family: "Source Sans Pro",Helvetica,Verdana,sans-serif;
     font-size: 1em;
@@ -38,7 +38,10 @@ body{
 
 .header-nav-link{
     margin: 0px 24px;
-    color: black;
+    color: #373737;
+    font-weight: 550;
+    line-height: 1.22;
+    font-size: 1.125em;
     /* background-color: blanchedalmond; */
     padding: 24px 0px;
 }
