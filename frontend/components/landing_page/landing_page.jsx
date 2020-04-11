@@ -48,6 +48,14 @@ class LandingPage extends React.Component {
                         <Link className='nav-session-link' to="/signup">Sign up</Link>
                         <Link className='nav-session-link' to="/login">Login</Link>
                         <img className='hamburger-img' src={window.hamburgerUrl} />
+                        <div class="dropdown-contetnt">
+                            <div className='header-nav'>
+                                <a className=''>How it works</a>
+                                <a className=''>Real site</a>
+                                <a className=''>Stack</a>
+                                <a className=''>Developer</a>
+                            </div>
+                        </div>
                     </nav>
                 </header>
             
@@ -98,7 +106,7 @@ class LandingPage extends React.Component {
                     <div className='media-div'> 
                         {/* <iframe width="628" height="426" src="https://www.youtube.com/embed/ARe9FupzuOA" frameBorder="0" allowFullScreen></iframe> */}
                         {/* <iframe width="628" height="426" src={`https://www.youtube.com/embed/dT3aZ5Ph8e8&t=4s`} frameBorder="10" allowFullScreen></iframe> */}
-                        <iframe width="628" height="426" src={`https://www.youtube.com/embed/dT3aZ5Ph8e8`} frameBorder="8" allowFullScreen></iframe>  
+                        <iframe src={`https://www.youtube.com/embed/dT3aZ5Ph8e8`} frameBorder="8" allowFullScreen></iframe>  
                     </div>
                     <div className='who-needs-this'>
                         <h1>Over 75% of the Fortune 500 trust the site we cloned</h1>
