@@ -5,16 +5,18 @@ class Api::UsersController < ApplicationController
     def create
         # debugger
         @user = User.new(user_params)
-        # debugger
-        if @user.save!
+        #debugger
+        if @user.save
+            # dont use save! I used it and it broke my code
+            # it doesn't return a bolean so the if statement is never executed
             login!(@user)
             # render :show  #render "api/users/show"
             # render json:@user  
             render "api/users/show"
         else
-            #render json: @user.errors.full_messages, status: 422  # not 401
             #debugger
-            render json:['Invalid credentials!'], status: 422  # not 401
+            render json: @user.errors.full_messages, status: 401
+            #render json:['Invalid credentials!'], status: 422  # not 401
         end
         #debugger
     end
