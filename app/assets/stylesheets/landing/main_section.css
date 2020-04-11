@@ -16,7 +16,7 @@ a, button{
     align-items: center;
 }
 .intro-div{
-    height: 525px;
+    min-height: 525px;
 }
 .intro-div-text-content-div{
     width: 480px;
@@ -233,4 +233,15 @@ a, button{
     background-color: #efefef;
     height: 40px;
     padding: 30px 0px;
+}
+
+
+@media (max-width: 960px) {
+    .computer-img{
+        display: none;
+    }
+
+    .intro-div{
+        min-height: fit-content;
+    }
 }
