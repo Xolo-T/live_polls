@@ -12,9 +12,8 @@
     justify-content: space-between;
     background-color: white;
     height: 70px;
-    /* padding-top: 30px;
-    padding-left: 10px; */
-    color: #007acc;
+    /* padding-top: 30px; */
+    padding-left: 50px;
 }
 
 .header-logo-nav{
@@ -25,18 +24,30 @@
 /* .header-logo{
     color: #007acc !important;
 } */
-.logo{
+.header-logo-div{
     display: inline;
     /* background-color: red; */
     padding-left: 40px;
     color: #007acc !important;
     margin-right: 40px;
+    /* min-width: ; */
+}
+.logo{
+    min-width: 150px;
+}
+
+.logo h1{
+    color: #007acc;
+}
+h1.header-logo {
+    min-width: 135px;
 }
 
 .header-nav{
     display: flex;
     /* background-color: hotpink; */
     display: inline-block;
+    min-width: 520px;
 }
 
 .header-nav-link{
@@ -54,7 +65,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 355px;
+    min-width: 355px;
     height: 70px;
     padding: 0px 10px;
     background-image: linear-gradient(115deg, #fff 0%, #fff 2.5rem, #007acc 2.6em, #00497a);
@@ -86,4 +97,30 @@
 .logo-div-img{
     height: 150px;
     width: 150px;
+}
+.hamburger-img{
+    display: none;
+    width: 36px;
+    height: 40px;
+    padding-right: 12px;
+}
+
+
+@media (max-width: 1200px) {
+  .header-nav{
+      /* background-color: brown; */
+      display: none;
+  }
+  
+  .hamburger-img{
+      display: block;
+      width: 36px;
+      height: 40px;
+      padding-right: 12px;
+  }
+
+  .login-signup-nav{
+      min-width: 400px;
+  }
+
 }

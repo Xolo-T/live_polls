@@ -28,14 +28,18 @@ class LandingPage extends React.Component {
 
                 <header className='header'>
                     <div className='header-logo-nav'>
-                        <Link className='logo' to='/'>
-                            <h1 >Live Polls</h1>
-                        </Link>
+                        <div className='header-logo-div'>
+                            <div className='logo'>
+                                <Link to='/'>
+                                    <h1 >Live Polls</h1>
+                                </Link>
+                            </div>
+                        </div>
                         <div className='header-nav'>
                             <a className='header-nav-link'>How it works</a>
                             <a className='header-nav-link'>Real site</a>
                             <a className='header-nav-link'>Stack</a>
-                            <a className='header-nav-link'>Github repo</a>
+                            {/* <a className='header-nav-link'>Github repo</a> */}
                             <a className='header-nav-link'>Developer</a>
                         </div>
                     </div>
@@ -43,6 +47,7 @@ class LandingPage extends React.Component {
                         <button className="demo-login" onClick={this.demoLogin}>Demo User</button>
                         <Link className='nav-session-link' to="/signup">Sign up</Link>
                         <Link className='nav-session-link' to="/login">Login</Link>
+                        <img className='hamburger-img' src={window.hamburgerUrl} />
                     </nav>
                 </header>
             
