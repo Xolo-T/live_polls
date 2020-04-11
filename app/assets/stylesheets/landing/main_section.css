@@ -2,6 +2,7 @@ a, button{
     cursor: pointer;
 }
 
+
 iframe{
     width: 628px;
     height: 85.2%;
@@ -19,6 +20,11 @@ iframe{
 .intro-div{
     min-height: 525px;
 }
+
+a.into-signup {
+    width: fit-content;
+}
+
 .intro-div-text-content-div{
     width: 480px;
     padding: 0px 10px;

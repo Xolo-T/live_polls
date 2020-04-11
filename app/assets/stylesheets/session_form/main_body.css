@@ -1,0 +1,21 @@
+@media (max-width: 770px) {
+    .session-form-main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .session-form-div, .session-side-div{
+        width: 100%;
+        /* content: url(window.signUpUrl); */
+        background: linear-gradient(284.67deg,#00497a,#007acc 83.92%);
+    }
+
+    .session-form-div{
+        padding-bottom: 80px;
+    }
+
+    .session-side-div{
+        padding-bottom: 800px;
+    }
+
+}

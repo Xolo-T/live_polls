@@ -46,16 +46,26 @@ class LandingPage extends React.Component {
                     <nav className="login-signup-nav">
                         <button className="demo-login" onClick={this.demoLogin}>Demo User</button>
                         <Link className='nav-session-link' to="/signup">Sign up</Link>
-                        <Link className='nav-session-link' to="/login">Login</Link>
+                        <Link id='login-next' className='nav-session-link' to="/login">Login</Link>
                         <img className='hamburger-img' src={window.hamburgerUrl} />
-                        <div class="dropdown-contetnt">
-                            <div className='header-nav'>
-                                <a className=''>How it works</a>
-                                <a className=''>Real site</a>
-                                <a className=''>Stack</a>
-                                <a className=''>Developer</a>
-                            </div>
-                        </div>
+                        <ul className="dropdown-contetnt">
+                            <li>
+                                <p>Hello Word</p>
+                            </li>
+                                <Link className='drop-down-link' to="/signup">Sign up</Link>
+                            <li>
+                                <Link className='drop-down-link' to="/login">Login</Link>
+                            </li>
+                            <li>
+                                <a className='drop-down-link'>How it works</a>
+                            </li>
+                            <li>
+                                <a className='drop-down-link'>Real site</a>
+                            </li>
+                            <li>
+                                <a className='drop-down-link'>Stack</a>
+                            </li>
+                        </ul>
                     </nav>
                 </header>
             
@@ -103,7 +113,7 @@ class LandingPage extends React.Component {
                                 presentation decks in just a few clicks.</p>
                         </div>
                     </div>
-                    <div className='media-div'> 
+                    <div className='media-div' id='demo-video'> 
                         {/* <iframe width="628" height="426" src="https://www.youtube.com/embed/ARe9FupzuOA" frameBorder="0" allowFullScreen></iframe> */}
                         {/* <iframe width="628" height="426" src={`https://www.youtube.com/embed/dT3aZ5Ph8e8&t=4s`} frameBorder="10" allowFullScreen></iframe> */}
                         <iframe src={`https://www.youtube.com/embed/dT3aZ5Ph8e8`} frameBorder="8" allowFullScreen></iframe>  

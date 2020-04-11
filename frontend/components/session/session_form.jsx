@@ -47,7 +47,6 @@ class SessionForm extends React.Component {
                             <a className='header-nav-link'>How it works</a>
                             <a className='header-nav-link'>Real site</a>
                             <a className='header-nav-link'>Stack</a>
-                            <a className='header-nav-link'>Github repo</a>
                             <a className='header-nav-link'>Developer</a>
                         </div>
                     </div>
