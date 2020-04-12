@@ -47,12 +47,13 @@ class LandingPage extends React.Component {
                         <button className="demo-login" onClick={this.demoLogin}>Demo User</button>
                         <Link className='nav-session-link' to="/signup">Sign up</Link>
                         <Link id='login-next' className='nav-session-link' to="/login">Login</Link>
-                        <img className='hamburger-img' src={window.hamburgerUrl} />
+                        <a className='hamburger-dropdown' href="">
+                            <img className='hamburger-img' src={window.hamburgerUrl} />
+                        </a>
                         <ul className="dropdown-contetnt">
                             <li>
-                                <p>Hello Word</p>
-                            </li>
                                 <Link className='drop-down-link' to="/signup">Sign up</Link>
+                            </li>
                             <li>
                                 <Link className='drop-down-link' to="/login">Login</Link>
                             </li>

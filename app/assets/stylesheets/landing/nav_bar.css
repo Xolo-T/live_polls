@@ -119,6 +119,9 @@ h1.header-logo {
     top: 69px;
     padding: 30px;
     line-height: 3;
+    border: 1px solid lightgray;
+    border-bottom-left-radius: 3%;
+    border-bottom-right-radius: 3%;
 }
 
 
@@ -152,7 +155,11 @@ h1.header-logo {
       cursor: pointer;
       /* margin-left: 10px; */
   }
+  
+  a.hamburger-dropdown:hover .dropdown-contetnt{
+      display: block;
 
+  }
 
   .login-signup-nav{
       min-width: 400px;
@@ -160,7 +167,7 @@ h1.header-logo {
   
   #login-next {
       margin-right: 20px;
-    }
+  }
 
 }
 
