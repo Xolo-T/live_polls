@@ -23,7 +23,7 @@ export const signup = (user) => dispatch =>(
         user => dispatch(receiveCurrentUser(user)),
 
         errors =>{
-            debugger
+            // debugger
             return(
                 dispatch(receiveErrors(errors.responseJSON))
             )
