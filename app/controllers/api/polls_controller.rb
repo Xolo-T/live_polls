@@ -3,6 +3,7 @@ class Api::PollsController < ApplicationController
     skip_before_action :verify_authenticity_token
 
     def create
+        #debugger
         @poll = Poll.new(poll_params)
 
         if @poll.save
@@ -14,18 +15,21 @@ class Api::PollsController < ApplicationController
     end
 
     def show
-        @poll = Poll.find(params[:id])
-        if @poll
-            render :show
-        else
-            render json: @poll.errors.full_messages, status: 404
-        end
+
+
+        #@poll = Poll.find(params[:id])
+        #if @poll
+        #    #render :show
+        #    render json: @poll
+        #else
+        #    render json: @poll.errors.full_messages, status: 404
+        #end
+
     end
 
     def index
-        #@polls = 
-        if params[:user_id]
-            @polls = Poll.where(author_id: params[:user_id])
+        if params[:author_id]
+            @polls = Poll.where(author_id: params[:author_id])
         else
             @polls = Poll.all
         end
@@ -39,11 +43,12 @@ class Api::PollsController < ApplicationController
     end
 
     def destroy
+        #debugger
         @poll = Poll.find(params[:id])
+        author_id = @poll.author_id
         
         if @poll.destroy
-            #redirect_to polls_url
-            @polls = Poll.all
+            @polls = Poll.where(author_id: author_id)
             render json: @polls
         else
             render plain: "You can't destroy what's not there."
@@ -51,8 +56,8 @@ class Api::PollsController < ApplicationController
     end
 
     private
-
     def poll_params
+        #debugger
         params.require(:poll).permit(:title, :author_id, :group)
     end
     

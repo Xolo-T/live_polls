@@ -5,6 +5,14 @@ import ReactDOM from "react-dom";
 import Root from "./components/root";
 import configureStore from './store/store';
 
+// import { fetchPolls } from './actions/poll_actions'
+import { 
+    fetchPolls, createPoll, deletePoll
+        } from './util/poll_api_util'
+import { 
+    fetchOptions, createOption, deleteOption, updateOption 
+        } from './util/option_api_util'
+
 // Testing
 // import { signup, login, logout} from './util/session_api_util';
 import * as SessionActions from './actions/session_actions';
@@ -24,6 +32,20 @@ document.addEventListener("DOMContentLoaded", () => {
     // window.signup = SessionActions.signup;
     // window.login = SessionActions.login;
     // window.logout = SessionActions.logout;
+    
+    window.fetchPolls = fetchPolls;
+    window.createPoll = createPoll;
+    window.deletePoll = deletePoll;
+
+
+    window.fetchOptions = fetchOptions;
+    window.createOption = createOption;
+    window.deleteOption = deleteOption;
+    window.updateOption = updateOption;
+
+    // window.logout = SessionActions.logout;
+    // window.logout = SessionActions.logout;
+
     // Testing
 
     let store;
@@ -39,6 +61,9 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
         store = configureStore();
     }
+
+    // window.store = store;
+    // window.dispatch = store.dispatch;
 
     const root = document.getElementById("root");
     // ReactDOM.render(<h1 className='header'>Welcome to LivePolls</h1>, root);

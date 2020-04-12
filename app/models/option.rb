@@ -12,6 +12,7 @@
 class Option < ApplicationRecord
     validates :title, presence: true
     validates :poll_id, presence: true
+    validates :count, presence: true
 
 
     belongs_to :poll,
