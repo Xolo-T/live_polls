@@ -21,6 +21,12 @@ class User < ApplicationRecord
     after_initialize :ensure_session_token
 
     attr_reader :password, :email
+
+    has_many :polls,
+        foreign_key: :author_id,
+        class_name: 'Poll'
+
+
     # attr_accessor :email  #not sure if I will need this
 
     # def email=(email)
