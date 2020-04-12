@@ -15,15 +15,14 @@ class Api::PollsController < ApplicationController
     end
 
     def show
-
-
-        #@poll = Poll.find(params[:id])
-        #if @poll
-        #    #render :show
-        #    render json: @poll
-        #else
-        #    render json: @poll.errors.full_messages, status: 404
-        #end
+        #debugger
+        @poll = Poll.find(params[:id])
+        if @poll
+            #render :show
+            render json: @poll
+        else
+            render json: @poll.errors.full_messages, status: 404
+        end
 
     end
 

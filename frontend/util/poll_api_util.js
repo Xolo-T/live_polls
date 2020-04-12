@@ -17,14 +17,13 @@ export const fetchPolls = (user_id) => {
     })
 }
 
-// export const fetchPolls = (user_id) => {
-//     return $.ajax({
-//         method: 'GET',
-//         url: '/api/options/:id/edit',
-//         data: { author_id: user_id }
-//         // error: (err) => console.log(err)
-//     })
-// }
+export const fetchPoll = (poll_id) => {
+    return $.ajax({
+        method: 'GET',
+        url: `/api/polls/${poll_id}`
+        // error: (err) => console.log(err)
+    })
+}
 
 export const deletePoll = (poll_id) => {
     return $.ajax({
