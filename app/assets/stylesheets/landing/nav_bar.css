@@ -113,7 +113,8 @@ h1.header-logo {
     display: none;
     height: fit-content;
     position: absolute;
-    background-color: rgb(249, 249, 249);
+    /* background-color: rgb(249, 249, 249); */
+    background-color: #efefef;
     width: 150px;
     z-index: 4523;
     top: 69px;
@@ -136,7 +137,7 @@ h1.header-logo {
 
 .drop-down-link:hover{
     text-decoration: underline;
-    background-color: #f1f1f1
+    background-color: rgb(249, 249, 249);
 }
 
 .intro-div:hover .dropdown-contetnt{
