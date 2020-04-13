@@ -1,0 +1,1 @@
+json.extract! poll, :id, :title, :author_id, :group

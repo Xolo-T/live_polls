@@ -17,4 +17,7 @@ class Poll < ApplicationRecord
         foreign_key: :author_id,
         class_name: 'User'
 
+    has_many :options,
+        foreign_key: :poll_id,
+        class_name: 'Option'      
 end
