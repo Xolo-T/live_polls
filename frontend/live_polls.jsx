@@ -8,6 +8,11 @@ import configureStore from './store/store';
 import { 
     fetchPolls, fetchPoll, createPoll, deletePoll
     } from './actions/poll_actions'
+
+import {
+    fetchOptions, createOption, deleteOption, updateOption 
+} from './actions/option_actions'
+
 // import { 
 //     fetchPolls, createPoll, deletePoll, fetchPoll
 //         } from './util/poll_api_util'
@@ -37,10 +42,10 @@ document.addEventListener("DOMContentLoaded", () => {
     window.fetchPoll = fetchPoll;
 
 
-    // window.fetchOptions = fetchOptions;
-    // window.createOption = createOption;
-    // window.deleteOption = deleteOption;
-    // window.updateOption = updateOption;
+    window.fetchOptions = fetchOptions;
+    window.createOption = createOption;
+    window.deleteOption = deleteOption;
+    window.updateOption = updateOption;
 
     // window.logout = SessionActions.logout;
     // window.logout = SessionActions.logout;
