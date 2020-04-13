@@ -32,17 +32,44 @@ const UserHomePage = ({ currentUser, logout }) => {
                     {/* <h1 className="header-name">Hi, {currentUser.username}!</h1> */}
 
                     <nav className='home-main-body-nav'>
-
+                        <button 
+                            className='home-main-body-nav-button' 
+                            id='create-poll'
+                            >
+                            Create
+                        </button>
+                        <button className='home-main-body-nav-button'> Edit </button>
+                        <hr/>
+                        <button className='home-main-body-extra-button'>My polls</button>
+                        <button className='home-main-body-extra-button'>Trash</button>
+                        <button className='home-main-body-extra-button'> Logout</button>
+                        
+                        <div id='home-main-nav-footer'>
+                            <p><strong>Download the app</strong></p>
+                            <p> Use the app to embed polls in your slides. </p>
+                            <p> Select your presentation software to start the download </p>
+                            <ul>
+                                <li>PowerPoint</li>
+                                <li>Keynote</li>
+                                <li>Google Slides</li>
+                            </ul>
+                        </div>
                     </nav>
 
                     <section className='home-main-content'>
-
+                        <ul>
+                            <li>poll 1</li>
+                            <li>poll 2</li>
+                            <li>poll 3</li>
+                            <li>poll 4</li>
+                            <li>poll 5</li>
+                        </ul>
                     </section>
 
                 </div>
                 
                 
-                <div className='the-rest-div'>
+                <div className='home-the-rest-div'>
                     <div className='last-logo'>
                         <h1> Live Polls </h1>
                     </div>
