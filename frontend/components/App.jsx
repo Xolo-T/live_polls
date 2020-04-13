@@ -18,11 +18,9 @@ const App = () => (
         <Route exact path="/" component={GreetingContainer} />
         <AuthRoute path="/login" component={LoginFormContainer} />
         <AuthRoute path="/signup" component={SignupFormContainer} />
-        <ProtectedRoute path="/polls" component={Polls} />
+        <ProtectedRoute path="/my/polls" component={Polls} />
         {/* <Route path="/polls" component={Polls} /> */}
     </div>
 );
 
 export default App;
-
-{/* <p>I am from App.jsx</p> */}

@@ -1,0 +1,10 @@
+nav.logout-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-width: 232px;
+    height: 70px;
+    padding: 0px 10px;
+    background-image: linear-gradient(115deg, #fff 0%, #fff 2.5rem, #007acc 2.6em, #00497a);
+}
+

@@ -31,6 +31,7 @@ class SessionForm extends React.Component {
             password: 'password'
         }
         this.props.processForm(guestUser)
+            .then(() => this.props.history.push('/'));
     }
 
     renderErrors() {

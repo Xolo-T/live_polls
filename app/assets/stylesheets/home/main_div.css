@@ -1,0 +1,23 @@
+.home-main-div {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    min-height: 402px;
+}
+
+.home-main-body-nav{
+    width: 250px;
+    background-color: green;
+    min-height: 500px;
+    margin-right: 5px;
+    margin-top: 70px;
+}
+
+.home-main-content{
+    width: 100%;
+    background-color: green;
+    min-height: 500px;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 70px;
+}
