@@ -4,25 +4,55 @@ import { Link } from 'react-router-dom';
 class CreatePoll extends React.Component {
     constructor(props) {
         super(props);
-        // this.state = {
-        //     username: '',
-        //     email: '',
-        //     password: ''
-        // };
-        // this.handleSubmit = this.handleSubmit.bind(this);
+        this.state = {
+            poll: { },
+            firstOption: {},
+            seconOption: {}
+        };
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    // update(field) {
-    //     return e => this.setState({
-    //         [field]: e.currentTarget.value
-    //     });
-    // }
+    updatePoll(field) {
+        return e => this.setState({
+            [field]:  { title: e.currentTarget.value, author_id: this.props.author_id }
+        });
+    }
 
-    // handleSubmit(e) {
-    //     e.preventDefault();
-    //     this.props.processForm(this.state)
-    //         .then(() => this.props.history.push('/'));
-    // }
+    updateOption(field) {
+        return e => this.setState({
+            [field]: { title: e.currentTarget.value }
+            // firstOption: { title: e.currentTarget.value }
+        });
+    }
+
+    handleSubmit(e) {
+        e.preventDefault();
+        this.props.createPoll(this.state.poll)
+            .then(
+                (action) =>{
+                    let pollOne = Object.assign({}, this.state.firstOption, {})
+                    debugger
+                    pollOne.poll_id = action.poll.id
+                    debugger
+                    return(    
+                        this.props.createOption(pollOne)
+                    )
+                })
+
+            .then( 
+                (action) => {
+                    let pollTwo = Object.assign({}, this.state.seconOption, {})
+                    debugger
+                    pollTwo.poll_id = action.option.poll_id
+                    debugger
+                    return (
+                        this.props.createOption(pollTwo)
+                    )
+                })
+            .then(
+                () => this.props.history.push('/')
+            );
+    }
 
     // renderErrors() {
     //     return (
@@ -71,14 +101,14 @@ class CreatePoll extends React.Component {
                         <section className='create-poll-main-div'>
                             <p>Ask a question and let participants choose from a list of answers.</p>
                             {/* <form onSubmit={this.handleSubmit} className="login-form-box"> */}
-                            <form className="create-poll-form">
+                            <form onSubmit={this.handleSubmit} className="create-poll-form">
                                 {/* {this.renderErrors()} */}
                                 <div className="create-poll-form-div">
                                     <br />
                                     <label>
                                         <input type="text"
-                                            // value={this.state.username}
-                                            // onChange={this.update('username')}
+                                            // value={this.state.poll}
+                                            onChange={this.updatePoll('poll')}
                                             className="create-form-input "
                                             placeholder="Title"
                                         />
@@ -87,26 +117,27 @@ class CreatePoll extends React.Component {
                                     <br/>
                                     <label>
                                         <input type="text"
-                                            // value={this.state.email}
-                                            // onChange={this.update('email')}
+                                            // value={this.state.firstOption}
+                                            onChange={this.updateOption('firstOption')}
                                             className="create-form-input"
                                             placeholder="text"
                                         />
                                     </label>
                                     <label>
                                         <input type="text"
-                                            // value={this.state.email}
-                                            // onChange={this.update('email')}
+                                            // value={this.state.seconOption}
+                                            onChange={this.updateOption('seconOption')}
                                             className="create-form-input"
                                             placeholder="text"
                                         />
                                     </label>
                                     <br />
-
-                                    <input className="new-poll-submit"
-                                        type="submit"
-                                        // value={this.props.formType}
-                                    />
+                                    <div className='submit-poll-div'>
+                                        <input className="new-poll-submit"
+                                            type="submit"
+                                            // value={this.props.formType}
+                                            />
+                                    </div>
                                 </div>
                             </form>
                         </section>

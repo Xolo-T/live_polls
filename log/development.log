@@ -22433,3 +22433,981 @@ Processing by StaticPagesController#root as HTML
 Completed 200 OK in 743ms (Views: 739.6ms | ActiveRecord: 1.0ms)
 
 
+Started GET "/" for ::1 at 2020-04-13 14:24:10 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KUFVPvHe0tiO+DDElKRJjGOadCCLxNH82ZXTFgT/IBfcgBK0FWNwL5amcaI164EFkl9hEXvb7zyYWuLxEI+vJQ=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 103ms (Views: 99.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-04-13 14:42:05 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KUFVPvHe0tiO+DDElKRJjGOadCCLxNH82ZXTFgT/IBfcgBK0FWNwL5amcaI164EFkl9hEXvb7zyYWuLxEI+vJQ=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (2.8ms)
+  Rendered static_pages/root.html.erb within layouts/application (20.4ms)
+Completed 200 OK in 827ms (Views: 820.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2020-04-13 14:44:54 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KUFVPvHe0tiO+DDElKRJjGOadCCLxNH82ZXTFgT/IBfcgBK0FWNwL5amcaI164EFkl9hEXvb7zyYWuLxEI+vJQ=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 166ms (Views: 160.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2020-04-13 14:45:19 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KUFVPvHe0tiO+DDElKRJjGOadCCLxNH82ZXTFgT/IBfcgBK0FWNwL5amcaI164EFkl9hEXvb7zyYWuLxEI+vJQ=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (1.8ms)
+  Rendered static_pages/root.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 136ms (Views: 131.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2020-04-13 14:57:34 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KUFVPvHe0tiO+DDElKRJjGOadCCLxNH82ZXTFgT/IBfcgBK0FWNwL5amcaI164EFkl9hEXvb7zyYWuLxEI+vJQ=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 708ms (Views: 704.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/polls?author_id=22" for ::1 at 2020-04-13 15:02:19 -0400
+Processing by Api::PollsController#index as JSON
+  Parameters: {"author_id"=>"22"}
+  [1m[36mPoll Load (1.0ms)[0m  [1m[34mSELECT "polls".* FROM "polls" WHERE "polls"."author_id" = $1[0m  [["author_id", 22]]
+  ↳ app/controllers/api/polls_controller.rb:37
+Completed 200 OK in 16ms (Views: 11.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2020-04-13 15:16:25 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KUFVPvHe0tiO+DDElKRJjGOadCCLxNH82ZXTFgT/IBfcgBK0FWNwL5amcaI164EFkl9hEXvb7zyYWuLxEI+vJQ=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 669ms (Views: 665.3ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/api/polls" for ::1 at 2020-04-13 15:16:58 -0400
+Processing by Api::PollsController#create as JSON
+  Parameters: {"poll"=>{"title"=>"firstFormPoll", "author_id"=>"22"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mPoll Create (14.0ms)[0m  [1m[32mINSERT INTO "polls" ("title", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "firstFormPoll"], ["author_id", 22], ["created_at", "2020-04-13 19:16:58.331587"], ["updated_at", "2020-04-13 19:16:58.331587"]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+Completed 200 OK in 175ms (Views: 2.6ms | ActiveRecord: 16.3ms)
+
+
+Started POST "/api/polls" for ::1 at 2020-04-13 15:19:11 -0400
+Processing by Api::PollsController#create as JSON
+  Parameters: {"poll"=>{"title"=>"firstFormPoll", "author_id"=>"22"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mPoll Create (2.6ms)[0m  [1m[32mINSERT INTO "polls" ("title", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "firstFormPoll"], ["author_id", 22], ["created_at", "2020-04-13 19:19:11.588791"], ["updated_at", "2020-04-13 19:19:11.588791"]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+Completed 200 OK in 12ms (Views: 0.9ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/" for ::1 at 2020-04-13 15:19:14 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KUFVPvHe0tiO+DDElKRJjGOadCCLxNH82ZXTFgT/IBfcgBK0FWNwL5amcaI164EFkl9hEXvb7zyYWuLxEI+vJQ=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (1.8ms)
+  Rendered static_pages/root.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 978ms (Views: 973.7ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/polls" for ::1 at 2020-04-13 15:19:21 -0400
+Processing by Api::PollsController#create as JSON
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+
+ActionController::ParameterMissing - param is missing or the value is empty: poll:
+  app/controllers/api/polls_controller.rb:60:in `poll_params'
+  app/controllers/api/polls_controller.rb:7:in `create'
+
+Started GET "/" for ::1 at 2020-04-13 15:19:39 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KUFVPvHe0tiO+DDElKRJjGOadCCLxNH82ZXTFgT/IBfcgBK0FWNwL5amcaI164EFkl9hEXvb7zyYWuLxEI+vJQ=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 73ms (Views: 69.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/polls" for ::1 at 2020-04-13 15:19:54 -0400
+Processing by Api::PollsController#create as JSON
+  Parameters: {"poll"=>{"title"=>"SecondPartialForm", "author_id"=>"22"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mPoll Create (1.7ms)[0m  [1m[32mINSERT INTO "polls" ("title", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "SecondPartialForm"], ["author_id", 22], ["created_at", "2020-04-13 19:19:54.849696"], ["updated_at", "2020-04-13 19:19:54.849696"]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for ::1 at 2020-04-13 15:21:03 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KUFVPvHe0tiO+DDElKRJjGOadCCLxNH82ZXTFgT/IBfcgBK0FWNwL5amcaI164EFkl9hEXvb7zyYWuLxEI+vJQ=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 946ms (Views: 942.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-04-13 15:23:00 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KUFVPvHe0tiO+DDElKRJjGOadCCLxNH82ZXTFgT/IBfcgBK0FWNwL5amcaI164EFkl9hEXvb7zyYWuLxEI+vJQ=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 650ms (Views: 646.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2020-04-13 15:23:25 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KUFVPvHe0tiO+DDElKRJjGOadCCLxNH82ZXTFgT/IBfcgBK0FWNwL5amcaI164EFkl9hEXvb7zyYWuLxEI+vJQ=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 78ms (Views: 74.7ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/polls" for ::1 at 2020-04-13 15:23:55 -0400
+Processing by Api::PollsController#create as JSON
+  Parameters: {"poll"=>{"title"=>"firstPollwithOption", "author_id"=>"22"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mPoll Create (0.7ms)[0m  [1m[32mINSERT INTO "polls" ("title", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "firstPollwithOption"], ["author_id", 22], ["created_at", "2020-04-13 19:23:55.280519"], ["updated_at", "2020-04-13 19:23:55.280519"]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/api/options" for ::1 at 2020-04-13 15:23:55 -0400
+Processing by Api::OptionsController#create as JSON
+  Parameters: {"option"=>{"title"=>{"title"=>"letsdothis", "poll_id"=>"22"}}}
+Unpermitted parameter: :title
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/options_controller.rb:9
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/options_controller.rb:9
+Completed 401 Unauthorized in 59ms (Views: 0.3ms | ActiveRecord: 33.6ms)
+
+
+Started POST "/api/polls" for ::1 at 2020-04-13 15:26:25 -0400
+Processing by Api::PollsController#create as JSON
+  Parameters: {"poll"=>{"title"=>"Secondtrywithoption", "author_id"=>"22"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mPoll Create (0.7ms)[0m  [1m[32mINSERT INTO "polls" ("title", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Secondtrywithoption"], ["author_id", 22], ["created_at", "2020-04-13 19:26:25.849873"], ["updated_at", "2020-04-13 19:26:25.849873"]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+Completed 200 OK in 7ms (Views: 0.6ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/api/options" for ::1 at 2020-04-13 15:26:25 -0400
+Processing by Api::OptionsController#create as JSON
+  Parameters: {"option"=>{"title"=>{"title"=>"letsgoaagain", "poll_id"=>"22"}}}
+Unpermitted parameter: :title
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/options_controller.rb:9
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/options_controller.rb:9
+Completed 401 Unauthorized in 5ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-04-13 15:29:31 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KUFVPvHe0tiO+DDElKRJjGOadCCLxNH82ZXTFgT/IBfcgBK0FWNwL5amcaI164EFkl9hEXvb7zyYWuLxEI+vJQ=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (22.2ms)
+Completed 200 OK in 664ms (Views: 654.9ms | ActiveRecord: 6.8ms)
+
+
+Started POST "/api/polls" for ::1 at 2020-04-13 15:30:12 -0400
+Processing by Api::PollsController#create as JSON
+  Parameters: {"poll"=>{"title"=>"optionstry3", "author_id"=>"22"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mPoll Create (0.5ms)[0m  [1m[32mINSERT INTO "polls" ("title", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "optionstry3"], ["author_id", 22], ["created_at", "2020-04-13 19:30:13.089922"], ["updated_at", "2020-04-13 19:30:13.089922"]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+Completed 200 OK in 58ms (Views: 1.5ms | ActiveRecord: 8.8ms)
+
+
+Started POST "/api/options" for ::1 at 2020-04-13 15:30:13 -0400
+Processing by Api::OptionsController#create as JSON
+  Parameters: {"option"=>{"title"=>{"title"=>"justoneoption", "poll_id"=>"22"}}}
+Unpermitted parameter: :title
+Unpermitted parameter: :title
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/options_controller.rb:10
+Started GET "/" for ::1 at 2020-04-13 15:37:23 -0400
+  [1m[35m (0.9ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/options_controller.rb:10
+Completed 401 Unauthorized in 430489ms (Views: 0.3ms | ActiveRecord: 8.3ms)
+
+
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KUFVPvHe0tiO+DDElKRJjGOadCCLxNH82ZXTFgT/IBfcgBK0FWNwL5amcaI164EFkl9hEXvb7zyYWuLxEI+vJQ=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 632ms (Views: 627.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2020-04-13 15:37:36 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KUFVPvHe0tiO+DDElKRJjGOadCCLxNH82ZXTFgT/IBfcgBK0FWNwL5amcaI164EFkl9hEXvb7zyYWuLxEI+vJQ=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 103ms (Views: 99.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/polls" for ::1 at 2020-04-13 15:37:53 -0400
+Processing by Api::PollsController#create as JSON
+  Parameters: {"poll"=>{"title"=>"try4", "author_id"=>"22"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mPoll Create (1.5ms)[0m  [1m[32mINSERT INTO "polls" ("title", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "try4"], ["author_id", 22], ["created_at", "2020-04-13 19:37:53.078256"], ["updated_at", "2020-04-13 19:37:53.078256"]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/api/options" for ::1 at 2020-04-13 15:37:53 -0400
+Processing by Api::OptionsController#create as JSON
+Completed 400 Bad Request in 50606ms (ActiveRecord: 0.0ms)
+
+
+
+ActionController::ParameterMissing - param is missing or the value is empty: option:
+  app/controllers/api/options_controller.rb:61:in `option_params'
+  app/controllers/api/options_controller.rb:7:in `create'
+
+Started GET "/" for ::1 at 2020-04-13 15:40:19 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KUFVPvHe0tiO+DDElKRJjGOadCCLxNH82ZXTFgT/IBfcgBK0FWNwL5amcaI164EFkl9hEXvb7zyYWuLxEI+vJQ=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (26.6ms)
+Completed 200 OK in 710ms (Views: 696.2ms | ActiveRecord: 11.4ms)
+
+
+Started POST "/api/polls" for ::1 at 2020-04-13 15:40:38 -0400
+Processing by Api::PollsController#create as JSON
+  Parameters: {"poll"=>{"title"=>"try5", "author_id"=>"22"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mPoll Create (1.1ms)[0m  [1m[32mINSERT INTO "polls" ("title", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "try5"], ["author_id", 22], ["created_at", "2020-04-13 19:40:38.820034"], ["updated_at", "2020-04-13 19:40:38.820034"]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+Completed 200 OK in 22ms (Views: 0.4ms | ActiveRecord: 7.9ms)
+
+
+Started POST "/api/options" for ::1 at 2020-04-13 15:40:38 -0400
+Processing by Api::OptionsController#create as JSON
+  Parameters: {"option"=>{"title"=>{"title"=>"option5", "poll_id"=>"22"}}}
+Started GET "/" for ::1 at 2020-04-13 15:45:11 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (9.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KUFVPvHe0tiO+DDElKRJjGOadCCLxNH82ZXTFgT/IBfcgBK0FWNwL5amcaI164EFkl9hEXvb7zyYWuLxEI+vJQ=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+Unpermitted parameter: :title
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (1926.7ms)
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/options_controller.rb:11
+Completed 401 Unauthorized in 275512ms (Views: 0.2ms | ActiveRecord: 9.2ms)
+
+
+Completed 200 OK in 3362ms (Views: 3348.2ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/" for ::1 at 2020-04-13 15:45:18 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KUFVPvHe0tiO+DDElKRJjGOadCCLxNH82ZXTFgT/IBfcgBK0FWNwL5amcaI164EFkl9hEXvb7zyYWuLxEI+vJQ=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 115ms (Views: 111.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/polls" for ::1 at 2020-04-13 15:45:32 -0400
+Processing by Api::PollsController#create as JSON
+  Parameters: {"poll"=>{"title"=>"try6", "author_id"=>"22"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mPoll Create (0.4ms)[0m  [1m[32mINSERT INTO "polls" ("title", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "try6"], ["author_id", 22], ["created_at", "2020-04-13 19:45:32.772503"], ["updated_at", "2020-04-13 19:45:32.772503"]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/api/options" for ::1 at 2020-04-13 15:45:32 -0400
+Processing by Api::OptionsController#create as JSON
+  Parameters: {"option"=>{"title"=>"option6", "poll_id"=>"22"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[36mPoll Load (1.6ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/options_controller.rb:11
+Completed 401 Unauthorized in 29459ms (Views: 0.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2020-04-13 16:04:40 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KUFVPvHe0tiO+DDElKRJjGOadCCLxNH82ZXTFgT/IBfcgBK0FWNwL5amcaI164EFkl9hEXvb7zyYWuLxEI+vJQ=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (2.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (23.9ms)
+Completed 200 OK in 838ms (Views: 832.0ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/api/polls" for ::1 at 2020-04-13 16:05:18 -0400
+Processing by Api::PollsController#create as JSON
+  Parameters: {"poll"=>{"title"=>"try7", "author_id"=>"22"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mPoll Create (4.9ms)[0m  [1m[32mINSERT INTO "polls" ("title", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "try7"], ["author_id", 22], ["created_at", "2020-04-13 20:05:18.805254"], ["updated_at", "2020-04-13 20:05:18.805254"]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+Completed 200 OK in 23ms (Views: 0.8ms | ActiveRecord: 11.8ms)
+
+
+Started POST "/api/options" for ::1 at 2020-04-13 16:05:18 -0400
+Processing by Api::OptionsController#create as JSON
+  Parameters: {"option"=>{"title"=>"opt7"}}
+Started GET "/" for ::1 at 2020-04-13 16:23:10 -0400
+  [1m[35m (13.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[35m (5.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/options_controller.rb:11
+Completed 401 Unauthorized in 1071971ms (Views: 3.2ms | ActiveRecord: 18.6ms)
+
+
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KUFVPvHe0tiO+DDElKRJjGOadCCLxNH82ZXTFgT/IBfcgBK0FWNwL5amcaI164EFkl9hEXvb7zyYWuLxEI+vJQ=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (1.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 806ms (Views: 799.9ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/api/polls" for ::1 at 2020-04-13 16:26:00 -0400
+Processing by Api::PollsController#create as JSON
+  Parameters: {"poll"=>{"title"=>"try8", "author_id"=>"22"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mPoll Create (2.0ms)[0m  [1m[32mINSERT INTO "polls" ("title", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "try8"], ["author_id", 22], ["created_at", "2020-04-13 20:26:00.399217"], ["updated_at", "2020-04-13 20:26:00.399217"]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+Completed 200 OK in 15ms (Views: 1.1ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for ::1 at 2020-04-13 16:26:55 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KUFVPvHe0tiO+DDElKRJjGOadCCLxNH82ZXTFgT/IBfcgBK0FWNwL5amcaI164EFkl9hEXvb7zyYWuLxEI+vJQ=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 847ms (Views: 843.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/polls" for ::1 at 2020-04-13 16:27:13 -0400
+Processing by Api::PollsController#create as JSON
+  Parameters: {"poll"=>{"title"=>"try9", "author_id"=>"22"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mPoll Create (0.6ms)[0m  [1m[32mINSERT INTO "polls" ("title", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "try9"], ["author_id", 22], ["created_at", "2020-04-13 20:27:13.688643"], ["updated_at", "2020-04-13 20:27:13.688643"]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+Completed 200 OK in 6ms (Views: 0.5ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/api/options" for ::1 at 2020-04-13 16:29:35 -0400
+Processing by Api::OptionsController#create as JSON
+  Parameters: {"option"=>{"title"=>"opt9"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/options_controller.rb:11
+Completed 401 Unauthorized in 23830ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-04-13 16:30:02 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KUFVPvHe0tiO+DDElKRJjGOadCCLxNH82ZXTFgT/IBfcgBK0FWNwL5amcaI164EFkl9hEXvb7zyYWuLxEI+vJQ=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (1.8ms)
+  Rendered static_pages/root.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 230ms (Views: 224.8ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/api/polls" for ::1 at 2020-04-13 16:30:24 -0400
+Processing by Api::PollsController#create as JSON
+  Parameters: {"poll"=>{"title"=>"try10", "author_id"=>"22"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mPoll Create (2.1ms)[0m  [1m[32mINSERT INTO "polls" ("title", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "try10"], ["author_id", 22], ["created_at", "2020-04-13 20:30:24.597573"], ["updated_at", "2020-04-13 20:30:24.597573"]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+Completed 200 OK in 8ms (Views: 0.5ms | ActiveRecord: 3.2ms)
+
+
+Started POST "/api/options" for ::1 at 2020-04-13 16:30:38 -0400
+Processing by Api::OptionsController#create as JSON
+  Parameters: {"option"=>{"title"=>"opt10"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/options_controller.rb:11
+Completed 401 Unauthorized in 3834ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2020-04-13 16:30:46 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KUFVPvHe0tiO+DDElKRJjGOadCCLxNH82ZXTFgT/IBfcgBK0FWNwL5amcaI164EFkl9hEXvb7zyYWuLxEI+vJQ=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 849ms (Views: 843.9ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/polls" for ::1 at 2020-04-13 16:31:16 -0400
+Processing by Api::PollsController#create as JSON
+  Parameters: {"poll"=>{"title"=>"try11", "author_id"=>"22"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mPoll Create (0.8ms)[0m  [1m[32mINSERT INTO "polls" ("title", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "try11"], ["author_id", 22], ["created_at", "2020-04-13 20:31:16.601283"], ["updated_at", "2020-04-13 20:31:16.601283"]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+Completed 200 OK in 11ms (Views: 0.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2020-04-13 16:32:25 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KUFVPvHe0tiO+DDElKRJjGOadCCLxNH82ZXTFgT/IBfcgBK0FWNwL5amcaI164EFkl9hEXvb7zyYWuLxEI+vJQ=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (1.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 692ms (Views: 687.7ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/api/polls" for ::1 at 2020-04-13 16:32:58 -0400
+Processing by Api::PollsController#create as JSON
+  Parameters: {"poll"=>{"title"=>"try12", "author_id"=>"22"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mPoll Create (2.6ms)[0m  [1m[32mINSERT INTO "polls" ("title", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "try12"], ["author_id", 22], ["created_at", "2020-04-13 20:32:58.783504"], ["updated_at", "2020-04-13 20:32:58.783504"]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 3.6ms)
+
+
+Started POST "/api/options" for ::1 at 2020-04-13 16:33:35 -0400
+Processing by Api::OptionsController#create as JSON
+  Parameters: {"option"=>{"title"=>"opt12", "poll_id"=>"25"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[36mPoll Load (0.8ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[36mOption Create (3.3ms)[0m  [1m[32mINSERT INTO "options" ("title", "poll_id", "count", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "opt12"], ["poll_id", 25], ["count", 0], ["created_at", "2020-04-13 20:33:49.758364"], ["updated_at", "2020-04-13 20:33:49.758364"]]
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/options_controller.rb:11
+Completed 200 OK in 14748ms (Views: 0.8ms | ActiveRecord: 4.9ms)
+
+
+Started POST "/api/polls" for ::1 at 2020-04-13 16:34:56 -0400
+Processing by Api::PollsController#create as JSON
+  Parameters: {"poll"=>{"title"=>"try13", "author_id"=>"22"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mPoll Create (0.5ms)[0m  [1m[32mINSERT INTO "polls" ("title", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "try13"], ["author_id", 22], ["created_at", "2020-04-13 20:34:56.298430"], ["updated_at", "2020-04-13 20:34:56.298430"]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/api/options" for ::1 at 2020-04-13 16:35:02 -0400
+Processing by Api::OptionsController#create as JSON
+  Parameters: {"option"=>{"title"=>"opt13", "poll_id"=>"26"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[36mPoll Load (0.5ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[36mOption Create (0.8ms)[0m  [1m[32mINSERT INTO "options" ("title", "poll_id", "count", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "opt13"], ["poll_id", 26], ["count", 0], ["created_at", "2020-04-13 20:35:21.966207"], ["updated_at", "2020-04-13 20:35:21.966207"]]
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/options_controller.rb:11
+Completed 200 OK in 19339ms (Views: 0.5ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for ::1 at 2020-04-13 16:43:40 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KUFVPvHe0tiO+DDElKRJjGOadCCLxNH82ZXTFgT/IBfcgBK0FWNwL5amcaI164EFkl9hEXvb7zyYWuLxEI+vJQ=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (2.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 790ms (Views: 784.3ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/api/polls" for ::1 at 2020-04-13 16:44:19 -0400
+Processing by Api::PollsController#create as JSON
+  Parameters: {"poll"=>{"title"=>"try14", "author_id"=>"22"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mPoll Create (2.5ms)[0m  [1m[32mINSERT INTO "polls" ("title", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "try14"], ["author_id", 22], ["created_at", "2020-04-13 20:44:19.511254"], ["updated_at", "2020-04-13 20:44:19.511254"]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+Completed 200 OK in 16ms (Views: 0.8ms | ActiveRecord: 5.4ms)
+
+
+Started POST "/api/options" for ::1 at 2020-04-13 16:44:22 -0400
+Processing by Api::OptionsController#create as JSON
+  Parameters: {"option"=>{"title"=>"opt14", "poll_id"=>"27"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[36mPoll Load (0.8ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[36mOption Create (2.4ms)[0m  [1m[32mINSERT INTO "options" ("title", "poll_id", "count", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "opt14"], ["poll_id", 27], ["count", 0], ["created_at", "2020-04-13 20:44:29.808078"], ["updated_at", "2020-04-13 20:44:29.808078"]]
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/options_controller.rb:11
+Completed 200 OK in 7769ms (Views: 0.4ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/" for ::1 at 2020-04-13 16:46:07 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KUFVPvHe0tiO+DDElKRJjGOadCCLxNH82ZXTFgT/IBfcgBK0FWNwL5amcaI164EFkl9hEXvb7zyYWuLxEI+vJQ=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.9ms)
+  Rendered static_pages/root.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 697ms (Views: 693.1ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/polls" for ::1 at 2020-04-13 16:47:11 -0400
+Processing by Api::PollsController#create as JSON
+  Parameters: {"poll"=>{"title"=>"twoOptions", "author_id"=>"22"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mPoll Create (0.8ms)[0m  [1m[32mINSERT INTO "polls" ("title", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "twoOptions"], ["author_id", 22], ["created_at", "2020-04-13 20:47:11.874811"], ["updated_at", "2020-04-13 20:47:11.874811"]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+Completed 200 OK in 38ms (Views: 2.0ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/api/options" for ::1 at 2020-04-13 16:47:33 -0400
+Processing by Api::OptionsController#create as JSON
+  Parameters: {"option"=>{"title"=>"try1ba", "poll_id"=>"28"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[36mPoll Load (0.4ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[36mOption Create (1.0ms)[0m  [1m[32mINSERT INTO "options" ("title", "poll_id", "count", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "try1ba"], ["poll_id", 28], ["count", 0], ["created_at", "2020-04-13 20:47:42.531810"], ["updated_at", "2020-04-13 20:47:42.531810"]]
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/options_controller.rb:11
+Completed 200 OK in 8569ms (Views: 0.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for ::1 at 2020-04-13 16:56:19 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KUFVPvHe0tiO+DDElKRJjGOadCCLxNH82ZXTFgT/IBfcgBK0FWNwL5amcaI164EFkl9hEXvb7zyYWuLxEI+vJQ=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (1.8ms)
+  Rendered static_pages/root.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 763ms (Views: 755.1ms | ActiveRecord: 3.1ms)
+
+
+Started POST "/api/polls" for ::1 at 2020-04-13 16:56:35 -0400
+Processing by Api::PollsController#create as JSON
+  Parameters: {"poll"=>{"title"=>"twoOptions2", "author_id"=>"22"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mPoll Create (1.0ms)[0m  [1m[32mINSERT INTO "polls" ("title", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "twoOptions2"], ["author_id", 22], ["created_at", "2020-04-13 20:56:35.258050"], ["updated_at", "2020-04-13 20:56:35.258050"]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+Completed 200 OK in 12ms (Views: 0.8ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/api/options" for ::1 at 2020-04-13 16:56:40 -0400
+Processing by Api::OptionsController#create as JSON
+  Parameters: {"option"=>{"title"=>"16a", "poll_id"=>"29"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[36mPoll Load (0.6ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[36mOption Create (2.3ms)[0m  [1m[32mINSERT INTO "options" ("title", "poll_id", "count", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "16a"], ["poll_id", 29], ["count", 0], ["created_at", "2020-04-13 20:56:52.811011"], ["updated_at", "2020-04-13 20:56:52.811011"]]
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/options_controller.rb:11
+Completed 200 OK in 12113ms (Views: 0.4ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/" for ::1 at 2020-04-13 16:59:08 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KUFVPvHe0tiO+DDElKRJjGOadCCLxNH82ZXTFgT/IBfcgBK0FWNwL5amcaI164EFkl9hEXvb7zyYWuLxEI+vJQ=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 696ms (Views: 692.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/polls" for ::1 at 2020-04-13 17:00:03 -0400
+Processing by Api::PollsController#create as JSON
+  Parameters: {"poll"=>{"title"=>"2opt3", "author_id"=>"22"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mPoll Create (0.5ms)[0m  [1m[32mINSERT INTO "polls" ("title", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "2opt3"], ["author_id", 22], ["created_at", "2020-04-13 21:00:03.959718"], ["updated_at", "2020-04-13 21:00:03.959718"]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/api/options" for ::1 at 2020-04-13 17:00:10 -0400
+Processing by Api::OptionsController#create as JSON
+  Parameters: {"option"=>{"title"=>"17a", "poll_id"=>"30"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[36mPoll Load (0.3ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[36mOption Create (1.0ms)[0m  [1m[32mINSERT INTO "options" ("title", "poll_id", "count", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "17a"], ["poll_id", 30], ["count", 0], ["created_at", "2020-04-13 21:00:20.882913"], ["updated_at", "2020-04-13 21:00:20.882913"]]
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/options_controller.rb:11
+Completed 200 OK in 9902ms (Views: 0.3ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/api/options" for ::1 at 2020-04-13 17:00:54 -0400
+Processing by Api::OptionsController#create as JSON
+  Parameters: {"option"=>{"title"=>"17b", "poll_id"=>"30"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[36mPoll Load (0.4ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[36mOption Create (0.4ms)[0m  [1m[32mINSERT INTO "options" ("title", "poll_id", "count", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "17b"], ["poll_id", 30], ["count", 0], ["created_at", "2020-04-13 21:00:59.767117"], ["updated_at", "2020-04-13 21:00:59.767117"]]
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/options_controller.rb:11
+Completed 200 OK in 5166ms (Views: 0.4ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/api/polls" for ::1 at 2020-04-13 17:02:51 -0400
+Processing by Api::PollsController#create as JSON
+  Parameters: {"poll"=>{"title"=>"redirect with two options", "author_id"=>"22"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mPoll Create (0.6ms)[0m  [1m[32mINSERT INTO "polls" ("title", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "redirect with two options"], ["author_id", 22], ["created_at", "2020-04-13 21:02:51.614661"], ["updated_at", "2020-04-13 21:02:51.614661"]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/api/options" for ::1 at 2020-04-13 17:02:57 -0400
+Processing by Api::OptionsController#create as JSON
+  Parameters: {"option"=>{"title"=>"1a it will work", "poll_id"=>"31"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[36mPoll Load (0.5ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[36mOption Create (1.1ms)[0m  [1m[32mINSERT INTO "options" ("title", "poll_id", "count", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "1a it will work"], ["poll_id", 31], ["count", 0], ["created_at", "2020-04-13 21:03:04.002509"], ["updated_at", "2020-04-13 21:03:04.002509"]]
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/options_controller.rb:11
+Completed 200 OK in 6564ms (Views: 0.4ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/api/options" for ::1 at 2020-04-13 17:03:08 -0400
+Processing by Api::OptionsController#create as JSON
+  Parameters: {"option"=>{"title"=>"1b it will fail", "poll_id"=>"31"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[36mPoll Load (0.4ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[36mOption Create (0.5ms)[0m  [1m[32mINSERT INTO "options" ("title", "poll_id", "count", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "1b it will fail"], ["poll_id", 31], ["count", 0], ["created_at", "2020-04-13 21:03:17.136305"], ["updated_at", "2020-04-13 21:03:17.136305"]]
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/options_controller.rb:11
+Completed 200 OK in 8346ms (Views: 0.8ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/api/polls" for ::1 at 2020-04-13 17:10:16 -0400
+Processing by Api::PollsController#create as JSON
+  Parameters: {"poll"=>{"title"=>"jbuilder", "author_id"=>"22"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mPoll Create (0.9ms)[0m  [1m[32mINSERT INTO "polls" ("title", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "jbuilder"], ["author_id", 22], ["created_at", "2020-04-13 21:10:16.434057"], ["updated_at", "2020-04-13 21:10:16.434057"]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+Completed 200 OK in 72ms (Views: 1.7ms | ActiveRecord: 20.8ms)
+
+
+Started POST "/api/options" for ::1 at 2020-04-13 17:10:19 -0400
+Processing by Api::OptionsController#create as JSON
+  Parameters: {"option"=>{"title"=>"2a it will work", "poll_id"=>"32"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[36mPoll Load (0.5ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[36mOption Create (0.6ms)[0m  [1m[32mINSERT INTO "options" ("title", "poll_id", "count", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "2a it will work"], ["poll_id", 32], ["count", 0], ["created_at", "2020-04-13 21:10:24.680334"], ["updated_at", "2020-04-13 21:10:24.680334"]]
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/options_controller.rb:11
+Completed 200 OK in 4817ms (Views: 0.4ms | ActiveRecord: 7.2ms)
+
+
+Started POST "/api/options" for ::1 at 2020-04-13 17:10:31 -0400
+Processing by Api::OptionsController#create as JSON
+  Parameters: {"option"=>{"title"=>"2b it will fail", "poll_id"=>"32"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[36mPoll Load (0.5ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[36mOption Create (0.5ms)[0m  [1m[32mINSERT INTO "options" ("title", "poll_id", "count", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "2b it will fail"], ["poll_id", 32], ["count", 0], ["created_at", "2020-04-13 21:10:39.217485"], ["updated_at", "2020-04-13 21:10:39.217485"]]
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/options_controller.rb:11
+Completed 200 OK in 7779ms (Views: 0.5ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/api/polls" for ::1 at 2020-04-13 17:12:05 -0400
+Processing by Api::PollsController#create as JSON
+  Parameters: {"poll"=>{"title"=>"jbuilder2", "author_id"=>"22"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mPoll Create (0.5ms)[0m  [1m[32mINSERT INTO "polls" ("title", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "jbuilder2"], ["author_id", 22], ["created_at", "2020-04-13 21:12:06.005128"], ["updated_at", "2020-04-13 21:12:06.005128"]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+Completed 200 OK in 41ms (Views: 0.4ms | ActiveRecord: 11.9ms)
+
+
+Started POST "/api/options" for ::1 at 2020-04-13 17:12:08 -0400
+Processing by Api::OptionsController#create as JSON
+  Parameters: {"option"=>{"title"=>"3a rander", "poll_id"=>"33"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[36mPoll Load (0.4ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[36mOption Create (0.5ms)[0m  [1m[32mINSERT INTO "options" ("title", "poll_id", "count", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "3a rander"], ["poll_id", 33], ["count", 0], ["created_at", "2020-04-13 21:12:12.034502"], ["updated_at", "2020-04-13 21:12:12.034502"]]
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/options_controller.rb:11
+Completed 500 Internal Server Error in 3442ms (ActiveRecord: 8.2ms)
+
+
+
+NameError - undefined local variable or method `show' for #<Api::OptionsController:0x00007fe51dd57550>:
+  app/controllers/api/options_controller.rb:13:in `create'
+
+Started GET "/" for ::1 at 2020-04-13 17:13:54 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KUFVPvHe0tiO+DDElKRJjGOadCCLxNH82ZXTFgT/IBfcgBK0FWNwL5amcaI164EFkl9hEXvb7zyYWuLxEI+vJQ=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.8ms)
+  Rendered static_pages/root.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 698ms (Views: 688.6ms | ActiveRecord: 6.8ms)
+
+
+Started POST "/api/polls" for ::1 at 2020-04-13 17:14:58 -0400
+Processing by Api::PollsController#create as JSON
+  Parameters: {"poll"=>{"title"=>"jb3", "author_id"=>"22"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mPoll Create (0.4ms)[0m  [1m[32mINSERT INTO "polls" ("title", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "jb3"], ["author_id", 22], ["created_at", "2020-04-13 21:14:58.645974"], ["updated_at", "2020-04-13 21:14:58.645974"]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+Completed 200 OK in 20ms (Views: 0.4ms | ActiveRecord: 5.9ms)
+
+
+Started POST "/api/options" for ::1 at 2020-04-13 17:15:01 -0400
+Processing by Api::OptionsController#create as JSON
+  Parameters: {"option"=>{"title"=>"opt jb3 ", "poll_id"=>"34"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[36mPoll Load (0.3ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[36mOption Create (0.5ms)[0m  [1m[32mINSERT INTO "options" ("title", "poll_id", "count", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "opt jb3 "], ["poll_id", 34], ["count", 0], ["created_at", "2020-04-13 21:15:04.474624"], ["updated_at", "2020-04-13 21:15:04.474624"]]
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/options_controller.rb:11
+  Rendering api/options/show.json.jbuilder
+  Rendered api/polls/_poll.json.jbuilder (8.2ms)
+  Rendered api/options/show.json.jbuilder (10.0ms)
+Completed 500 Internal Server Error in 2769ms (ActiveRecord: 8.5ms)
+
+
+
+NoMethodError - undefined method `id' for nil:NilClass:
+  app/views/api/polls/_poll.json.jbuilder:1:in `_app_views_api_polls__poll_json_jbuilder__1307522954760786839_70311072689420'
+  app/views/api/options/show.json.jbuilder:1:in `_app_views_api_options_show_json_jbuilder___3837706338117192397_70311072659880'
+  app/controllers/api/options_controller.rb:13:in `create'
+
+Started GET "/" for ::1 at 2020-04-13 17:15:41 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KUFVPvHe0tiO+DDElKRJjGOadCCLxNH82ZXTFgT/IBfcgBK0FWNwL5amcaI164EFkl9hEXvb7zyYWuLxEI+vJQ=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (24.2ms)
+Completed 200 OK in 120ms (Views: 110.2ms | ActiveRecord: 6.7ms)
+
+
+Started POST "/api/polls" for ::1 at 2020-04-13 17:15:59 -0400
+Processing by Api::PollsController#create as JSON
+  Parameters: {"poll"=>{"title"=>"rerender", "author_id"=>"22"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[36mPoll Create (0.3ms)[0m  [1m[32mINSERT INTO "polls" ("title", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "rerender"], ["author_id", 22], ["created_at", "2020-04-13 21:15:59.839384"], ["updated_at", "2020-04-13 21:15:59.839384"]]
+  ↳ app/controllers/api/polls_controller.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/polls_controller.rb:9
+Completed 200 OK in 21ms (Views: 0.8ms | ActiveRecord: 6.1ms)
+
+
+Started POST "/api/options" for ::1 at 2020-04-13 17:16:02 -0400
+Processing by Api::OptionsController#create as JSON
+  Parameters: {"option"=>{"title"=>"pleas", "poll_id"=>"35"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[36mPoll Load (0.4ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[36mOption Create (0.4ms)[0m  [1m[32mINSERT INTO "options" ("title", "poll_id", "count", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "pleas"], ["poll_id", 35], ["count", 0], ["created_at", "2020-04-13 21:16:06.187034"], ["updated_at", "2020-04-13 21:16:06.187034"]]
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/options_controller.rb:11
+Completed 200 OK in 3302ms (Views: 0.4ms | ActiveRecord: 7.8ms)
+
+
+Started POST "/api/options" for ::1 at 2020-04-13 17:16:11 -0400
+Processing by Api::OptionsController#create as JSON
+  Parameters: {"option"=>{"title"=>"ibeg you", "poll_id"=>"35"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[36mPoll Load (0.4ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[36mOption Create (0.4ms)[0m  [1m[32mINSERT INTO "options" ("title", "poll_id", "count", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "ibeg you"], ["poll_id", 35], ["count", 0], ["created_at", "2020-04-13 21:16:14.332984"], ["updated_at", "2020-04-13 21:16:14.332984"]]
+  ↳ app/controllers/api/options_controller.rb:11
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/options_controller.rb:11
+Completed 200 OK in 3075ms (Views: 0.7ms | ActiveRecord: 1.7ms)
+
+

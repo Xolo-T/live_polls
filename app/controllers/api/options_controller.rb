@@ -3,11 +3,14 @@ class Api::OptionsController < ApplicationController
     skip_before_action :verify_authenticity_token
 
     def create
+        # debugger
         @option = Option.new(option_params)
+        # debugger
         @option[:count] = 0
 
         if @option.save
             render json: @option
+            # render :show
         else
             render json: @option.errors.full_messages, status: 401
         end
@@ -56,6 +59,7 @@ class Api::OptionsController < ApplicationController
 
     private 
     def option_params
+        debugger
         params.require(:option).permit(:title, :poll_id)
     end
 
