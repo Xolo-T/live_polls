@@ -5,53 +5,113 @@ class CreatePoll extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            poll: { },
+            poll: {},
             firstOption: {},
-            seconOption: {}
+            seconOption: {},
+
+            pollTitle: '',
+            firstOptionTitle: '',
+            seconOptionTitle: '',
+            
+            pollTitleError: '',
+            firstOptionTitleError: '',
+            seconOptionTitleError: '',
         };
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     updatePoll(field) {
         return e => this.setState({
-            [field]:  { title: e.currentTarget.value, author_id: this.props.author_id }
+            [field]:  { title: e.currentTarget.value, author_id: this.props.author_id },
+            ['pollTitle']: e.currentTarget.value
         });
     }
 
-    updateOption(field) {
+    updateFirstOption(field) {
         return e => this.setState({
-            [field]: { title: e.currentTarget.value }
+            [field]: { title: e.currentTarget.value },
             // firstOption: { title: e.currentTarget.value }
+            ['firstOptionTitle']: e.currentTarget.value
         });
     }
+
+    updateSecondOption(field) {
+        return e => this.setState({
+            [field]: { title: e.currentTarget.value },
+            // firstOption: { title: e.currentTarget.value }
+            ['seconOptionTitle']: e.currentTarget.value
+        });
+    }
+
+    validate() {
+        let pollTitleError = ''
+        let firstOptionTitleError = ''
+        let seconOptionTitleError = ''
+
+        if (this.state.pollTitle.length == 0) {
+            pollTitleError = "Poll title can't be empty"
+        }
+
+        if (this.state.firstOptionTitle.length == 0) {
+            firstOptionTitleError = "Poll option cant be empty"
+        }
+        
+        if (this.state.seconOptionTitle.length == 0) {
+            seconOptionTitleError = "Poll option cant be empty"
+        }
+        if (pollTitleError) {
+            this.setState({ pollTitleError })
+            this.setState({ seconOptionTitleError })
+            this.setState({ firstOptionTitleError })
+            return false
+        }
+
+        if (seconOptionTitleError) {
+            this.setState({ pollTitleError })
+            this.setState({ seconOptionTitleError })
+            this.setState({ firstOptionTitleError })
+            return false
+        }
+
+        if (firstOptionTitleError) {
+            this.setState({ firstOptionTitleError })
+            this.setState({ pollTitleError })
+            this.setState({ seconOptionTitleError })
+            return false
+        }
+        return true;
+    };
 
     handleSubmit(e) {
         e.preventDefault();
-        this.props.createPoll(this.state.poll)
-            .then(
-                (action) =>{
-                    let pollOne = Object.assign({}, this.state.firstOption, {})
-                    // debugger
-                    pollOne.poll_id = action.poll.id
-                    // debugger
-                    return(    
-                        this.props.createOption(pollOne)
-                    )
-                })
+        const isValid = this.validate();
+        if (isValid){
+            this.props.createPoll(this.state.poll)
+                .then(
+                    (action) =>{
+                        let pollOne = Object.assign({}, this.state.firstOption, {})
+                        // debugger
+                        pollOne.poll_id = action.poll.id
+                        // debugger
+                        return(    
+                            this.props.createOption(pollOne)
+                        )
+                    })
 
-            .then( 
-                (action) => {
-                    let pollTwo = Object.assign({}, this.state.seconOption, {})
-                    // debugger
-                    pollTwo.poll_id = action.option.poll_id
-                    // debugger
-                    return (
-                        this.props.createOption(pollTwo)
-                    )
-                })
-            .then(
-                () => this.props.history.push('/')
-            );
+                .then( 
+                    (action) => {
+                        let pollTwo = Object.assign({}, this.state.seconOption, {})
+                        // debugger
+                        pollTwo.poll_id = action.option.poll_id
+                        // debugger
+                        return (
+                            this.props.createOption(pollTwo)
+                        )
+                    })
+                .then(
+                    () => this.props.history.push('/')
+                );
+        }
     }
 
     // renderErrors() {
@@ -115,29 +175,32 @@ class CreatePoll extends React.Component {
                                     <br />
                                     <label>
                                         <input type="text"
-                                            // value={this.state.poll}
+                                            // value={this.state.pollTitle}
                                             onChange={this.updatePoll('poll')}
                                             className="create-form-input "
                                             placeholder="Title"
                                         />
+                                        <div>{this.state.pollTitleError}</div>
                                     </label>
                                     <br />
                                     <br/>
                                     <label>
                                         <input type="text"
-                                            // value={this.state.firstOption}
-                                            onChange={this.updateOption('firstOption')}
+                                            value={this.state.firstOptionTitle}
+                                            onChange={this.updateFirstOption('firstOption')}
                                             className="create-form-input"
                                             placeholder="text"
                                         />
+                                        <div>{this.state.firstOptionTitleError}</div>
                                     </label>
                                     <label>
                                         <input type="text"
-                                            // value={this.state.seconOption}
-                                            onChange={this.updateOption('seconOption')}
+                                            value={this.state.seconOptionTitle}
+                                            onChange={this.updateSecondOption('seconOption')}
                                             className="create-form-input"
                                             placeholder="text"
                                         />
+                                        <div>{this.state.seconOptionTitleError}</div>
                                     </label>
                                     <br />
                                     <div className='submit-poll-div'>

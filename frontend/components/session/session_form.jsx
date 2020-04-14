@@ -6,7 +6,9 @@ class SessionForm extends React.Component {
         super(props);
         this.state = {
             username: '',
-            password: ''
+            password: '',
+            usernameError: '',
+            passwordError: ''
         };
         this.handleSubmit = this.handleSubmit.bind(this);
         this.demoLogin = this.demoLogin.bind(this);
@@ -18,10 +20,37 @@ class SessionForm extends React.Component {
         });
     }
 
+    validate(){
+        let usernameError = ''
+        let passwordError = ''
+
+        if (this.state.username.length == 0){
+            usernameError = "Username can't be empty"
+        }
+
+        if (this.state.password.length == 0) {
+            passwordError = "Password can't be empty"
+        }
+        if (usernameError) {
+            this.setState({usernameError})
+            this.setState({ passwordError }) // this licne resets the password field
+            return false
+        }
+        if (passwordError) {
+            this.setState({ passwordError })
+            this.setState({ usernameError })
+            return false
+        }
+        return true;
+    };
+
     handleSubmit(e) {
         e.preventDefault();
-        this.props.processForm(this.state)
-            .then(() => this.props.history.push('/'));
+        const isValid = this.validate();
+        if (isValid) {
+            this.props.processForm(this.state)
+                .then(() => this.props.history.push('/'));
+        }
     }
 
     demoLogin(e) {
@@ -76,21 +105,23 @@ class SessionForm extends React.Component {
                             <div className="login-form">
                                 <br />
                                 <label>
-                            <input type="text"
-                                        value={this.state.username}
-                                        onChange={this.update('username')}
-                                        className="login-input"
-                                        placeholder="Username"
-                                    />
+                                    <input type="text"
+                                                value={this.state.username}
+                                                onChange={this.update('username')}
+                                                className="login-input"
+                                                placeholder="Username"
+                                            />
+                                    <div>{this.state.usernameError}</div>
                                 </label>
                                 <br />
                                 <label>
-                            <input type="password"
-                                        value={this.state.password}
-                                        onChange={this.update('password')}
-                                        className="login-input"
-                                        placeholder="Password"
-                                    />
+                                    <input type="password"
+                                                value={this.state.password}
+                                                onChange={this.update('password')}
+                                                className="login-input"
+                                                placeholder="Password"
+                                            />
+                                    <div>{this.state.passwordError}</div>
                                 </label>
                                 <br />
                                 <input className="session-submit"

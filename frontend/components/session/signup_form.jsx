@@ -7,7 +7,10 @@ class SignupForm extends React.Component {
         this.state = {
             username: '',
             email: '',
-            password: ''
+            password: '',
+            usernameError: '',
+            emailError: '',
+            passwordError: ''
         };
         this.handleSubmit = this.handleSubmit.bind(this);
         this.demoLogin = this.demoLogin.bind(this);
@@ -28,10 +31,52 @@ class SignupForm extends React.Component {
         this.props.login(guestUser);
     }
 
+    validate() {
+        let usernameError = ''
+        let passwordError = ''
+        let emailError = ''
+
+        if (this.state.username.length == 0) {
+            usernameError = "Username can't be empty"
+        }
+
+        if (this.state.email.length == 0) {
+            emailError = "Email can't be empty"
+        }
+
+        if (this.state.password.length == 0) {
+            passwordError = "Password can't be empty"
+        }
+        if (usernameError) {
+            this.setState({ usernameError })
+            this.setState({ emailError })
+            this.setState({ passwordError })
+            return false
+        }
+
+        if (emailError) {
+            this.setState({ usernameError })
+            this.setState({ emailError })
+            this.setState({ passwordError })
+            return false
+        }
+
+        if (passwordError) {
+            this.setState({ passwordError })
+            this.setState({ usernameError })
+            this.setState({ emailError })
+            return false
+        }
+        return true;
+    };
+
     handleSubmit(e) {
         e.preventDefault();
-        this.props.processForm(this.state)
-            .then(() => this.props.history.push('/'));
+        const isValid = this.validate();
+        if (isValid){
+            this.props.processForm(this.state)
+                .then(() => this.props.history.push('/'));
+        }
     }
 
     renderErrors() {
@@ -83,6 +128,7 @@ class SignupForm extends React.Component {
                                         className="login-input "
                                         placeholder="Username"
                                     />
+                                    <div>{this.state.usernameError}</div>
                                 </label>
                                 <br/>
                                 <label>
@@ -92,6 +138,7 @@ class SignupForm extends React.Component {
                                         className="login-input"
                                         placeholder="Email"
                                     />
+                                    <div>{this.state.emailError}</div>
                                 </label>
                                 <br />
                                 <label>
@@ -101,6 +148,7 @@ class SignupForm extends React.Component {
                                         className="login-input"
                                         placeholder="Password"
                                     />
+                                    <div>{this.state.passwordError}</div>
                                 </label>
                                 <br />
                                 <input className="session-submit"
