@@ -4,12 +4,18 @@ import OptionIndexItem from './option_index_item';
 
 class PollShow extends React.Component {
     constructor(props) {
-        super(props)
+        super(props);
+        this.handleClick = this.handleClick.bind(this);
     }
 
     componentDidMount() {
         this.props.fetchPoll(this.props.poll.id)
         this.props.fetchOptions(this.props.poll.id)
+    }
+
+    handleClick() {
+        this.props.deletePoll(this.props.poll.id)
+            .then( this.props.history.push(`/`) ) 
     }
 
     render() {
@@ -36,6 +42,7 @@ class PollShow extends React.Component {
                         )
                     }
                 </ul>
+                <button onClick={this.handleClick}>Delete Poll</button>
             </div>
         )
     }
