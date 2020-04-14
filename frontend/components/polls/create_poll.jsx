@@ -31,9 +31,9 @@ class CreatePoll extends React.Component {
             .then(
                 (action) =>{
                     let pollOne = Object.assign({}, this.state.firstOption, {})
-                    debugger
+                    // debugger
                     pollOne.poll_id = action.poll.id
-                    debugger
+                    // debugger
                     return(    
                         this.props.createOption(pollOne)
                     )
@@ -42,9 +42,9 @@ class CreatePoll extends React.Component {
             .then( 
                 (action) => {
                     let pollTwo = Object.assign({}, this.state.seconOption, {})
-                    debugger
+                    // debugger
                     pollTwo.poll_id = action.option.poll_id
-                    debugger
+                    // debugger
                     return (
                         this.props.createOption(pollTwo)
                     )
@@ -101,6 +101,14 @@ class CreatePoll extends React.Component {
                         <section className='create-poll-main-div'>
                             <p>Ask a question and let participants choose from a list of answers.</p>
                             {/* <form onSubmit={this.handleSubmit} className="login-form-box"> */}
+                            <Link to='/' className=''>
+                                <button
+                                    className='home-main-body-nav-button'
+                                    id='create-poll'
+                                >
+                                    Back to polls
+                                </button>
+                            </Link>
                             <form onSubmit={this.handleSubmit} className="create-poll-form">
                                 {/* {this.renderErrors()} */}
                                 <div className="create-poll-form-div">

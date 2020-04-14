@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import UserPollsContainer from './user_polls_container'
+
+
 const UserHomePage = ({ currentUser, logout }) => {
     return (
         <div className='landing-page-full'>
@@ -32,12 +35,14 @@ const UserHomePage = ({ currentUser, logout }) => {
                     {/* <h1 className="header-name">Hi, {currentUser.username}!</h1> */}
 
                     <nav className='home-main-body-nav'>
-                        <button 
-                            className='home-main-body-nav-button' 
-                            id='create-poll'
-                            >
-                            Create
-                        </button>
+                        <Link to='/create/poll' className=''>
+                            <button 
+                                className='home-main-body-nav-button' 
+                                id='create-poll'
+                                >
+                                Create
+                            </button>
+                        </Link>
                         <button className='home-main-body-nav-button'> Edit </button>
                         <hr/>
                         <button className='home-main-body-extra-button'>My polls</button>
@@ -57,13 +62,7 @@ const UserHomePage = ({ currentUser, logout }) => {
                     </nav>
 
                     <section className='home-main-content'>
-                        <ul>
-                            <li>poll 1</li>
-                            <li>poll 2</li>
-                            <li>poll 3</li>
-                            <li>poll 4</li>
-                            <li>poll 5</li>
-                        </ul>
+                        <UserPollsContainer/>
                     </section>
 
                 </div>

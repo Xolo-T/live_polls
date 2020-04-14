@@ -59,7 +59,7 @@ class Api::OptionsController < ApplicationController
 
     private 
     def option_params
-        debugger
+        #debugger
         params.require(:option).permit(:title, :poll_id)
     end
 
