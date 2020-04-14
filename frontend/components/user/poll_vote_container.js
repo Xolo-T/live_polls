@@ -1,17 +1,16 @@
 import { connect } from 'react-redux';
 import { fetchPoll, deletePoll } from '../../actions/poll_actions';
 import { fetchOptions, updateOption } from '../../actions/option_actions';
-import PollShow from './poll_show';
+import VoteTake from './poll_vote';
 
 
 const msp = (state, ownProps) => {
-    // debugger
-    return(
-        {
-            poll: state.entities.polls[ownProps.match.params.pollId],
-            options: Object.values(state.entities.options)
-        }
-    )
+    debugger
+    return ({
+        pollId: ownProps.match.params.pollId,
+        polls: Object.keys(state.entities.polls).map(key => state.entities.polls[key]),
+        options: Object.keys(state.entities.options).map(key => state.entities.options[key])
+    })
 }
 
 const mdp = (dispatch) => ({
@@ -21,4 +20,4 @@ const mdp = (dispatch) => ({
     updateOption: (optionId) => dispatch(updateOption(optionId)),
 })
 
-export default connect(msp, mdp)(PollShow)
+export default connect(msp, mdp)(VoteTake)

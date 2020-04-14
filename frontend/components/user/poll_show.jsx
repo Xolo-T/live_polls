@@ -27,9 +27,10 @@ class PollShow extends React.Component {
                     <button
                         className='home-main-body-nav-button'
                     >
-                        Back to polls
+                        Back to my polls
                     </button>
                 </Link>
+                <Link to={`/vote/${this.props.poll.id}`}> Go to votting page</Link>
                 <h1>{this.props.poll.title}</h1>
                 <ul>
                     {
@@ -37,6 +38,8 @@ class PollShow extends React.Component {
                             // <p>{poll.title}</p>
                             <OptionIndexItem
                                 option={option}
+                                updateOption={this.props.updateOption}
+                                key={option.id}
                             />
                              )
                         )

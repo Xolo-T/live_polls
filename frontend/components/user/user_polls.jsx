@@ -9,11 +9,12 @@ class UserPolls extends React.Component {
     }
 
     componentDidMount(){
+        debugger
         this.props.fetchPolls(this.props.currentUserId)
     }
 
     render() {
-        // debugger
+        debugger
         return (
             <div className='current user polls'>
                 <h1>Hello! Here are all your ugly polls</h1>
@@ -23,6 +24,7 @@ class UserPolls extends React.Component {
                             // <p>{poll.title}</p>
                             <PollIndexItem
                                 poll={poll}
+                                key={poll.id}
                             />
                             )
                         )

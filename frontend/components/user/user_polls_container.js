@@ -6,6 +6,7 @@ import { createOption } from '../../actions/option_actions';
 import UserPolls from './user_polls';
 
 const mapStateToProps = (state) => {
+    debugger
     return {
         // polls: state.entities.polls,
         currentUserId: state.session.id,
