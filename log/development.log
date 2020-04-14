@@ -39038,3 +39038,551 @@ Processing by Api::PollsController#index as JSON
 Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.8ms)
 
 
+Started GET "/api/polls/38" for ::1 at 2020-04-13 21:24:58 -0400
+Processing by Api::PollsController#show as JSON
+  Parameters: {"id"=>"38"}
+  [1m[36mPoll Load (0.5ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = $1 LIMIT $2[0m  [["id", 38], ["LIMIT", 1]]
+  ↳ app/controllers/api/polls_controller.rb:19
+  Rendering api/polls/show.json.jbuilder
+  Rendered api/polls/_poll.json.jbuilder (0.4ms)
+  [1m[36mOption Load (0.5ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 38]]
+  ↳ app/views/api/polls/show.json.jbuilder:8
+  Rendered api/polls/show.json.jbuilder (4.7ms)
+Completed 200 OK in 18ms (Views: 16.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/polls?author_id=10" for ::1 at 2020-04-13 21:25:00 -0400
+Processing by Api::PollsController#index as JSON
+  Parameters: {"author_id"=>"10"}
+  [1m[36mPoll Load (1.5ms)[0m  [1m[34mSELECT "polls".* FROM "polls" WHERE "polls"."author_id" = $1[0m  [["author_id", 10]]
+  ↳ app/controllers/api/polls_controller.rb:37
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2020-04-13 21:36:39 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4XVKT6wiM1KIavYJijJf4g0IzYd8Hw0pgfUBGiWI4C4zIxeV+gCSVzHgq7/YEuqBjUvIDY0XGCrs8ltq1CKAdQ=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (2.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 818ms (Views: 812.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/polls?author_id=10" for ::1 at 2020-04-13 21:36:41 -0400
+Processing by Api::PollsController#index as JSON
+  Parameters: {"author_id"=>"10"}
+  [1m[36mPoll Load (1.4ms)[0m  [1m[34mSELECT "polls".* FROM "polls" WHERE "polls"."author_id" = $1[0m  [["author_id", 10]]
+  ↳ app/controllers/api/polls_controller.rb:37
+Completed 200 OK in 8ms (Views: 5.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/polls?author_id=10" for ::1 at 2020-04-13 21:36:48 -0400
+Processing by Api::PollsController#index as JSON
+  Parameters: {"author_id"=>"10"}
+  [1m[36mPoll Load (2.3ms)[0m  [1m[34mSELECT "polls".* FROM "polls" WHERE "polls"."author_id" = $1[0m  [["author_id", 10]]
+  ↳ app/controllers/api/polls_controller.rb:37
+Completed 200 OK in 6ms (Views: 3.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/api/polls/3" for ::1 at 2020-04-13 21:36:49 -0400
+Processing by Api::PollsController#show as JSON
+  Parameters: {"id"=>"3"}
+  [1m[36mPoll Load (0.5ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/polls_controller.rb:19
+  Rendering api/polls/show.json.jbuilder
+  Rendered api/polls/_poll.json.jbuilder (0.5ms)
+  [1m[36mOption Load (0.8ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 3]]
+  ↳ app/views/api/polls/show.json.jbuilder:8
+  Rendered api/polls/show.json.jbuilder (5.4ms)
+Completed 200 OK in 18ms (Views: 14.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2020-04-13 21:38:06 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4XVKT6wiM1KIavYJijJf4g0IzYd8Hw0pgfUBGiWI4C4zIxeV+gCSVzHgq7/YEuqBjUvIDY0XGCrs8ltq1CKAdQ=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 756ms (Views: 752.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2020-04-13 21:38:38 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4XVKT6wiM1KIavYJijJf4g0IzYd8Hw0pgfUBGiWI4C4zIxeV+gCSVzHgq7/YEuqBjUvIDY0XGCrs8ltq1CKAdQ=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.8ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 67ms (Views: 64.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/polls?author_id=10" for ::1 at 2020-04-13 21:38:39 -0400
+Processing by Api::PollsController#index as JSON
+  Parameters: {"author_id"=>"10"}
+  [1m[36mPoll Load (0.4ms)[0m  [1m[34mSELECT "polls".* FROM "polls" WHERE "polls"."author_id" = $1[0m  [["author_id", 10]]
+  ↳ app/controllers/api/polls_controller.rb:37
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/polls/36" for ::1 at 2020-04-13 21:38:45 -0400
+Started GET "/api/options?poll_id=36" for ::1 at 2020-04-13 21:38:45 -0400
+Processing by Api::PollsController#show as JSON
+  Parameters: {"id"=>"36"}
+  [1m[36mPoll Load (0.7ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/api/polls_controller.rb:19
+  Rendering api/polls/show.json.jbuilder
+  Rendered api/polls/_poll.json.jbuilder (0.5ms)
+  [1m[36mOption Load (0.5ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 36]]
+  ↳ app/views/api/polls/show.json.jbuilder:8
+  Rendered api/polls/show.json.jbuilder (4.8ms)
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 1.2ms)
+
+
+Processing by Api::OptionsController#index as JSON
+  Parameters: {"poll_id"=>"36"}
+  [1m[36mOption Load (1.5ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 36]]
+  ↳ app/controllers/api/options_controller.rb:44
+Completed 200 OK in 13ms (Views: 5.3ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/" for ::1 at 2020-04-13 21:40:03 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4XVKT6wiM1KIavYJijJf4g0IzYd8Hw0pgfUBGiWI4C4zIxeV+gCSVzHgq7/YEuqBjUvIDY0XGCrs8ltq1CKAdQ=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 657ms (Views: 653.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2020-04-13 21:40:12 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4XVKT6wiM1KIavYJijJf4g0IzYd8Hw0pgfUBGiWI4C4zIxeV+gCSVzHgq7/YEuqBjUvIDY0XGCrs8ltq1CKAdQ=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 71ms (Views: 68.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/polls?author_id=10" for ::1 at 2020-04-13 21:40:13 -0400
+Processing by Api::PollsController#index as JSON
+  Parameters: {"author_id"=>"10"}
+  [1m[36mPoll Load (1.7ms)[0m  [1m[34mSELECT "polls".* FROM "polls" WHERE "polls"."author_id" = $1[0m  [["author_id", 10]]
+  ↳ app/controllers/api/polls_controller.rb:37
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/polls/38" for ::1 at 2020-04-13 21:40:15 -0400
+Processing by Api::PollsController#show as JSON
+  Parameters: {"id"=>"38"}
+Started GET "/api/options?poll_id=38" for ::1 at 2020-04-13 21:40:15 -0400
+  [1m[36mPoll Load (1.5ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = $1 LIMIT $2[0m  [["id", 38], ["LIMIT", 1]]
+  ↳ app/controllers/api/polls_controller.rb:19
+  Rendering api/polls/show.json.jbuilder
+Processing by Api::OptionsController#index as JSON
+  Parameters: {"poll_id"=>"38"}
+  Rendered api/polls/_poll.json.jbuilder (0.4ms)
+  [1m[36mOption Load (0.7ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 38]]
+  ↳ app/controllers/api/options_controller.rb:44
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.7ms)
+
+
+  [1m[36mOption Load (1.3ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 38]]
+  ↳ app/views/api/polls/show.json.jbuilder:8
+  Rendered api/polls/show.json.jbuilder (7.0ms)
+Completed 200 OK in 22ms (Views: 18.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/api/polls?author_id=10" for ::1 at 2020-04-13 21:40:17 -0400
+Processing by Api::PollsController#index as JSON
+  Parameters: {"author_id"=>"10"}
+  [1m[36mPoll Load (3.7ms)[0m  [1m[34mSELECT "polls".* FROM "polls" WHERE "polls"."author_id" = $1[0m  [["author_id", 10]]
+  ↳ app/controllers/api/polls_controller.rb:37
+Completed 200 OK in 7ms (Views: 3.1ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/api/polls/3" for ::1 at 2020-04-13 21:40:19 -0400
+Processing by Api::PollsController#show as JSON
+  Parameters: {"id"=>"3"}
+Started GET "/api/options?poll_id=3" for ::1 at 2020-04-13 21:40:19 -0400
+  [1m[36mPoll Load (0.9ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/polls_controller.rb:19
+  Rendering api/polls/show.json.jbuilder
+Processing by Api::OptionsController#index as JSON
+  Parameters: {"poll_id"=>"3"}
+  Rendered api/polls/_poll.json.jbuilder (0.3ms)
+  [1m[36mOption Load (1.4ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 3]]
+  ↳ app/controllers/api/options_controller.rb:44
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 1.4ms)
+
+
+  [1m[36mOption Load (0.8ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 3]]
+  ↳ app/views/api/polls/show.json.jbuilder:8
+  Rendered api/polls/show.json.jbuilder (7.4ms)
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/polls?author_id=10" for ::1 at 2020-04-13 21:40:20 -0400
+Processing by Api::PollsController#index as JSON
+  Parameters: {"author_id"=>"10"}
+  [1m[36mPoll Load (1.9ms)[0m  [1m[34mSELECT "polls".* FROM "polls" WHERE "polls"."author_id" = $1[0m  [["author_id", 10]]
+  ↳ app/controllers/api/polls_controller.rb:37
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/options?poll_id=4" for ::1 at 2020-04-13 21:40:21 -0400
+Started GET "/api/polls/4" for ::1 at 2020-04-13 21:40:21 -0400
+Processing by Api::OptionsController#index as JSON
+  Parameters: {"poll_id"=>"4"}
+Processing by Api::PollsController#show as JSON
+  Parameters: {"id"=>"4"}
+  [1m[36mOption Load (0.5ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 4]]
+  ↳ app/controllers/api/options_controller.rb:44
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.5ms)
+
+
+  [1m[36mPoll Load (7.2ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/polls_controller.rb:19
+  Rendering api/polls/show.json.jbuilder
+  Rendered api/polls/_poll.json.jbuilder (0.3ms)
+  [1m[36mOption Load (0.4ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 4]]
+  ↳ app/views/api/polls/show.json.jbuilder:8
+  Rendered api/polls/show.json.jbuilder (2.8ms)
+Completed 200 OK in 25ms (Views: 16.9ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/api/polls?author_id=10" for ::1 at 2020-04-13 21:40:22 -0400
+Processing by Api::PollsController#index as JSON
+  Parameters: {"author_id"=>"10"}
+  [1m[36mPoll Load (1.8ms)[0m  [1m[34mSELECT "polls".* FROM "polls" WHERE "polls"."author_id" = $1[0m  [["author_id", 10]]
+  ↳ app/controllers/api/polls_controller.rb:37
+Completed 200 OK in 5ms (Views: 2.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/api/polls/36" for ::1 at 2020-04-13 21:40:23 -0400
+Started GET "/api/options?poll_id=36" for ::1 at 2020-04-13 21:40:23 -0400
+Processing by Api::PollsController#show as JSON
+  Parameters: {"id"=>"36"}
+Processing by Api::OptionsController#index as JSON
+  [1m[36mPoll Load (1.0ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/api/polls_controller.rb:19
+  Parameters: {"poll_id"=>"36"}
+  Rendering api/polls/show.json.jbuilder
+  [1m[36mOption Load (7.5ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 36]]
+  ↳ app/controllers/api/options_controller.rb:44
+Completed 200 OK in 12ms (Views: 3.7ms | ActiveRecord: 7.5ms)
+
+
+  Rendered api/polls/_poll.json.jbuilder (0.5ms)
+  [1m[36mOption Load (0.4ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 36]]
+  ↳ app/views/api/polls/show.json.jbuilder:8
+  Rendered api/polls/show.json.jbuilder (6.4ms)
+Completed 200 OK in 21ms (Views: 18.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/polls?author_id=10" for ::1 at 2020-04-13 21:40:24 -0400
+Processing by Api::PollsController#index as JSON
+  Parameters: {"author_id"=>"10"}
+  [1m[36mPoll Load (3.0ms)[0m  [1m[34mSELECT "polls".* FROM "polls" WHERE "polls"."author_id" = $1[0m  [["author_id", 10]]
+  ↳ app/controllers/api/polls_controller.rb:37
+Completed 200 OK in 7ms (Views: 3.2ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/api/options?poll_id=37" for ::1 at 2020-04-13 21:40:25 -0400
+Started GET "/api/polls/37" for ::1 at 2020-04-13 21:40:25 -0400
+Processing by Api::PollsController#show as JSON
+  Parameters: {"id"=>"37"}
+Processing by Api::OptionsController#index as JSON
+  Parameters: {"poll_id"=>"37"}
+  [1m[36mPoll Load (0.9ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ app/controllers/api/polls_controller.rb:19
+  [1m[36mOption Load (4.2ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 37]]
+  ↳ app/controllers/api/options_controller.rb:44
+Completed 200 OK in 7ms (Views: 1.9ms | ActiveRecord: 4.2ms)
+
+
+  Rendering api/polls/show.json.jbuilder
+  Rendered api/polls/_poll.json.jbuilder (0.5ms)
+  [1m[36mOption Load (1.5ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 37]]
+  ↳ app/views/api/polls/show.json.jbuilder:8
+  Rendered api/polls/show.json.jbuilder (6.6ms)
+Completed 200 OK in 23ms (Views: 19.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/api/polls?author_id=10" for ::1 at 2020-04-13 21:40:26 -0400
+Processing by Api::PollsController#index as JSON
+  Parameters: {"author_id"=>"10"}
+  [1m[36mPoll Load (4.5ms)[0m  [1m[34mSELECT "polls".* FROM "polls" WHERE "polls"."author_id" = $1[0m  [["author_id", 10]]
+  ↳ app/controllers/api/polls_controller.rb:37
+Completed 200 OK in 9ms (Views: 3.4ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/api/polls/38" for ::1 at 2020-04-13 21:40:27 -0400
+Processing by Api::PollsController#show as JSON
+  Parameters: {"id"=>"38"}
+Started GET "/api/options?poll_id=38" for ::1 at 2020-04-13 21:40:27 -0400
+  [1m[36mPoll Load (0.9ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = $1 LIMIT $2[0m  [["id", 38], ["LIMIT", 1]]
+  ↳ app/controllers/api/polls_controller.rb:19
+Processing by Api::OptionsController#index as JSON
+  Parameters: {"poll_id"=>"38"}
+  Rendering api/polls/show.json.jbuilder
+  [1m[36mOption Load (6.8ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 38]]
+  ↳ app/controllers/api/options_controller.rb:44
+Completed 200 OK in 11ms (Views: 3.3ms | ActiveRecord: 6.8ms)
+
+
+  Rendered api/polls/_poll.json.jbuilder (0.3ms)
+  [1m[36mOption Load (0.5ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 38]]
+  ↳ app/views/api/polls/show.json.jbuilder:8
+  Rendered api/polls/show.json.jbuilder (5.4ms)
+Completed 200 OK in 21ms (Views: 18.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/polls?author_id=10" for ::1 at 2020-04-13 21:40:28 -0400
+Processing by Api::PollsController#index as JSON
+  Parameters: {"author_id"=>"10"}
+  [1m[36mPoll Load (1.1ms)[0m  [1m[34mSELECT "polls".* FROM "polls" WHERE "polls"."author_id" = $1[0m  [["author_id", 10]]
+  ↳ app/controllers/api/polls_controller.rb:37
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/polls?author_id=10" for ::1 at 2020-04-13 21:40:32 -0400
+Processing by Api::PollsController#index as JSON
+  Parameters: {"author_id"=>"10"}
+  [1m[36mPoll Load (2.3ms)[0m  [1m[34mSELECT "polls".* FROM "polls" WHERE "polls"."author_id" = $1[0m  [["author_id", 10]]
+  ↳ app/controllers/api/polls_controller.rb:37
+Completed 200 OK in 5ms (Views: 2.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/api/options?poll_id=37" for ::1 at 2020-04-13 21:40:36 -0400
+Started GET "/api/polls/37" for ::1 at 2020-04-13 21:40:36 -0400
+Processing by Api::PollsController#show as JSON
+  Parameters: {"id"=>"37"}
+Processing by Api::OptionsController#index as JSON
+  Parameters: {"poll_id"=>"37"}
+  [1m[36mPoll Load (1.1ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ app/controllers/api/polls_controller.rb:19
+  Rendering api/polls/show.json.jbuilder
+  [1m[36mOption Load (14.8ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 37]]
+  ↳ app/controllers/api/options_controller.rb:44
+Completed 200 OK in 17ms (Views: 1.6ms | ActiveRecord: 14.8ms)
+
+
+  Rendered api/polls/_poll.json.jbuilder (1.1ms)
+  [1m[36mOption Load (1.3ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 37]]
+  ↳ app/views/api/polls/show.json.jbuilder:8
+  Rendered api/polls/show.json.jbuilder (8.4ms)
+Completed 200 OK in 23ms (Views: 20.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/api/polls?author_id=10" for ::1 at 2020-04-13 21:40:40 -0400
+Processing by Api::PollsController#index as JSON
+  Parameters: {"author_id"=>"10"}
+  [1m[36mPoll Load (0.3ms)[0m  [1m[34mSELECT "polls".* FROM "polls" WHERE "polls"."author_id" = $1[0m  [["author_id", 10]]
+  ↳ app/controllers/api/polls_controller.rb:37
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/polls/38" for ::1 at 2020-04-13 21:41:14 -0400
+Processing by Api::PollsController#show as JSON
+  Parameters: {"id"=>"38"}
+  [1m[36mPoll Load (1.5ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = $1 LIMIT $2[0m  [["id", 38], ["LIMIT", 1]]
+  ↳ app/controllers/api/polls_controller.rb:19
+Started GET "/api/options?poll_id=38" for ::1 at 2020-04-13 21:41:14 -0400
+  Rendering api/polls/show.json.jbuilder
+  Rendered api/polls/_poll.json.jbuilder (0.4ms)
+Processing by Api::OptionsController#index as JSON
+  Parameters: {"poll_id"=>"38"}
+  [1m[36mOption Load (4.8ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 38]]
+  ↳ app/views/api/polls/show.json.jbuilder:8
+  Rendered api/polls/show.json.jbuilder (10.5ms)
+Completed 200 OK in 27ms (Views: 19.2ms | ActiveRecord: 6.2ms)
+
+
+  [1m[36mOption Load (2.3ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 38]]
+  ↳ app/controllers/api/options_controller.rb:44
+Completed 200 OK in 9ms (Views: 5.7ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/api/polls?author_id=10" for ::1 at 2020-04-13 21:41:15 -0400
+Processing by Api::PollsController#index as JSON
+  Parameters: {"author_id"=>"10"}
+  [1m[36mPoll Load (0.6ms)[0m  [1m[34mSELECT "polls".* FROM "polls" WHERE "polls"."author_id" = $1[0m  [["author_id", 10]]
+  ↳ app/controllers/api/polls_controller.rb:37
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2020-04-13 21:43:02 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4XVKT6wiM1KIavYJijJf4g0IzYd8Hw0pgfUBGiWI4C4zIxeV+gCSVzHgq7/YEuqBjUvIDY0XGCrs8ltq1CKAdQ=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 675ms (Views: 671.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/polls?author_id=10" for ::1 at 2020-04-13 21:43:03 -0400
+Processing by Api::PollsController#index as JSON
+  Parameters: {"author_id"=>"10"}
+  [1m[36mPoll Load (0.3ms)[0m  [1m[34mSELECT "polls".* FROM "polls" WHERE "polls"."author_id" = $1[0m  [["author_id", 10]]
+  ↳ app/controllers/api/polls_controller.rb:37
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/polls/4" for ::1 at 2020-04-13 21:43:06 -0400
+Processing by Api::PollsController#show as JSON
+  Parameters: {"id"=>"4"}
+  [1m[36mPoll Load (2.0ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/polls_controller.rb:19
+Started GET "/api/options?poll_id=4" for ::1 at 2020-04-13 21:43:06 -0400
+  Rendering api/polls/show.json.jbuilder
+  Rendered api/polls/_poll.json.jbuilder (0.4ms)
+Processing by Api::OptionsController#index as JSON
+  [1m[36mOption Load (1.0ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 4]]
+  Parameters: {"poll_id"=>"4"}
+  ↳ app/views/api/polls/show.json.jbuilder:8
+  Rendered api/polls/show.json.jbuilder (4.9ms)
+Completed 200 OK in 22ms (Views: 17.3ms | ActiveRecord: 3.0ms)
+
+
+  [1m[36mOption Load (0.7ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 4]]
+  ↳ app/controllers/api/options_controller.rb:44
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/polls?author_id=10" for ::1 at 2020-04-13 21:43:15 -0400
+Processing by Api::PollsController#index as JSON
+  Parameters: {"author_id"=>"10"}
+  [1m[36mPoll Load (0.3ms)[0m  [1m[34mSELECT "polls".* FROM "polls" WHERE "polls"."author_id" = $1[0m  [["author_id", 10]]
+  ↳ app/controllers/api/polls_controller.rb:37
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/polls/37" for ::1 at 2020-04-13 21:43:16 -0400
+Started GET "/api/options?poll_id=37" for ::1 at 2020-04-13 21:43:16 -0400
+Processing by Api::PollsController#show as JSON
+  Parameters: {"id"=>"37"}
+  [1m[36mPoll Load (0.5ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ app/controllers/api/polls_controller.rb:19
+  Rendering api/polls/show.json.jbuilder
+Processing by Api::OptionsController#index as JSON
+  Parameters: {"poll_id"=>"37"}
+  Rendered api/polls/_poll.json.jbuilder (0.5ms)
+  [1m[36mOption Load (0.6ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 37]]
+  [1m[36mOption Load (0.2ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 37]]
+  ↳ app/controllers/api/options_controller.rb:44
+  ↳ app/views/api/polls/show.json.jbuilder:8
+  Rendered api/polls/show.json.jbuilder (5.3ms)
+Completed 200 OK in 21ms (Views: 18.7ms | ActiveRecord: 0.8ms)
+
+
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/polls?author_id=10" for ::1 at 2020-04-13 21:43:21 -0400
+Processing by Api::PollsController#index as JSON
+  Parameters: {"author_id"=>"10"}
+  [1m[36mPoll Load (2.0ms)[0m  [1m[34mSELECT "polls".* FROM "polls" WHERE "polls"."author_id" = $1[0m  [["author_id", 10]]
+  ↳ app/controllers/api/polls_controller.rb:37
+Completed 200 OK in 5ms (Views: 2.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/api/polls/37" for ::1 at 2020-04-13 21:43:23 -0400
+Started GET "/api/options?poll_id=37" for ::1 at 2020-04-13 21:43:23 -0400
+Processing by Api::PollsController#show as JSON
+Processing by Api::OptionsController#index as JSON
+  Parameters: {"poll_id"=>"37"}
+  Parameters: {"id"=>"37"}
+  [1m[36mOption Load (1.4ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 37]]
+  ↳ app/controllers/api/options_controller.rb:44
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 1.4ms)
+
+
+  [1m[36mPoll Load (4.0ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ app/controllers/api/polls_controller.rb:19
+  Rendering api/polls/show.json.jbuilder
+  Rendered api/polls/_poll.json.jbuilder (0.4ms)
+  [1m[36mOption Load (0.3ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 37]]
+  ↳ app/views/api/polls/show.json.jbuilder:8
+  Rendered api/polls/show.json.jbuilder (3.1ms)
+Completed 200 OK in 20ms (Views: 14.9ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/api/polls?author_id=10" for ::1 at 2020-04-13 21:43:25 -0400
+Processing by Api::PollsController#index as JSON
+  Parameters: {"author_id"=>"10"}
+  [1m[36mPoll Load (0.7ms)[0m  [1m[34mSELECT "polls".* FROM "polls" WHERE "polls"."author_id" = $1[0m  [["author_id", 10]]
+  ↳ app/controllers/api/polls_controller.rb:37
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/polls/38" for ::1 at 2020-04-13 21:43:26 -0400
+Processing by Api::PollsController#show as JSON
+  Parameters: {"id"=>"38"}
+  [1m[36mPoll Load (0.4ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = $1 LIMIT $2[0m  [["id", 38], ["LIMIT", 1]]
+  ↳ app/controllers/api/polls_controller.rb:19
+  Rendering api/polls/show.json.jbuilder
+Started GET "/api/options?poll_id=38" for ::1 at 2020-04-13 21:43:26 -0400
+  Rendered api/polls/_poll.json.jbuilder (0.4ms)
+  [1m[36mOption Load (0.3ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 38]]
+  ↳ app/views/api/polls/show.json.jbuilder:8
+  Rendered api/polls/show.json.jbuilder (4.4ms)
+Processing by Api::OptionsController#index as JSON
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.7ms)
+
+
+  Parameters: {"poll_id"=>"38"}
+  [1m[36mOption Load (1.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 38]]
+  ↳ app/controllers/api/options_controller.rb:44
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/polls?author_id=10" for ::1 at 2020-04-13 21:44:26 -0400
+Processing by Api::PollsController#index as JSON
+  Parameters: {"author_id"=>"10"}
+  [1m[36mPoll Load (1.2ms)[0m  [1m[34mSELECT "polls".* FROM "polls" WHERE "polls"."author_id" = $1[0m  [["author_id", 10]]
+  ↳ app/controllers/api/polls_controller.rb:37
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/polls?author_id=10" for ::1 at 2020-04-13 21:44:29 -0400
+Processing by Api::PollsController#index as JSON
+  Parameters: {"author_id"=>"10"}
+  [1m[36mPoll Load (0.6ms)[0m  [1m[34mSELECT "polls".* FROM "polls" WHERE "polls"."author_id" = $1[0m  [["author_id", 10]]
+  ↳ app/controllers/api/polls_controller.rb:37
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/polls?author_id=10" for ::1 at 2020-04-13 21:44:34 -0400
+Processing by Api::PollsController#index as JSON
+  Parameters: {"author_id"=>"10"}
+  [1m[36mPoll Load (0.4ms)[0m  [1m[34mSELECT "polls".* FROM "polls" WHERE "polls"."author_id" = $1[0m  [["author_id", 10]]
+  ↳ app/controllers/api/polls_controller.rb:37
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/polls/38" for ::1 at 2020-04-13 21:48:44 -0400
+Processing by Api::PollsController#show as JSON
+  Parameters: {"id"=>"38"}
+  [1m[36mPoll Load (0.4ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = $1 LIMIT $2[0m  [["id", 38], ["LIMIT", 1]]
+  ↳ app/controllers/api/polls_controller.rb:19
+Started GET "/api/options?poll_id=38" for ::1 at 2020-04-13 21:48:44 -0400
+  Rendering api/polls/show.json.jbuilder
+  Rendered api/polls/_poll.json.jbuilder (0.6ms)
+  [1m[36mOption Load (0.4ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 38]]
+  ↳ app/views/api/polls/show.json.jbuilder:8
+  Rendered api/polls/show.json.jbuilder (7.6ms)
+Completed 200 OK in 27ms (Views: 23.5ms | ActiveRecord: 0.8ms)
+
+
+Processing by Api::OptionsController#index as JSON
+  Parameters: {"poll_id"=>"38"}
+  [1m[36mOption Load (0.9ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 38]]
+  ↳ app/controllers/api/options_controller.rb:44
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 1.1ms)
+
+
