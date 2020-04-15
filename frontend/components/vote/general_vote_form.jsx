@@ -21,11 +21,33 @@ class GenrralVoteForm extends React.Component {
         });
     }
 
+    validate() {
+        let pollIdError = ''
+        let numPrased = parseInt(this.state.pollId)
+        debugger
+
+        if (this.state.pollId.length == 0) {
+            pollIdError = "Please enter an option id"
+        } else if ( isNaN(parseInt(numPrased))) {
+            pollIdError = "An option id is a number"
+        }
+
+        if (pollIdError) {
+            this.setState({ pollIdError })
+            return false
+        }
+
+        return true;
+    };
+
     handleSubmit(e) {
         debugger
         e.preventDefault();
-        this.props.updateOption(this.state.pollId)
-            .then(this.props.history.push(`/`))
+        const isValid = this.validate();
+        if (isValid) {
+            this.props.updateOption(this.state.pollId)
+                .then(this.props.history.push(`/`))
+        }
     }
 
     render() {
@@ -39,7 +61,7 @@ class GenrralVoteForm extends React.Component {
                         placeholder="option Id"
                     />
                     <div className='vote-form-error-div'>
-                        {this.state.pollTitleError}
+                        <p>{this.state.pollIdError}</p>
                     </div>
                     <br />
                     <div className='submit-vote-div'>

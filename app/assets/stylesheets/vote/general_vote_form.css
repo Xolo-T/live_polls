@@ -32,4 +32,10 @@ button.vote-form-submit {
     width: 180px;
 }
 
+.vote-form-error-div p{
+    margin: 10px;
+    /* background-color: #fb6363; */
+    color: #fb6363;
+    font-size: larger;
+}
 
