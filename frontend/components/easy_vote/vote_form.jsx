@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import OptionIndexItem from './option_index_item';
+import VoteOptionItem from './vote_option_item';
 
-class PollShow extends React.Component {
+class BetterVoteForm extends React.Component {
     constructor(props) {
         super(props);
         this.handleClick = this.handleClick.bind(this);
-        
+
     }
 
     componentDidMount() {
@@ -18,7 +18,7 @@ class PollShow extends React.Component {
 
     handleClick() {
         this.props.deletePoll(this.props.poll.id)
-            .then( this.props.history.push(`/`) ) 
+            .then(this.props.history.push(`/`))
     }
 
     render() {
@@ -29,8 +29,8 @@ class PollShow extends React.Component {
 
         return (
             <div>
-                
-                
+
+
                 {/* <Link to='/'>PollIndex</Link> */}
                 <Link to='/' className='poll-show-back-link'>
                     <button
@@ -40,11 +40,10 @@ class PollShow extends React.Component {
                     </button>
                 </Link>
                 <div className='poll-show-title'>
-                    <h3> To vote please visit: </h3>
-                    <h2>{`https://live-polls.herokuapp.com/#/vote/${this.props.pollId}`}</h2>
-                    <h3> to vote using option id visite the link</h3> 
-                    <h3> 'https://live-polls.herokuapp.com/#/text/vote'</h3>
-                    
+                    <h3> is this what you looking for? </h3>
+                    <h3> Thanks for polling live </h3>
+                    <h3>sorry to break your heart but this poll</h3>
+
                 </div>
                 <div className='showPoll-title-div'>
                     <h1>{this.props.poll.title}</h1>
@@ -53,14 +52,15 @@ class PollShow extends React.Component {
                     {
                         this.props.options.map(option => (
                             // <p>{poll.title}</p>
-                            <OptionIndexItem
-                            option={option}
-                            updateOption={this.props.updateOption}
-                            key={option.id}
+                            <VoteOptionItem
+                                option={option}
+                                updateOption={this.props.updateOption}
+                                key={option.id}
+                                history={this.props.history}
                             />
-                            )
                         )
-                        }
+                        )
+                    }
                 </ul>
                 <div className='pollshowPage-links-div'>
                     <Link className='link-to-vote-page' to={`/vote/${this.props.poll.id}`}> Go to votting page</Link>
@@ -71,4 +71,4 @@ class PollShow extends React.Component {
     }
 }
 
-export default PollShow;
+export default BetterVoteForm;

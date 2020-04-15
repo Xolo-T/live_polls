@@ -47,7 +47,7 @@ class GenrralVoteForm extends React.Component {
         if (isValid) {
             // this.props.updateOption(this.state.pollId)
             debugger
-            let voteId = parseInt(this.state.pollId) / 13
+            let voteId = parseInt(this.state.pollId) / 23
             let realId = voteId.toString()
             debugger
             this.props.updateOption(realId)
