@@ -1,25 +1,40 @@
+a.poll-show-back-link {
+    margin: 17px;
+}
+
 .poll-show-title {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: aliceblue;
+    background-color: #007ACC;
+    color: #fff;
+    margin: 17px;
+    line-height: 0.2;
+}
+
+.showPoll-title-div {
+    text-align: center;
+    margin: 17px;
+    line-height: 0.2;
 }
 
 .options-div {
-    /* background-color: rgb(255, 106, 106); */
+    background-color: lightgray;
     min-width: 90%;
-    min-height: 400px;
+    min-height: 350px;
     padding: 4%;
+    margin: 17px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin: 17px;
 }
 
 .one-option-div {
     /* background-color: lightgray; */
     display: flex;
     flex-direction: column;
-    width: 115px;
+    min-width: 115px;
     height: 90%;
     margin: 10px;
     align-items: center;
@@ -36,4 +51,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 17px;
+    padding: 17px;
 }

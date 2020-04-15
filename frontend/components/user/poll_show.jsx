@@ -24,7 +24,7 @@ class PollShow extends React.Component {
             <div>
                 
                 {/* <Link to='/'>PollIndex</Link> */}
-                <Link to='/' className=''>
+                <Link to='/' className='poll-show-back-link'>
                     <button
                         className='home-main-body-nav-button'
                     >
@@ -32,11 +32,15 @@ class PollShow extends React.Component {
                     </button>
                 </Link>
                 <div className='poll-show-title'>
-                    <h3> To vote please visit: 
-                        <Link className='link-to-vote-page' to={`/vote/${this.props.poll.id}`}>
+                    <h3> To vote please visit: </h3>
+                    <h3> 'https://live-polls.herokuapp.com/#/vote'</h3>
+                    <h3>and provide the option id</h3> 
+                        {/* <Link className='link-to-vote-page' to={`/vote/${this.props.poll.id}`}>
                             {`/vote/${this.props.poll.id}`}
-                        </Link>
-                    </h3>
+                        </Link> */}
+                    
+                </div>
+                <div className='showPoll-title-div'>
                     <h1>{this.props.poll.title}</h1>
                 </div>
                 <ul className='options-div'>

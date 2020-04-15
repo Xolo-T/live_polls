@@ -12,7 +12,9 @@ class OptionIndexItem extends React.Component {
             <li>
                 <div className='one-option-div'>
                     <h1>{this.props.option.count}</h1>
-                    <h2> {this.props.option.title} </h2>
+                    <h1> {this.props.option.title} </h1>
+                    <h2> id: {this.props.option.id} </h2>
+                    {/* <h1>vote id: {this.props.option.id}</h1> */}
                 </div>
             </li>
         )
