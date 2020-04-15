@@ -6,13 +6,13 @@ class PollShow extends React.Component {
     constructor(props) {
         super(props);
         this.handleClick = this.handleClick.bind(this);
-        debugger
+        
     }
 
     componentDidMount() {
         debugger
-        this.props.fetchPoll(this.props.poll.id)
-        this.props.fetchOptions(this.props.poll.id)
+        this.props.fetchPoll(this.props.pollId)
+        this.props.fetchOptions(this.props.pollId)
         // setInterval(this.forceUpdate(), 1000)
     }
 
@@ -23,8 +23,13 @@ class PollShow extends React.Component {
 
     render() {
         debugger
+        if (!this.props.poll) {
+            return <span>Nothing yet!</span>;
+        }
+
         return (
             <div>
+                
                 
                 {/* <Link to='/'>PollIndex</Link> */}
                 <Link to='/' className='poll-show-back-link'>

@@ -8,6 +8,7 @@ const msp = (state, ownProps) => {
     debugger
     return(
         {
+            pollId: ownProps.match.params.pollId,
             poll: state.entities.polls[ownProps.match.params.pollId],
             options: Object.values(state.entities.options)
         }
