@@ -18,10 +18,10 @@ const UserHomePage = ({ currentUser, logout }) => {
                         </div>
                     </div>
                     <div className='header-nav'>
-                        <Link to='/polls' className='header-nav-link'>Polls</Link>
-                        <Link to='/polls' className='header-nav-link'>Participants</Link>
-                        <Link to='/polls' className='header-nav-link'>Reports</Link>
-                        <Link to='/polls' className='header-nav-link'>More</Link>
+                        <a className='header-nav-link' href='https://www.polleverywhere.com/' >Real site</a>
+                        <a className='header-nav-link' href='https://github.com/Solomon-T/live_polls/wiki' >Github repo</a>
+                        <a className='header-nav-link' >Stack</a>
+                        <a className='header-nav-link'>Developer</a>
                     </div>
                 </div>
                 <nav className="logout-nav">

@@ -36,10 +36,9 @@ class LandingPage extends React.Component {
                             </div>
                         </div>
                         <div className='header-nav'>
-                            <a className='header-nav-link'>How it works</a>
-                            <a className='header-nav-link'>Real site</a>
-                            <a className='header-nav-link'>Stack</a>
-                            {/* <a className='header-nav-link'>Github repo</a> */}
+                            <a className='header-nav-link' href='https://www.polleverywhere.com/' >Real site</a>
+                            <a className='header-nav-link' href='https://github.com/Solomon-T/live_polls/wiki' >Github repo</a>
+                            <a className='header-nav-link' >Stack</a>
                             <a className='header-nav-link'>Developer</a>
                         </div>
                     </div>
