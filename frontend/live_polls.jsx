@@ -5,17 +5,17 @@ import ReactDOM from "react-dom";
 import Root from "./components/root";
 import configureStore from './store/store';
 
-import { 
-    fetchPolls, fetchPoll, createPoll, deletePoll
-    } from './actions/poll_actions'
+// import { 
+//     fetchPolls, fetchPoll, createPoll, deletePoll
+//     } from './actions/poll_actions'
 
 import {
     fetchOptions, createOption, deleteOption, updateOption 
 } from './actions/option_actions'
 
-// import { 
-//     fetchPolls, createPoll, deletePoll, fetchPoll
-//         } from './util/poll_api_util'
+import { 
+    fetchPolls, createPoll, deletePoll, fetchPoll
+        } from './util/poll_api_util'
 // import { 
 //     fetchOptions, createOption, deleteOption, updateOption 
 //         } from './util/option_api_util'
@@ -66,6 +66,15 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
         debugger
         store = configureStore();
+        // const preloadedState = {
+        //     entities: {
+        //         users: { [window.currentUser.id]: window.currentUser },
+        //         polls: {}
+        //     },
+        //     session: { id: window.currentUser.id }
+        // };
+        // store = configureStore(preloadedState);
+        // delete window.currentUser;
     }
 
     window.store = store;

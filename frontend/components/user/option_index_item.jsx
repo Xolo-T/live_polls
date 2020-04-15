@@ -10,11 +10,10 @@ class OptionIndexItem extends React.Component {
     render() {
         return (
             <li>
-                {/* <button onClick={() => this.props.updateOption(this.props.option.id)}>
-                    {this.props.option.title}
-                </button> */}
-                <h2> {this.props.option.title} </h2>
-                <h1>{this.props.option.count}</h1>
+                <div className='one-option-div'>
+                    <h1>{this.props.option.count}</h1>
+                    <h2> {this.props.option.title} </h2>
+                </div>
             </li>
         )
     }

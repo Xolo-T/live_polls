@@ -11,6 +11,7 @@ class PollShow extends React.Component {
     componentDidMount() {
         this.props.fetchPoll(this.props.poll.id)
         this.props.fetchOptions(this.props.poll.id)
+        setInterval(this.forceUpdate(), 1000)
     }
 
     handleClick() {
@@ -30,22 +31,31 @@ class PollShow extends React.Component {
                         Back to my polls
                     </button>
                 </Link>
-                <Link to={`/vote/${this.props.poll.id}`}> Go to votting page</Link>
-                <h1>{this.props.poll.title}</h1>
-                <ul>
+                <div className='poll-show-title'>
+                    <h3> To vote please visit: 
+                        <Link className='link-to-vote-page' to={`/vote/${this.props.poll.id}`}>
+                            {`/vote/${this.props.poll.id}`}
+                        </Link>
+                    </h3>
+                    <h1>{this.props.poll.title}</h1>
+                </div>
+                <ul className='options-div'>
                     {
                         this.props.options.map(option => (
                             // <p>{poll.title}</p>
                             <OptionIndexItem
-                                option={option}
-                                updateOption={this.props.updateOption}
-                                key={option.id}
+                            option={option}
+                            updateOption={this.props.updateOption}
+                            key={option.id}
                             />
-                             )
+                            )
                         )
-                    }
+                        }
                 </ul>
-                <button onClick={this.handleClick}>Delete Poll</button>
+                <div className='pollshowPage-links-div'>
+                    <Link className='link-to-vote-page' to={`/vote/${this.props.poll.id}`}> Go to votting page</Link>
+                    <button onClick={this.handleClick}>Delete Poll</button>
+                </div>
             </div>
         )
     }

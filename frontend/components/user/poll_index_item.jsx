@@ -19,10 +19,8 @@ class PollIndexItem extends React.Component {
 
     render() {
         return (
-            <li>
-                <Link to={`/polls/${this.props.poll.id}`}>{this.props.poll.title}</Link>
-                {/* <Link to={`/events/${this.props.event.id}/edit`}>Edit</Link>
-                <button onClick={() => this.props.deleteEvent(this.props.event.id)}>D</button> */}
+            <li className='user-poll'>
+                    <Link to={`/polls/${this.props.poll.id}`}>{this.props.poll.title}</Link>
             </li>
         )
     }

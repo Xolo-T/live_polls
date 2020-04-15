@@ -15,7 +15,15 @@ class VoteTake extends React.Component {
         this.props.fetchPoll(this.props.pollId)
         this.props.fetchOptions(this.props.pollId)
         debugger
+        // setInterval(this.doSomething, 5000);
+        // setInterval(this.props.fetchPoll(this.props.pollId), 5000);
+        setInterval(this.forceUpdate(), 5000);
+
     }
+
+    // doSomething() {
+    //     alert('This pops up every 5 seconds and is annoying!');
+    // }
 
     // UNSAFE_componentDidMount() {
     //     debugger
@@ -34,20 +42,30 @@ class VoteTake extends React.Component {
                         Visit Live Polls
                     </button>
                 </Link>
-                <h1>{this.props.polls[0].title}</h1>
-                <ul>
-                    {
-                        this.props.options.map(option => (
-                            // <p>{poll.title}</p>
-                            <OptionVoteIndexItem
-                                option={option}
-                                updateOption={this.props.updateOption}
-                                key={option.id}
-                            />
+                <div className='vote-form-div'>
+                    <h1>{this.props.polls[0].title}</h1>
+                    <ul className='temp-vote-buttons'>
+                        {
+                            this.props.options.map(option => (
+                                // <p>{poll.title}</p>
+                                <OptionVoteIndexItem
+                                    option={option}
+                                    updateOption={this.props.updateOption}
+                                    key={option.id}
+                                />
+                                )
                             )
-                        )
-                    }
-                </ul>
+                        }
+                    </ul>
+                    <form className='vote-porm'>
+                        {/* {let myOptions = this} */}
+                        <select multiple>
+                            <option value="volvo">car</option>
+                            <option value="saab">Saab</option>
+                        </select>
+                        <button type="submit">Vote</button>
+                    </form>
+                </div>
             </div>
         )
     }

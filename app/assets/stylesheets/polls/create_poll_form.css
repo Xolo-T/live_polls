@@ -67,3 +67,16 @@ form.create-poll-form {
     align-content: flex-end;
     justify-content: flex-end;
 }
+
+.create-poll-error-div {
+    /* background-color: aliceblue; */
+    /* height: 24px; */
+    /* padding-top: 8px; */
+    color: rgb(255, 90, 90);
+    padding-bottom: 8px;
+    font-size: inherit;
+    width: 90%;
+    font-size: inherit;
+    margin-bottom: 17px;
+    margin: 8px 20px;
+}

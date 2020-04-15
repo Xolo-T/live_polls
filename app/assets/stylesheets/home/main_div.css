@@ -19,7 +19,7 @@
 .home-main-content{
     width: 100%;
     background-color: #F5F5F5;
-    background-color: lightgray;
+    /* background-color: lightgray; */
     min-height: 500px;
     margin-right: 15px;
     /* margin-left: 1px; */
@@ -56,6 +56,8 @@ button.home-main-body-extra-button {
     font-weight: 600;
     background-color: transparent;
     text-align: left;
+    border: none;
+    border-bottom: 1px solid #a8a3a3;
 }
 
 button.home-main-body-nav-button:hover{
@@ -80,3 +82,26 @@ div#home-main-nav-footer p, ul {
     background-color: #eaeff5;
     padding-top: 5px;
 }
+
+li.user-poll {
+    /* border: 1px solid; */
+    width: 100%;
+    margin: 5px 0px;
+    /* font-size: large; */
+    padding: 5px;
+}
+
+li.user-poll a {
+    color: #007ACC;
+    width: 93%;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: transparent;
+    text-align: left;
+    padding: 8px 5px;
+}
+
+li.user-poll a:hover {
+    background-color: lightgray;
+}
+

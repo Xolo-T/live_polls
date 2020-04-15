@@ -1,0 +1,39 @@
+.poll-show-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.options-div {
+    /* background-color: rgb(255, 106, 106); */
+    min-width: 90%;
+    min-height: 400px;
+    padding: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.one-option-div {
+    /* background-color: lightgray; */
+    display: flex;
+    flex-direction: column;
+    width: 115px;
+    height: 90%;
+    margin: 10px;
+    align-items: center;
+}
+
+.link-to-vote-page{
+    font-size: larger;
+    color: #007ACC;
+}
+
+.pollshowPage-links-div{
+    background-color: lightgray;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

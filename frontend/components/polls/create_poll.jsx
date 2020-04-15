@@ -49,15 +49,15 @@ class CreatePoll extends React.Component {
         let seconOptionTitleError = ''
 
         if (this.state.pollTitle.length == 0) {
-            pollTitleError = "Poll title can't be empty"
+            pollTitleError = "Please enter a title"
         }
 
         if (this.state.firstOptionTitle.length == 0) {
-            firstOptionTitleError = "Poll option cant be empty"
+            firstOptionTitleError = "Please enter a response"
         }
         
         if (this.state.seconOptionTitle.length == 0) {
-            seconOptionTitleError = "Poll option cant be empty"
+            seconOptionTitleError = "Please enter a response"
         }
         if (pollTitleError) {
             this.setState({ pollTitleError })
@@ -180,7 +180,7 @@ class CreatePoll extends React.Component {
                                             className="create-form-input "
                                             placeholder="Title"
                                         />
-                                        <div>{this.state.pollTitleError}</div>
+                                        <div className='create-poll-error-div'>{this.state.pollTitleError}</div>
                                     </label>
                                     <br />
                                     <br/>
@@ -191,7 +191,7 @@ class CreatePoll extends React.Component {
                                             className="create-form-input"
                                             placeholder="text"
                                         />
-                                        <div>{this.state.firstOptionTitleError}</div>
+                                        <div className='create-poll-error-div'>{this.state.firstOptionTitleError}</div>
                                     </label>
                                     <label>
                                         <input type="text"
@@ -200,7 +200,7 @@ class CreatePoll extends React.Component {
                                             className="create-form-input"
                                             placeholder="text"
                                         />
-                                        <div>{this.state.seconOptionTitleError}</div>
+                                        <div className='create-poll-error-div'>{this.state.seconOptionTitleError}</div>
                                     </label>
                                     <br />
                                     <div className='submit-poll-div'>
