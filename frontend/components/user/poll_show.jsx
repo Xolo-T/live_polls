@@ -6,12 +6,14 @@ class PollShow extends React.Component {
     constructor(props) {
         super(props);
         this.handleClick = this.handleClick.bind(this);
+        debugger
     }
 
     componentDidMount() {
+        debugger
         this.props.fetchPoll(this.props.poll.id)
         this.props.fetchOptions(this.props.poll.id)
-        setInterval(this.forceUpdate(), 1000)
+        // setInterval(this.forceUpdate(), 1000)
     }
 
     handleClick() {
@@ -20,6 +22,7 @@ class PollShow extends React.Component {
     }
 
     render() {
+        debugger
         return (
             <div>
                 

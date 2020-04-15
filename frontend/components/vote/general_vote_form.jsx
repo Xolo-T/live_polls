@@ -45,7 +45,12 @@ class GenrralVoteForm extends React.Component {
         e.preventDefault();
         const isValid = this.validate();
         if (isValid) {
-            this.props.updateOption(this.state.pollId)
+            // this.props.updateOption(this.state.pollId)
+            debugger
+            let voteId = parseInt(this.state.pollId) / 13
+            let realId = voteId.toString()
+            debugger
+            this.props.updateOption(realId)
                 .then(this.props.history.push(`/`))
         }
     }

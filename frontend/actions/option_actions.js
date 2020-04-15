@@ -2,10 +2,16 @@ import * as APIUtil from '../util/option_api_util';
 
 export const RECEIVE_OPTIONS = 'RECEIVE_OPTIONS';
 export const RECEIVE_OPTION = 'RECEIVE_OPTION';
+export const RECEIVE_OPTION_ERRORS = 'RECEIVE_OPTION_ERRORS';
 
 export const receiveOptions = options => ({
     type: RECEIVE_OPTIONS,
     options
+});
+
+export const receiveOptionErrors = option => ({
+    type: RECEIVE_OPTION_ERRORS,
+    errors
 });
 
 export const receiveOption = option => ({
@@ -26,8 +32,9 @@ export const createOption = option => dispatch => (
 );
 
 export const updateOption = option_id => dispatch => (
-    APIUtil.updateOption(option_id).then(option => (
-        dispatch(receiveOption(option))
+    APIUtil.updateOption(option_id).then(
+        option => (dispatch(receiveOption(option)),
+            errors => dispatch(receiveOptionErrors(errors.responseJSON))
     ))
 );
 

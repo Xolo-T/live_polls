@@ -5,7 +5,7 @@ import PollShow from './poll_show';
 
 
 const msp = (state, ownProps) => {
-    // debugger
+    debugger
     return(
         {
             poll: state.entities.polls[ownProps.match.params.pollId],

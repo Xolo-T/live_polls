@@ -9,11 +9,13 @@ import CreatePoll from './polls/create_poll_container';
 import PollShowContainer from './user/polls_show_container';
 // import PollVoteContainer from './user/poll_vote_container';
 import GeneralVoteContainer from './vote/general_vote_container'
+import TestShowContainer from './test/test_show_container'
 
 import { AuthRoute, ProtectedRoute } from "../util/route_util";
 
 const App = () => (
     <div className='rendered-body'>
+        
         <Route exact path="/" component={GreetingContainer} />
         <AuthRoute path="/login" component={LoginFormContainer} />
         <AuthRoute path="/signup" component={SignupFormContainer} />
@@ -22,6 +24,7 @@ const App = () => (
         <Route path="/polls/:pollId" component={PollShowContainer} />
         {/* <Route path="/vote/:pollId" component={PollVoteContainer} /> */}
         <Route path="/vote" component={GeneralVoteContainer} />
+        <Route path="/test/:pollId" component={TestShowContainer} />
     </div>
 );
 
