@@ -28,44 +28,45 @@ class BetterVoteForm extends React.Component {
         }
 
         return (
-            <div>
+            <div className='better-vote-form-div'>
+                <div className='voting-page-welcome-div'>
+                    <h4 > Welcome to our voting page </h4>
+                </div>
+                <div className='vote-instructions-div'>
+                    <p> To vote simply click the vote button
+                         next to your choice.  </p>
+                    <p> Once you vote you will be redirected to our home page.
+                         to respond to a poll. </p>
+                    <p>On this note please please be carefull with accidental votes</p>
+                </div>
+                <div className='thank-you-voter-div'>
+                    <p>Thanks for polling with us.</p>
+                </div>
 
 
-                {/* <Link to='/'>PollIndex</Link> */}
-                <Link to='/' className='poll-show-back-link'>
-                    <button
-                        className='home-main-body-nav-button'
-                    >
-                        Back to my polls
-                    </button>
+                <div className='better-vote-form'>
+                    <h1 className='better-vote-form-title'>
+                        {this.props.poll.title}
+                    </h1>
+                    <p className='last-voting-instruction'>Just click 'Vote' to vote</p>
+                    <ul>
+                        {
+                            this.props.options.map(option => (
+                                // <p>{poll.title}</p>
+                                <VoteOptionItem
+                                    option={option}
+                                    updateOption={this.props.updateOption}
+                                    key={option.id}
+                                    history={this.props.history}
+                                />
+                            )
+                            )
+                        }
+                    </ul>
+                </div>
+                <Link className='vote-logo' to='/'>
+                    <h2>Live Polls</h2>
                 </Link>
-                <div className='poll-show-title'>
-                    <h3> is this what you looking for? </h3>
-                    <h3> Thanks for polling live </h3>
-                    <h3>sorry to break your heart but this poll</h3>
-
-                </div>
-                <div className='showPoll-title-div'>
-                    <h1>{this.props.poll.title}</h1>
-                </div>
-                <ul className='options-div'>
-                    {
-                        this.props.options.map(option => (
-                            // <p>{poll.title}</p>
-                            <VoteOptionItem
-                                option={option}
-                                updateOption={this.props.updateOption}
-                                key={option.id}
-                                history={this.props.history}
-                            />
-                        )
-                        )
-                    }
-                </ul>
-                <div className='pollshowPage-links-div'>
-                    <Link className='link-to-vote-page' to={`/vote/${this.props.poll.id}`}> Go to votting page</Link>
-                    <button onClick={this.handleClick}>Delete Poll</button>
-                </div>
             </div>
         )
     }

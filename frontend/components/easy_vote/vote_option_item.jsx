@@ -16,12 +16,14 @@ class VoteOptionItem extends React.Component {
     render() {
         return (
             <li>
-                <div className='one-option-div'>
-                    <p>yey!!</p>
-                    <h1>{this.props.option.count}</h1>
-                    <h1> {this.props.option.title} </h1>
+                <div className='vote-option-div'>
                     {/* <button onClick={() => this.props.updateOption(this.props.option.id)}>Vote</button> */}
-                    <button onClick={this.handleClick}>Vote</button>
+                    <button 
+                        className='vote-button' 
+                        onClick={this.handleClick}>
+                            Vote
+                    </button>
+                    <p className='vote-option-title'> {this.props.option.title} </p>
                 </div>
             </li>
         )

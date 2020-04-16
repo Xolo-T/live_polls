@@ -59,7 +59,7 @@ class GenrralVoteForm extends React.Component {
         return (
             <div className="vote-form- div">
                 <form onSubmit={this.handleSubmit} className="general-vote-form">
-                    <h1 className='vote-form-header' >Pleease submit the id of your choice</h1>
+                    <h1 className='vote-form-header' >Please submit the id of your choice</h1>
                     <input type="text"
                         onChange={this.updatePoll('pollId')}
                         className="vote-form-input "

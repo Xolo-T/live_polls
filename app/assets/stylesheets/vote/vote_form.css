@@ -1,0 +1,120 @@
+.better-vote-form-div{
+    height: 100%;
+    background-color: #35506c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 10% 3%; */
+}
+
+.vote-logo {
+    min-width: 150px;
+    color: #fff;
+    position: fixed;
+    top: -5px;
+    left: 29px;
+}
+.vote-logo h2{
+    color: #fff;
+    height: fit-content;
+}
+.vote-logo h1{
+    min-width: 150px;
+    color: #fff;
+}
+
+.voting-page-welcome-div{
+    color: #fff;
+}
+.vote-instructions-div{
+    background-color: #dbdbdb;
+}
+
+
+
+.better-vote-form {
+    background-color: #35506c;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: baseline; */
+    padding: 3% 3%;
+    height: 100%;
+    width: 60%;
+    /* background-color: antiquewhite; */
+}
+
+.better-vote-form-title{
+    color: #fff;
+}
+.last-voting-instruction{
+    color: #fff;
+    font-size: medium;
+    margin-bottom: 5px;
+}
+
+.vote-option-div {
+    background-color: #efefef;
+    margin-bottom: 10px;
+    padding: 5px;
+    display: flex;
+    align-items: baseline;
+}
+
+.vote-button {
+    font-size: 14px;
+    background-color: #507AA3;
+    color: #fff;
+    padding: 5px 19px;
+    margin-right: 15px;
+    border-radius: 6%;
+}
+
+.vote-option-title{
+    color: #4F4F4F;
+}
+
+.vote-instructions-div {
+    background-color: #dbdbdb;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #4F4F4F;
+    padding: 12px 12px 30px 12px;
+    
+}
+
+.vote-instructions-div p {
+    font-weight: 100 !important;
+    padding: 10px;
+}
+
+.thank-you-voter-div {
+    opacity: 1;
+    background-color: #efefef;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 7px;
+}
+
+.thank-you-voter-div p {
+    color: #4F4F4F;
+    font-weight: 100 !important;
+}
+
+input.vote-form-input {
+    /* height: 25px; */
+    width: 30%;
+    font-size: 22px;
+    text-align: center;
+}
+
+button.vote-form-submit {
+    font-size: large;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px;
+    width: 180px;
+}
