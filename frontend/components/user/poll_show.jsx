@@ -6,14 +6,16 @@ class PollShow extends React.Component {
     constructor(props) {
         super(props);
         this.handleClick = this.handleClick.bind(this);
+        this.handleRefresh = this.handleRefresh.bind(this);
         
     }
 
     componentDidMount() {
-        debugger
+        // debugger
         this.props.fetchPoll(this.props.pollId)
         this.props.fetchOptions(this.props.pollId)
-        // setInterval(this.forceUpdate(), 1000)
+        const refreshInterval = setInterval(this.handleRefresh, 250)
+        setTimeout(() => clearInterval(refreshInterval), 120000);
     }
 
     handleClick() {
@@ -21,8 +23,13 @@ class PollShow extends React.Component {
             .then( this.props.history.push(`/`) ) 
     }
 
+    handleRefresh() {
+        this.props.fetchOptions(this.props.pollId)
+    }
+
+
     render() {
-        debugger
+        // debugger
         if (!this.props.poll) {
             return <span>Nothing yet!</span>;
         }
@@ -39,6 +46,7 @@ class PollShow extends React.Component {
                         Back to my polls
                     </button>
                 </Link>
+                <button onClick={this.handleRefresh}> refresh</button>
                 <div className='poll-show-title'>
                     <h3> To vote please visit: </h3>
                     <h2>{`https://live-polls.herokuapp.com/#/vote/${this.props.pollId}`}</h2>

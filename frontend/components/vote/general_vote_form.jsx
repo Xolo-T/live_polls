@@ -12,7 +12,7 @@ class GenrralVoteForm extends React.Component {
     }
 
     componentDidMount(){
-        debugger
+        // debugger
     }
 
     updatePoll(field) {
@@ -24,7 +24,7 @@ class GenrralVoteForm extends React.Component {
     validate() {
         let pollIdError = ''
         let numPrased = parseInt(this.state.pollId)
-        debugger
+        // debugger
 
         if (this.state.pollId.length == 0) {
             pollIdError = "Please enter an option id"
@@ -41,15 +41,15 @@ class GenrralVoteForm extends React.Component {
     };
 
     handleSubmit(e) {
-        debugger
+        // debugger
         e.preventDefault();
         const isValid = this.validate();
         if (isValid) {
             // this.props.updateOption(this.state.pollId)
-            debugger
+            // debugger
             let voteId = parseInt(this.state.pollId) / 23
             let realId = voteId.toString()
-            debugger
+            // debugger
             this.props.updateOption(realId)
                 .then(this.props.history.push(`/`))
         }

@@ -9,12 +9,12 @@ class UserPolls extends React.Component {
     }
 
     componentDidMount(){
-        debugger
+        // debugger
         this.props.fetchPolls(this.props.currentUserId)
     }
 
     render() {
-        debugger
+        // debugger
         return (
             <div className='current user polls'>
                 <h1>Hello! Here are all your ugly polls</h1>

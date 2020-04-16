@@ -4,7 +4,7 @@ import React from 'react';
 
 class TestShow extends React.Component {
     componentDidMount() {
-        debugger
+        // debugger
         this.props.fetchPoll(this.props.pollId);
     }
 

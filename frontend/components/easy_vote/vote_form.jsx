@@ -10,7 +10,7 @@ class BetterVoteForm extends React.Component {
     }
 
     componentDidMount() {
-        debugger
+        // debugger
         this.props.fetchPoll(this.props.pollId)
         this.props.fetchOptions(this.props.pollId)
         // setInterval(this.forceUpdate(), 1000)
@@ -22,7 +22,7 @@ class BetterVoteForm extends React.Component {
     }
 
     render() {
-        debugger
+        // debugger
         if (!this.props.poll) {
             return <span>Nothing yet!</span>;
         }
