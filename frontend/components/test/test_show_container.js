@@ -7,7 +7,7 @@ import { fetchOptions } from '../../actions/option_actions';
 import TestShow from './test_show';
 
 const mapStateToProps = (state, ownProps) => {
-    debugger
+    // debugger
     return {
         pollId: ownProps.match.params.postId,
         polls: Object.keys(state.entities.polls).map(key => state.entities.polls[key]),

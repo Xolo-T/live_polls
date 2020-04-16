@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
         store = configureStore(preloadedState);
         delete window.currentUser;
     } else {
-        debugger
+        // debugger
         store = configureStore();
         // const preloadedState = {
         //     entities: {

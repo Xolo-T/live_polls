@@ -5,7 +5,7 @@ import BetterVoteForm from './vote_form';
 
 
 const msp = (state, ownProps) => {
-    debugger
+    // debugger
     return (
         {
             pollId: ownProps.match.params.pollId,

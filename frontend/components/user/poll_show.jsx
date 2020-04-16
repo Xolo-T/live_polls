@@ -10,19 +10,12 @@ class PollShow extends React.Component {
         
     }
 
-    logEverySecond() {
-        console.log('interval working')
-    }
-
     componentDidMount() {
-        debugger
+        // debugger
         this.props.fetchPoll(this.props.pollId)
         this.props.fetchOptions(this.props.pollId)
-        // var myInterval = setInterval(() => console.log('interval working'), 1000)
-        // setInterval(this.handleRefresh , 1000)
-    }
-    componentWillUnmount(){
-        // clearInterval(myInterval)
+        const refreshInterval = setInterval(this.handleRefresh, 250)
+        setTimeout(() => clearInterval(refreshInterval), 120000);
     }
 
     handleClick() {
@@ -31,16 +24,12 @@ class PollShow extends React.Component {
     }
 
     handleRefresh() {
-        // this.props.history.push(`/polls/${this.props.pollId}`)
-        console.log('Refreshing')
         this.props.fetchOptions(this.props.pollId)
-
     }
 
 
-
     render() {
-        debugger
+        // debugger
         if (!this.props.poll) {
             return <span>Nothing yet!</span>;
         }
