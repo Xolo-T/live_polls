@@ -44272,3 +44272,463 @@ Processing by Api::OptionsController#index as JSON
 Completed 200 OK in 5ms (Views: 2.2ms | ActiveRecord: 1.6ms)
 
 
+Started GET "/api/options?poll_id=1" for ::1 at 2020-04-15 21:36:04 -0400
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/xolo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by Api::OptionsController#index as JSON
+  Parameters: {"poll_id"=>"1"}
+  [1m[36mOption Load (2.8ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 1]]
+  ↳ app/controllers/api/options_controller.rb:44
+Completed 200 OK in 35ms (Views: 12.3ms | ActiveRecord: 13.6ms)
+
+
+Started GET "/api/options?poll_id=1" for ::1 at 2020-04-15 21:36:04 -0400
+Processing by Api::OptionsController#index as JSON
+  Parameters: {"poll_id"=>"1"}
+  [1m[36mOption Load (0.5ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 1]]
+  ↳ app/controllers/api/options_controller.rb:44
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/options?poll_id=1" for ::1 at 2020-04-15 21:36:05 -0400
+Processing by Api::OptionsController#index as JSON
+  Parameters: {"poll_id"=>"1"}
+  [1m[36mOption Load (0.3ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 1]]
+  ↳ app/controllers/api/options_controller.rb:44
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/options?poll_id=1" for ::1 at 2020-04-15 21:36:07 -0400
+Processing by Api::OptionsController#index as JSON
+  Parameters: {"poll_id"=>"1"}
+  [1m[36mOption Load (0.5ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 1]]
+  ↳ app/controllers/api/options_controller.rb:44
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/options?poll_id=1" for ::1 at 2020-04-15 21:36:08 -0400
+Processing by Api::OptionsController#index as JSON
+  Parameters: {"poll_id"=>"1"}
+  [1m[36mOption Load (0.4ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 1]]
+  ↳ app/controllers/api/options_controller.rb:44
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/options?poll_id=1" for ::1 at 2020-04-15 21:36:09 -0400
+Processing by Api::OptionsController#index as JSON
+  Parameters: {"poll_id"=>"1"}
+  [1m[36mOption Load (0.4ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 1]]
+  ↳ app/controllers/api/options_controller.rb:44
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/options?poll_id=1" for ::1 at 2020-04-15 21:36:10 -0400
+Processing by Api::OptionsController#index as JSON
+  Parameters: {"poll_id"=>"1"}
+  [1m[36mOption Load (0.3ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 1]]
+  ↳ app/controllers/api/options_controller.rb:44
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/options?poll_id=1" for ::1 at 2020-04-15 21:36:11 -0400
+Processing by Api::OptionsController#index as JSON
+  Parameters: {"poll_id"=>"1"}
+  [1m[36mOption Load (0.3ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 1]]
+  ↳ app/controllers/api/options_controller.rb:44
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/options?poll_id=1" for ::1 at 2020-04-15 21:36:12 -0400
+Processing by Api::OptionsController#index as JSON
+  Parameters: {"poll_id"=>"1"}
+  [1m[36mOption Load (0.3ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 1]]
+  ↳ app/controllers/api/options_controller.rb:44
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/options?poll_id=1" for ::1 at 2020-04-15 21:36:13 -0400
+Processing by Api::OptionsController#index as JSON
+  Parameters: {"poll_id"=>"1"}
+  [1m[36mOption Load (0.3ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 1]]
+  ↳ app/controllers/api/options_controller.rb:44
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/options?poll_id=1" for ::1 at 2020-04-15 21:36:14 -0400
+Processing by Api::OptionsController#index as JSON
+  Parameters: {"poll_id"=>"1"}
+  [1m[36mOption Load (0.3ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 1]]
+  ↳ app/controllers/api/options_controller.rb:44
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/options?poll_id=1" for ::1 at 2020-04-15 21:36:15 -0400
+Processing by Api::OptionsController#index as JSON
+  Parameters: {"poll_id"=>"1"}
+  [1m[36mOption Load (0.3ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 1]]
+  ↳ app/controllers/api/options_controller.rb:44
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/options?poll_id=1" for ::1 at 2020-04-15 21:36:16 -0400
+Processing by Api::OptionsController#index as JSON
+  Parameters: {"poll_id"=>"1"}
+  [1m[36mOption Load (0.3ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 1]]
+  ↳ app/controllers/api/options_controller.rb:44
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/options?poll_id=1" for ::1 at 2020-04-15 21:36:16 -0400
+Processing by Api::OptionsController#index as JSON
+  Parameters: {"poll_id"=>"1"}
+  [1m[36mOption Load (0.3ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 1]]
+  ↳ app/controllers/api/options_controller.rb:44
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/options?poll_id=1" for ::1 at 2020-04-15 21:36:18 -0400
+Processing by Api::OptionsController#index as JSON
+  Parameters: {"poll_id"=>"1"}
+  [1m[36mOption Load (0.3ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 1]]
+  ↳ app/controllers/api/options_controller.rb:44
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/options?poll_id=1" for ::1 at 2020-04-15 21:36:18 -0400
+Processing by Api::OptionsController#index as JSON
+  Parameters: {"poll_id"=>"1"}
+  [1m[36mOption Load (0.2ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 1]]
+  ↳ app/controllers/api/options_controller.rb:44
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/options?poll_id=1" for ::1 at 2020-04-15 21:36:19 -0400
+Processing by Api::OptionsController#index as JSON
+  Parameters: {"poll_id"=>"1"}
+  [1m[36mOption Load (0.9ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 1]]
+  ↳ app/controllers/api/options_controller.rb:44
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/options?poll_id=1" for ::1 at 2020-04-15 21:36:21 -0400
+Processing by Api::OptionsController#index as JSON
+  Parameters: {"poll_id"=>"1"}
+  [1m[36mOption Load (0.4ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 1]]
+  ↳ app/controllers/api/options_controller.rb:44
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/options?poll_id=1" for ::1 at 2020-04-15 21:36:22 -0400
+Processing by Api::OptionsController#index as JSON
+  Parameters: {"poll_id"=>"1"}
+  [1m[36mOption Load (0.3ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 1]]
+  ↳ app/controllers/api/options_controller.rb:44
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/options?poll_id=1" for ::1 at 2020-04-15 21:36:22 -0400
+Processing by Api::OptionsController#index as JSON
+  Parameters: {"poll_id"=>"1"}
+  [1m[36mOption Load (0.3ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 1]]
+  ↳ app/controllers/api/options_controller.rb:44
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/options?poll_id=1" for ::1 at 2020-04-15 21:36:24 -0400
+Processing by Api::OptionsController#index as JSON
+  Parameters: {"poll_id"=>"1"}
+  [1m[36mOption Load (0.3ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 1]]
+  ↳ app/controllers/api/options_controller.rb:44
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/options?poll_id=1" for ::1 at 2020-04-15 21:36:25 -0400
+
+PG::Error - could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+:
+
+Started GET "/api/options?poll_id=1" for ::1 at 2020-04-15 21:36:26 -0400
+
+PG::ConnectionBad - could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+:
+
+Started GET "/api/options?poll_id=1" for ::1 at 2020-04-15 21:36:27 -0400
+
+PG::ConnectionBad - could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+:
+
+Started GET "/api/options?poll_id=1" for ::1 at 2020-04-15 21:36:28 -0400
+
+PG::ConnectionBad - could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+:
+
+Started GET "/api/options?poll_id=1" for ::1 at 2020-04-15 21:36:29 -0400
+
+PG::ConnectionBad - could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+:
+
+Started GET "/api/options?poll_id=1" for ::1 at 2020-04-15 21:36:29 -0400
+
+PG::ConnectionBad - could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+:
+
+Started GET "/api/options?poll_id=1" for ::1 at 2020-04-15 21:36:31 -0400
+
+PG::ConnectionBad - could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+:
+
+Started GET "/api/options?poll_id=1" for ::1 at 2020-04-15 21:36:31 -0400
+
+PG::ConnectionBad - could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+:
+
+Started GET "/api/options?poll_id=1" for ::1 at 2020-04-15 21:36:33 -0400
+
+PG::ConnectionBad - could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+:
+
+Started GET "/api/options?poll_id=1" for ::1 at 2020-04-15 21:36:34 -0400
+
+PG::ConnectionBad - could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+:
+
+Started GET "/api/options?poll_id=1" for ::1 at 2020-04-15 21:36:34 -0400
+
+PG::ConnectionBad - could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+:
+
+Started GET "/api/options?poll_id=1" for ::1 at 2020-04-15 21:36:36 -0400
+
+PG::ConnectionBad - could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+:
+
+Started GET "/api/options?poll_id=1" for ::1 at 2020-04-15 21:36:36 -0400
+
+PG::ConnectionBad - could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+:
+
+Started GET "/api/options?poll_id=1" for ::1 at 2020-04-15 21:36:37 -0400
+
+PG::ConnectionBad - could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+:
+
+Started GET "/api/options?poll_id=1" for ::1 at 2020-04-15 21:36:39 -0400
+
+PG::ConnectionBad - could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+:
+
+Started GET "/api/options?poll_id=1" for ::1 at 2020-04-15 21:36:40 -0400
+
+PG::ConnectionBad - could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+:
+
+Started GET "/api/options?poll_id=1" for ::1 at 2020-04-15 21:36:40 -0400
+
+PG::ConnectionBad - could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+:
+
+Started GET "/api/options?poll_id=1" for ::1 at 2020-04-15 21:36:42 -0400
+
+PG::ConnectionBad - could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+:
+
+Started GET "/api/options?poll_id=1" for ::1 at 2020-04-15 21:36:43 -0400
+
+PG::ConnectionBad - could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+:
+
+Started GET "/api/options?poll_id=1" for ::1 at 2020-04-15 21:36:43 -0400
+
+PG::ConnectionBad - could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+:
+
+Started GET "/api/options?poll_id=1" for ::1 at 2020-04-15 21:36:45 -0400
+
+PG::ConnectionBad - could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+:
+
+Started GET "/" for ::1 at 2020-04-15 21:37:16 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 2009ms (Views: 2006.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/session" for ::1 at 2020-04-15 21:37:26 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"Guest", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (5.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Guest"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:55
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "Guest"], ["id", 22], ["LIMIT", 1]]
+  ↳ app/models/user.rb:55
+  [1m[36mUser Update (5.4ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "D8HlTlnM+xDhw5IFMnASL/tBjl6IYLKNtU/+h4w2c3OB4tUoRdd1nQY2h3wRsNea2BaeGc+Y0viMsWj7PsTaQQ=="], ["updated_at", "2020-04-16 01:37:26.673554"], ["id", 22]]
+  ↳ app/models/user.rb:55
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:55
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  [1m[36mPoll Load (1.7ms)[0m  [1m[34mSELECT "polls".* FROM "polls" WHERE "polls"."author_id" = $1[0m  [["author_id", 22]]
+  ↳ app/views/api/users/show.json.jbuilder:5
+  Rendered api/users/show.json.jbuilder (33.8ms)
+Completed 200 OK in 331ms (Views: 33.9ms | ActiveRecord: 51.7ms)
+
+
+Started GET "/api/polls?author_id=22" for ::1 at 2020-04-15 21:37:26 -0400
+Processing by Api::PollsController#index as JSON
+  Parameters: {"author_id"=>"22"}
+  [1m[36mPoll Load (0.4ms)[0m  [1m[34mSELECT "polls".* FROM "polls" WHERE "polls"."author_id" = $1[0m  [["author_id", 22]]
+  ↳ app/controllers/api/polls_controller.rb:37
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/polls/31" for ::1 at 2020-04-15 21:37:32 -0400
+Started GET "/api/options?poll_id=31" for ::1 at 2020-04-15 21:37:32 -0400
+Processing by Api::PollsController#show as JSON
+  Parameters: {"id"=>"31"}
+  [1m[36mPoll Load (0.3ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/api/polls_controller.rb:19
+  Rendering api/polls/show.json.jbuilder
+  Rendered api/polls/_poll.json.jbuilder (0.6ms)
+  [1m[36mOption Load (2.5ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 31]]
+  ↳ app/views/api/polls/show.json.jbuilder:8
+  Rendered api/polls/show.json.jbuilder (11.2ms)
+Completed 200 OK in 28ms (Views: 23.0ms | ActiveRecord: 2.9ms)
+
+
+Processing by Api::OptionsController#index as JSON
+  Parameters: {"poll_id"=>"31"}
+  [1m[36mOption Load (1.4ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 31]]
+  ↳ app/controllers/api/options_controller.rb:44
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/polls?author_id=22" for ::1 at 2020-04-15 21:37:56 -0400
+Processing by Api::PollsController#index as JSON
+  Parameters: {"author_id"=>"22"}
+  [1m[36mPoll Load (1.0ms)[0m  [1m[34mSELECT "polls".* FROM "polls" WHERE "polls"."author_id" = $1[0m  [["author_id", 22]]
+  ↳ app/controllers/api/polls_controller.rb:37
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2020-04-15 21:38:01 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "D8HlTlnM+xDhw5IFMnASL/tBjl6IYLKNtU/+h4w2c3OB4tUoRdd1nQY2h3wRsNea2BaeGc+Y0viMsWj7PsTaQQ=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 85ms (Views: 81.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/polls?author_id=22" for ::1 at 2020-04-15 21:38:01 -0400
+Processing by Api::PollsController#index as JSON
+  Parameters: {"author_id"=>"22"}
+  [1m[36mPoll Load (0.4ms)[0m  [1m[34mSELECT "polls".* FROM "polls" WHERE "polls"."author_id" = $1[0m  [["author_id", 22]]
+  ↳ app/controllers/api/polls_controller.rb:37
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/polls/39" for ::1 at 2020-04-15 21:38:07 -0400
+Started GET "/api/options?poll_id=39" for ::1 at 2020-04-15 21:38:07 -0400
+Processing by Api::PollsController#show as JSON
+  Parameters: {"id"=>"39"}
+Processing by Api::OptionsController#index as JSON
+  Parameters: {"poll_id"=>"39"}
+  [1m[36mOption Load (0.4ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 39]]
+  ↳ app/controllers/api/options_controller.rb:44
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mPoll Load (0.5ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = $1 LIMIT $2[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/controllers/api/polls_controller.rb:19
+  Rendering api/polls/show.json.jbuilder
+  Rendered api/polls/_poll.json.jbuilder (0.9ms)
+  [1m[36mOption Load (1.0ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 39]]
+  ↳ app/views/api/polls/show.json.jbuilder:8
+  Rendered api/polls/show.json.jbuilder (7.6ms)
+Completed 200 OK in 24ms (Views: 18.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2020-04-15 21:38:12 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "D8HlTlnM+xDhw5IFMnASL/tBjl6IYLKNtU/+h4w2c3OB4tUoRdd1nQY2h3wRsNea2BaeGc+Y0viMsWj7PsTaQQ=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 95ms (Views: 92.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/polls/39" for ::1 at 2020-04-15 21:38:12 -0400
+Started GET "/api/options?poll_id=39" for ::1 at 2020-04-15 21:38:12 -0400
+Processing by Api::PollsController#show as JSON
+  Parameters: {"id"=>"39"}
+Processing by Api::OptionsController#index as JSON
+  Parameters: {"poll_id"=>"39"}
+  [1m[36mPoll Load (1.8ms)[0m  [1m[34mSELECT  "polls".* FROM "polls" WHERE "polls"."id" = $1 LIMIT $2[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/controllers/api/polls_controller.rb:19
+  [1m[36mOption Load (4.8ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 39]]
+  ↳ app/controllers/api/options_controller.rb:44
+Completed 200 OK in 8ms (Views: 2.8ms | ActiveRecord: 4.8ms)
+
+
+  Rendering api/polls/show.json.jbuilder
+  Rendered api/polls/_poll.json.jbuilder (0.4ms)
+  [1m[36mOption Load (0.5ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."poll_id" = $1[0m  [["poll_id", 39]]
+  ↳ app/views/api/polls/show.json.jbuilder:8
+  Rendered api/polls/show.json.jbuilder (3.8ms)
+Completed 200 OK in 22ms (Views: 18.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/api/polls?author_id=22" for ::1 at 2020-04-15 21:38:15 -0400
+Processing by Api::PollsController#index as JSON
+  Parameters: {"author_id"=>"22"}
+  [1m[36mPoll Load (0.5ms)[0m  [1m[34mSELECT "polls".* FROM "polls" WHERE "polls"."author_id" = $1[0m  [["author_id", 22]]
+  ↳ app/controllers/api/polls_controller.rb:37
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.5ms)
+
+

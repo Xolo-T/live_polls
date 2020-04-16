@@ -18,11 +18,11 @@ class PollShow extends React.Component {
         debugger
         this.props.fetchPoll(this.props.pollId)
         this.props.fetchOptions(this.props.pollId)
-        var myInterval = setInterval(() => console.log('interval working'), 1000)
+        // var myInterval = setInterval(() => console.log('interval working'), 1000)
         // setInterval(this.handleRefresh , 1000)
     }
     componentWillUnmount(){
-        clearInterval(myInterval())
+        // clearInterval(myInterval)
     }
 
     handleClick() {
