@@ -7,6 +7,7 @@ class PollShow extends React.Component {
         super(props);
         this.handleClick = this.handleClick.bind(this);
         this.handleRefresh = this.handleRefresh.bind(this);
+        this.refreshInterval = null;
         
     }
 
@@ -14,8 +15,14 @@ class PollShow extends React.Component {
         // debugger
         this.props.fetchPoll(this.props.pollId)
         this.props.fetchOptions(this.props.pollId)
-        const refreshInterval = setInterval(this.handleRefresh, 250)
-        setTimeout(() => clearInterval(refreshInterval), 120000);
+        this.refreshInterval = setInterval(this.handleRefresh, 250)
+        setTimeout(() => clearInterval(this.refreshInterval), 120000);
+    }
+
+    componentWillUnmount(){
+        // console.log('Component saying bye')
+        // debugger
+        clearInterval(this.refreshInterval)
     }
 
     handleClick() {
