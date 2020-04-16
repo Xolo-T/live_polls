@@ -36,8 +36,8 @@ class BetterVoteForm extends React.Component {
                     <p> To vote simply click the vote button
                          next to your choice.  </p>
                     <p> Once you vote you will be redirected to our home page.
-                         to respond to a poll. </p>
-                    <p>On this note please please be carefull with accidental votes</p>
+                         There is no experimental clicking. </p>
+                    <p>On this note please be careful with accidental votes</p>
                 </div>
                 <div className='thank-you-voter-div'>
                     <p>Thanks for polling with us.</p>
