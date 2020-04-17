@@ -78,7 +78,9 @@ class PollShow extends React.Component {
                 <div className='poll-live-div'>
                     <div className='poll-live-instructions'>
                         <p> To vote please visit: </p>
-                        <h4>{`https://live-polls.herokuapp.com/#/vote/${this.props.pollId}`}</h4>
+                        <h4 className='poll-voting-link'>
+                            {`https://live-polls.herokuapp.com/#/vote/${this.props.pollId}`}
+                        </h4>
                         {/* <p> to vote using option id visite the link</p>  */}
                         <p>OR: https://live-polls.herokuapp.com/#/text/vote</p>
                     </div>
