@@ -18,7 +18,7 @@ class PollShow extends React.Component {
         this.props.fetchPoll(this.props.pollId)
         this.props.fetchOptions(this.props.pollId)
         this.refreshInterval = setInterval(this.handleRefresh, 250)
-        setTimeout(() => clearInterval(this.refreshInterval), 120000);
+        setTimeout(() => clearInterval(this.refreshInterval), 1200);
     }
 
     componentWillUnmount(){
@@ -79,12 +79,12 @@ class PollShow extends React.Component {
                         
                     <div className='showPoll-title-div'>
                             
-                        <OptionsChart 
+                        {/* <OptionsChart 
                                 options={this.props.options}
                                 pollTitle={this.props.poll.title}
-                        />
+                        /> */}
                              
-                        {/* <div id='options-index-items'>
+                        <div id='options-index-items'>
                             <h1>{this.props.poll.title}</h1>
                             <ul className='options-div'>
                                 {
@@ -99,7 +99,7 @@ class PollShow extends React.Component {
                                         )
                                     }
                             </ul>
-                        </div> */}
+                        </div>
                     </div>
                 </div>
 
