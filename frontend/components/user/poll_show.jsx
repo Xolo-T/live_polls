@@ -79,12 +79,12 @@ class PollShow extends React.Component {
                         
                     <div className='showPoll-title-div'>
                             
-                        {/* <OptionsChart 
+                        <OptionsChart 
                                 options={this.props.options}
                                 pollTitle={this.props.poll.title}
-                        /> */}
+                        />
                              
-                        <div id='options-index-items'>
+                        {/* <div id='options-index-items'>
                             <h1>{this.props.poll.title}</h1>
                             <ul className='options-div'>
                                 {
@@ -99,7 +99,7 @@ class PollShow extends React.Component {
                                         )
                                     }
                             </ul>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
 
