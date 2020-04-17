@@ -9,9 +9,9 @@ class OptionsChart extends React.Component {
     }
 
     render() {
-        debugger
+        // debugger
         if (this.props.options.length < 2) {
-            debugger
+            // debugger
             return <span>Options not loaded!</span>;
         }
 

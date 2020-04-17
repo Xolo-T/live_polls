@@ -18,7 +18,7 @@ class PollShow extends React.Component {
         this.props.fetchPoll(this.props.pollId)
         this.props.fetchOptions(this.props.pollId)
         this.refreshInterval = setInterval(this.handleRefresh, 250)
-        setTimeout(() => clearInterval(this.refreshInterval), 1200);
+        setTimeout(() => clearInterval(this.refreshInterval), 12000);
     }
 
     componentWillUnmount(){
