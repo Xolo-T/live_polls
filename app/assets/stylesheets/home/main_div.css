@@ -67,6 +67,14 @@ button.home-main-body-nav-button:hover{
 button.home-main-body-extra-button:hover{
     background-color: #a2c1d6;
 }
+button.home-main-body-extra-button a{
+    color: #007ACC;
+}
+
+ul.user-polls-ul {
+    display: flex;
+    flex-direction: column-reverse;
+}
 
 
 div#home-main-nav-footer{

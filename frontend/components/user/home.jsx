@@ -26,7 +26,7 @@ const UserHomePage = ({ currentUser, logout }) => {
                 </div>
                 <nav className="logout-nav">
                     <button className="header-button" onClick={logout}>Log Out</button>
-                    <Link className='nav-session-link' to="/signup">{currentUser.username}!</Link>
+                    <Link className='nav-session-link' to="/signup">{currentUser.username}</Link>
                 </nav>
             </header>
 
@@ -45,9 +45,11 @@ const UserHomePage = ({ currentUser, logout }) => {
                         </Link>
                         <button className='home-main-body-nav-button'> Edit </button>
                         <hr/>
-                        <button className='home-main-body-extra-button'>My polls</button>
+                        <button className='home-main-body-extra-button'> Groups </button>
                         <button className='home-main-body-extra-button'>Trash</button>
-                        <button className='home-main-body-extra-button'> Logout</button>
+                        <button className='home-main-body-extra-button'> 
+                            <Link to='/text/vote'> Vote </Link> 
+                        </button>
                         
                         <div id='home-main-nav-footer'>
                             <p><strong>Download the app</strong></p>

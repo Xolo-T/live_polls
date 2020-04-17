@@ -20,3 +20,9 @@ ul.session-input-errors li {
 ul.session-input-errors {
     width: 280px;
 }
+
+.frontEnd-session-errors {
+    background-color: #ff5d5d;
+    color: #fff;
+    padding: 0px 2px;
+}

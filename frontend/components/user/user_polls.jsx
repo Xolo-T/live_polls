@@ -17,8 +17,8 @@ class UserPolls extends React.Component {
         // debugger
         return (
             <div className='current user polls'>
-                <h1>Hello! Here are all your ugly polls</h1>
-                <ul>
+                <h1>My Polls</h1>
+                <ul className='user-polls-ul'>
                     {
                         this.props.polls.map(poll => (
                             // <p>{poll.title}</p>

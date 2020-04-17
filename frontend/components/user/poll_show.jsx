@@ -18,7 +18,7 @@ class PollShow extends React.Component {
         this.props.fetchPoll(this.props.pollId)
         this.props.fetchOptions(this.props.pollId)
         this.refreshInterval = setInterval(this.handleRefresh, 250)
-        setTimeout(() => clearInterval(this.refreshInterval), 12000);
+        setTimeout(() => clearInterval(this.refreshInterval), 120000);
     }
 
     componentWillUnmount(){
@@ -63,8 +63,14 @@ class PollShow extends React.Component {
                         </div>
                     </div>
                     <nav className="logout-nav">
-                        <button className="header-button">Activate</button>
-                        <Link className='nav-session-link' to="/">back to home</Link>
+                        {/* <button className="header-button">Activate</button> */}
+                        <Link 
+                            className='nav-session-link' 
+                            // to={`https://live-polls.herokuapp.com/#/vote/${this.props.pollId}`}
+                            to={`/vote/${this.props.pollId}`}
+                            >
+                            Voting Page
+                        </Link>
                     </nav>
                 </header>
 
@@ -105,12 +111,12 @@ class PollShow extends React.Component {
 
                 <nav id='poll-show-side-nav' className='home-main-body-nav'>
                     <div>
-                        <Link to='/create/poll' className=''>
+                        <Link to='/' className=''>
                             <button
                                 className='home-main-body-nav-button'
                                 id='create-poll'
                             >
-                                    Back to polls 
+                                    My polls 
                             </button>
                         </Link>
                             
@@ -118,9 +124,9 @@ class PollShow extends React.Component {
                     </div>
 
                     <div>
-                        <button className='home-main-body-extra-button'>My polls</button>
+                        {/* <button className='home-main-body-extra-button'>My polls</button> */}
                         <button className='home-main-body-extra-button'>Trash</button>
-                        <button className='home-main-body-extra-button'> Delete</button>
+                        <button className='home-main-body-extra-button' onClick={this.handleClick}> Delete</button>
                     </div>
 
                 </nav>

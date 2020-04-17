@@ -128,7 +128,7 @@ class SignupForm extends React.Component {
                                         className="login-input "
                                         placeholder="Username"
                                     />
-                                    <div>{this.state.usernameError}</div>
+                                    <div className='frontEnd-session-errors'>{this.state.usernameError}</div>
                                 </label>
                                 <br/>
                                 <label>
@@ -138,7 +138,7 @@ class SignupForm extends React.Component {
                                         className="login-input"
                                         placeholder="Email"
                                     />
-                                    <div>{this.state.emailError}</div>
+                                    <div className='frontEnd-session-errors'>{this.state.emailError}</div>
                                 </label>
                                 <br />
                                 <label>
@@ -148,7 +148,7 @@ class SignupForm extends React.Component {
                                         className="login-input"
                                         placeholder="Password"
                                     />
-                                    <div>{this.state.passwordError}</div>
+                                    <div className='frontEnd-session-errors'>{this.state.passwordError}</div>
                                 </label>
                                 <br />
                                 <input className="session-submit"
