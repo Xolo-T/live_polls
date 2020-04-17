@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import OptionIndexItem from './option_index_item';
 
+import OptionsChart from "./graph";
+
 class PollShow extends React.Component {
     constructor(props) {
         super(props);
@@ -16,7 +18,7 @@ class PollShow extends React.Component {
         this.props.fetchPoll(this.props.pollId)
         this.props.fetchOptions(this.props.pollId)
         this.refreshInterval = setInterval(this.handleRefresh, 250)
-        setTimeout(() => clearInterval(this.refreshInterval), 120000);
+        setTimeout(() => clearInterval(this.refreshInterval), 1200);
     }
 
     componentWillUnmount(){
@@ -42,45 +44,89 @@ class PollShow extends React.Component {
         }
 
         return (
-            <div>
+            <div className='poll-show-page-full'>
                 
-                
-                {/* <Link to='/'>PollIndex</Link> */}
-                <Link to='/' className='poll-show-back-link'>
-                    <button
-                        className='home-main-body-nav-button'
-                    >
-                        Back to my polls
-                    </button>
-                </Link>
-                <button onClick={this.handleRefresh}> refresh</button>
-                <div className='poll-show-title'>
-                    <h3> To vote please visit: </h3>
-                    <h2>{`https://live-polls.herokuapp.com/#/vote/${this.props.pollId}`}</h2>
-                    <h3> to vote using option id visite the link</h3> 
-                    <h3> 'https://live-polls.herokuapp.com/#/text/vote'</h3>
-                    
+                <header className='header'>
+                    <div className='header-logo-nav'>
+                        <div className='header-logo-div'>
+                            <div className='logo'>
+                                <Link to='/'>
+                                    <h1 >Live Polls</h1>
+                                </Link>
+                            </div>
+                        </div>
+                        <div className='header-nav'>
+                            <a className='header-nav-link' href='https://www.polleverywhere.com/' >Real site</a>
+                            <a className='header-nav-link' href='https://github.com/Solomon-T/live_polls/wiki' >Github repo</a>
+                            <a className='header-nav-link' >Stack</a>
+                            <a className='header-nav-link'>Developer</a>
+                        </div>
+                    </div>
+                    <nav className="logout-nav">
+                        <button className="header-button">Activate</button>
+                        <Link className='nav-session-link' to="/">back to home</Link>
+                    </nav>
+                </header>
+
+                <main id='poll-Show-nav' className='poll-show-main-div'>
+                <div className='poll-live-div'>
+                    <div className='poll-live-instructions'>
+                        <p> To vote please visit: </p>
+                        <h4>{`https://live-polls.herokuapp.com/#/vote/${this.props.pollId}`}</h4>
+                        {/* <p> to vote using option id visite the link</p>  */}
+                        <p>OR: https://live-polls.herokuapp.com/#/text/vote</p>
+                    </div>
+                        
+                    <div className='showPoll-title-div'>
+                            
+                        <OptionsChart 
+                                options={this.props.options}
+                                pollTitle={this.props.poll.title}
+                        />
+                             
+                        {/* <div id='options-index-items'>
+                            <h1>{this.props.poll.title}</h1>
+                            <ul className='options-div'>
+                                {
+                                    this.props.options.map(option => (
+                                        // <p>{poll.title}</p>
+                                        <OptionIndexItem
+                                        option={option}
+                                        updateOption={this.props.updateOption}
+                                        key={option.id}
+                                        />
+                                        )
+                                        )
+                                    }
+                            </ul>
+                        </div> */}
+                    </div>
                 </div>
-                <div className='showPoll-title-div'>
-                    <h1>{this.props.poll.title}</h1>
-                </div>
-                <ul className='options-div'>
-                    {
-                        this.props.options.map(option => (
-                            // <p>{poll.title}</p>
-                            <OptionIndexItem
-                            option={option}
-                            updateOption={this.props.updateOption}
-                            key={option.id}
-                            />
-                            )
-                        )
-                        }
-                </ul>
-                <div className='pollshowPage-links-div'>
-                    <Link className='link-to-vote-page' to={`/vote/${this.props.poll.id}`}> Go to votting page</Link>
-                    <button onClick={this.handleClick}>Delete Poll</button>
-                </div>
+
+                <nav id='poll-show-side-nav' className='home-main-body-nav'>
+                    <div>
+                        <Link to='/create/poll' className=''>
+                            <button
+                                className='home-main-body-nav-button'
+                                id='create-poll'
+                            >
+                                    Back to polls 
+                            </button>
+                        </Link>
+                            
+                        <button className='home-main-body-nav-button'> Edit</button>
+                    </div>
+
+                    <div>
+                        <button className='home-main-body-extra-button'>My polls</button>
+                        <button className='home-main-body-extra-button'>Trash</button>
+                        <button className='home-main-body-extra-button'> Delete</button>
+                    </div>
+
+                </nav>
+
+
+                </main>
             </div>
         )
     }
