@@ -3,11 +3,11 @@ Live polls is a web based app that facilitates interaction between a presenter a
 
 ## Technoligies Used
  ### react-redux
-    the front end is utilised using react-redux which manages front 
+   The front end is utilised using react-redux which manages front 
  ### rails
-    Rails provides API endpoints and logic for the backend
+   Rails provides API endpoints and logic for the backend
  ### PostgreSQL
-    All the data is being stored in a PostresgreSQL
+   All the data is being stored in a PostresgreSQL
 ## Features
   ### Polls creation
   This poll is just a simple form where a user can create a poll by giving it a title and options
@@ -17,12 +17,12 @@ Live polls is a web based app that facilitates interaction between a presenter a
 * a link to the general URL
 * A bar graph with the poll title, options on the horizontal axis and vote count on the vertical axis.
 * Live updates as long a the poll is being viewed
-  ### Voting pages
-    #### Full voting page
-      This page displays the whole poll title and a form having the options in which participant can choose from
-    #### Voting by `optionID`
-      This is a more general page where by the user just imputs the option id from which ever poll they are participating in
+### Voting pages
+   * #### Full voting page
+   This page displays the whole poll title and a form having the options in which participant can choose from
+   * #### Voting by `optionID`
+   This is a more general page where by the user just imputs the option id from which ever poll they are participating in
 
-# Still to come
-  ## Viting by text
-    This feature will utiilise the already implemented voting by optionID
+## Still to come
+  * ### Viting by text
+  This feature will utiilise the already implemented voting by optionID
