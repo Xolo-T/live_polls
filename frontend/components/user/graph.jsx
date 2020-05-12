@@ -18,12 +18,12 @@ class OptionsChart extends React.Component {
         return (
             <div className='graph-js'>
                 <Bar
-                    fontSize='20'
+                    fontSize='12'
                     data={
                         {
                             labels: [
-                                this.props.options[0].title,
-                                this.props.options[1].title
+                                this.props.options[0].title + ' (id:' + this.props.options[0].id * 23 + ')',
+                                this.props.options[1].title + '  (id:' + this.props.options[1].id * 23 +')'
                             ],
                             datasets: [
                                 {
@@ -42,23 +42,23 @@ class OptionsChart extends React.Component {
                             yAxes: [{
                                 ticks: {
                                     beginAtZero: true,
-                                    fontSize: 20
+                                    fontSize: 14
                                 }
                             }],
                             xAxes: [{
                                 ticks: {
-                                    fontSize: 30
+                                    fontSize: 18
                                 }
                             }]
                         },
                         title: {
                             display: true,
                             text: this.props.pollTitle,
-                            fontSize: 25
+                            fontSize: 22
                         },
                         legend: {
                             labels: {
-                                fontSize: 16
+                                fontSize: 14
                             },
                             defa: 30
                         },

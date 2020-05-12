@@ -2,7 +2,10 @@
 <html>
   <head>
     <title>LivePolls</title>
-<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">    <%= csrf_meta_tags %>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">    <%= csrf_meta_tags %>
+    <link rel="shortcut icon" href=<%= image_url('favicon.png') %> type="image/png">
+
+
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
@@ -37,6 +40,8 @@
         window.signUpUrl = "<%= image_url('sign-up.svg') %>";
         
         window.hamburgerUrl = "<%= image_url('hamburger-menu.png') %>";
+
+        window.favicon = "<%= image_url('favicon.png') %>";
     </script>
   </head>
 

@@ -6,8 +6,11 @@ import { createOption } from '../../actions/option_actions';
 import CreatePoll from './create_poll';
 
 const mapStateToProps = (state) => {
+    // let currentUserId = state.session.id;
+    // let currentUser = state.entities.users
     return {
         author_id: state.session.id,
+        current_user: state.entities.users[state.session.id]
     };
 };
 
