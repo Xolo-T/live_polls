@@ -10,7 +10,7 @@ Live polls is a web based app that facilitates interaction between a presenter a
    * All the data is being stored in a PostresgreSQL
 ## Features
   * ### Polls creation
-   * This poll is just a simple form where a user can create a poll by giving it a title and options
+    This poll is just a simple form where a user can create a poll by giving it a title and options
   * ### Poll view
     This is where all the beauty is. On poll view page. The user can see the following
     * a link to the pole specific URL
