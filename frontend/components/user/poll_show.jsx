@@ -122,12 +122,13 @@ class PollShow extends React.Component {
                             </button>
                         </Link>
                             
-                        <button className='home-main-body-nav-button'> Edit</button>
+                        {/* <button className='home-main-body-nav-button'> Edit</button> */}
                     </div>
 
                     <div>
                         {/* <button className='home-main-body-extra-button'>My polls</button> */}
-                        <button className='home-main-body-extra-button'>Trash</button>
+                        {/* <button className='home-main-body-extra-button'>Trash</button> */}
+                        {/* <br/> */}
                         <button className='home-main-body-extra-button' onClick={this.handleClick}> Delete</button>
                     </div>
 

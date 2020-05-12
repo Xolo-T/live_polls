@@ -57,7 +57,8 @@ button.home-main-body-extra-button {
     background-color: transparent;
     text-align: left;
     border: none;
-    border-bottom: 1px solid #a8a3a3;
+    /* border-bottom: 1px solid #a8a3a3; */
+    border-top: 1px solid #a8a3a3;
 }
 
 button.home-main-body-nav-button:hover{

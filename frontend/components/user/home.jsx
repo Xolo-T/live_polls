@@ -18,10 +18,10 @@ const UserHomePage = ({ currentUser, logout }) => {
                         </div>
                     </div>
                     <div className='header-nav'>
-                        <a className='header-nav-link' href='https://www.polleverywhere.com/' >Real site</a>
-                        <a className='header-nav-link' href='https://github.com/Solomon-T/live_polls/wiki' >Github repo</a>
-                        <a className='header-nav-link' >Stack</a>
-                        <a className='header-nav-link'>Developer</a>
+                        <a className='header-nav-link' href='https://www.polleverywhere.com/' target="_blank">Real site</a>
+                        <a className='header-nav-link' href='https://github.com/Solomon-T/live_polls' target="_blank">Github repo</a>
+                        <a className='header-nav-link' href="https://www.linkedin.com/in/solomon-timothy-manyaga-305a51b4/" target="_blank">LinkedIn</a>
+                        <a className='header-nav-link' href="https://solomon-t.github.io/" target="_blank">Developer</a>
                     </div>
                 </div>
                 <nav className="logout-nav">
@@ -43,12 +43,20 @@ const UserHomePage = ({ currentUser, logout }) => {
                                 Create
                             </button>
                         </Link>
-                        <button className='home-main-body-nav-button'> Edit </button>
-                        <hr/>
-                        <button className='home-main-body-extra-button'> Groups </button>
-                        <button className='home-main-body-extra-button'>Trash</button>
+                        <Link to='/text/vote'>
+                            <button className='home-main-body-nav-button'> 
+                                Vote 
+                            </button>
+                        </Link>
+                        {/* <hr/> */}
+                        <button className='home-main-body-extra-button'>  
+                            <a href="https://solomon-t.github.io/" target="_blank"> About the developer </a>
+                        </button>
+                        <button className='home-main-body-extra-button'>
+                            <a href="https://www.linkedin.com/in/solomon-timothy-manyaga-305a51b4/" target="_blank"> LinkedIn </a>
+                        </button>
                         <button className='home-main-body-extra-button'> 
-                            <Link to='/text/vote'> Vote </Link> 
+                            <a href="https://github.com/Solomon-T/live_polls" target="_blank"> Project repo </a>
                         </button>
                         
                         <div id='home-main-nav-footer'>
