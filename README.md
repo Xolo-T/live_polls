@@ -11,12 +11,14 @@ Live polls is a web based app that facilitates interaction between a presenter a
 ## Features
   * ### Polls creation
     This poll is just a simple form where a user can create a poll by giving it a title and options
+    ![Poll show page](https://github.com/Solomon-T/live_polls/blob/master/images/poll_create_form.png)
   * ### Poll view
     This is where all the beauty is. On poll view page. The user can see the following
     * a link to the pole specific URL
     * a link to the general URL
     * A bar graph with the poll title, options on the horizontal axis and vote count on the vertical axis.
     * Live updates as long a the poll is being viewed
+    ![Poll show page](https://github.com/Solomon-T/live_polls/blob/master/images/poll_show.png)
 ### Voting pages
    * #### Full voting page
    This page displays the whole poll title and a form having the options in which participant can choose from
