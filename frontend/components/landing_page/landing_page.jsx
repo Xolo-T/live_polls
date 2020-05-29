@@ -83,8 +83,7 @@ class LandingPage extends React.Component {
                     </div>
                     <div className='blue-band'>
                         <p>
-                            Poll Everywhere is offering a complimentary 90-day premium plan for
-                            educators affected by COVID-19.
+                            Live Polls provides instant updates as your audiance renspond.
                         </p>
                         <Link className='blue-band-signup' to="/signup">
                             Sign up for free
@@ -94,9 +93,7 @@ class LandingPage extends React.Component {
                         <div className='second-intro-div-content'>
                             <img className='remote-img' src={window.remoterUrl} alt="interactive remote" />
                             <h4>Interactive remote meetings</h4>
-                            <p>Collect and visualize audience feedback in real time with
-                                a variety of activity types including multiple choice, 
-                                word clouds, and Q/As.</p>
+                            <p>Collect and visualize audience feedback in real time.</p>
                         </div>
                         <div className='second-intro-div-content'>
                             <img className='remote-img' src={window.presentationUrl} alt="interactive remote" />
@@ -108,20 +105,18 @@ class LandingPage extends React.Component {
                         <div className='second-intro-div-content'>
                             <img className='remote-img' src={window.distanceUrl} alt="interactive remote"/>
                             <h4>Apps that work where you do</h4>
-                            <p>Download the Poll Everywhere app for PowerPoint, Keynote,
-                                or Google Slides and add polls to your existing 
-                                presentation decks in just a few clicks.</p>
+                            <p>Visit the app anytime to create a poll in just a few clicks.</p>
                         </div>
                     </div>
                     <div className='media-div' id='demo-video'> 
                         {/* <iframe width="628" height="426" src="https://www.youtube.com/embed/ARe9FupzuOA" frameBorder="0" allowFullScreen></iframe> */}
                         {/* <iframe width="628" height="426" src={`https://www.youtube.com/embed/dT3aZ5Ph8e8&t=4s`} frameBorder="10" allowFullScreen></iframe> */}
-                        <iframe src={`https://www.youtube.com/embed/dT3aZ5Ph8e8`} frameBorder="8" allowFullScreen></iframe>  
+                        {/* <iframe src={`https://www.youtube.com/embed/dT3aZ5Ph8e8`} frameBorder="8" allowFullScreen></iframe>   */}
+                        <img className="demo_livepolls_gif" src={window.demo_livepolls} alt="apo demo"/>
                     </div>
                     <div className='who-needs-this'>
-                        <h1>Over 75% of the Fortune 500 trust the site we cloned</h1>
-                        <p>They also help over 300,000 educators facilitate
-                            tough discussions in classrooms worldwide</p>
+                        <h1>Over 75% of the Fortune 500 use simmilar application</h1>
+                        <p>This is to focilitale fast and easy to interprete feedback</p>
                         <div className='logos-div'>
                             {/* <img src='window.alllogosUrl' /> */}
                             <img className='logo-div-img' src={window.applelogoUrl}/>
@@ -145,8 +140,8 @@ class LandingPage extends React.Component {
                     </div>
                     <div className='intergration-div'>
                         <div className='intergration-title-div'>
-                            <h1>Poll Everywhere slideware integrations</h1>
-                            <p>Poll Everywhere works in PowerPoint, Keynote, and Google
+                            <h1> LivePolls slideware integrations comming soon</h1>
+                            <p>Live Polls is comming soon on PowerPoint, Keynote, and Google
                                 Slides</p>
                         </div>
                         <div className='slides-intergrsation-div'>
@@ -155,21 +150,21 @@ class LandingPage extends React.Component {
                                 <img className='power-point-div-img' src={window.powerpointUrl} />
                                 <div className='power-point-div-content'>
                                     <h4>POWERPOINT</h4>
-                                    <p>Easily add Poll Everywhere to your presentations</p>
+                                    <p>Easily add live Polls to your presentations</p>
                                 </div>
                             </div>
                             <div className='power-point-div'>
                                 <img className='power-point-div-img' src={window.keynoteUrl} />
                                 <div className='power-point-div-content'>
                                     <h4>KEYNOTE</h4>
-                                    <p>Easily add Poll Everywhere to your presentations</p>
+                                    <p>Easily add live Polls to your presentations</p>
                                 </div>
                             </div>
                             <div className='power-point-div'>
                                 <img className='power-point-div-img' src={window.googleslidesUrl} />
                                 <div className='power-point-div-content'>
                                     <h4>GOOGLE SLIDES</h4>
-                                    <p>Easily add Poll Everywhere to your presentations</p>
+                                    <p>Easily add live Polls to your presentations</p>
                                 </div>
                             </div>
 
@@ -178,7 +173,8 @@ class LandingPage extends React.Component {
                     {/* <div className='after-intergration-div'>
                         <p>, Keynote, and Google Slides</p>
                     </div> */}
-                    <div className='the-rest-div'>
+                    
+                    {/* <div className='the-rest-div'>
                         <div className='last-logo'>
                             <h1> Live Polls </h1>
                         </div>
@@ -221,16 +217,19 @@ class LandingPage extends React.Component {
                                 <p>Jobs</p>
                                 <p>Security</p>
                             </div>
-                        </div>
-                    </div>
+                        </div> 
+                    </div>*/}
                 </main>
                 <footer className='footer'>
-                    <div>
+                    {/* <ul class="icons">
+                       <li><a target="_blank" href="https://www.linkedin.com/in/solomon-timothy-manyaga-305a51b4/" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
+                        <li><a target="_blank" href="https://github.com/Solomon-T" class="icon brands fa-github"><span class="label">Github</span></a></li>
+                        <li><a target="_blank" href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                    </ul> */}
+                    {/* <i class="fab fa-linkedin-in"></i> */}
+                    {/* <i className="fab fa-github"></i> */}
 
-                    </div>
-                    <div>
 
-                    </div>
                 </footer>
             </div>
         );
