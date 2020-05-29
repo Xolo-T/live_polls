@@ -148,7 +148,7 @@ class CreatePoll extends React.Component {
                     </div>
                     <nav className="logout-nav">
                         {/* <button className="header-button" onClick={logout}>Log Out</button> */}
-                        <button className="header-button">Log Out</button>
+                        {/* <button className="header-button">Log Out</button> */}
                         <Link className='nav-session-link' to="/signup">{this.props.current_user.username}</Link>
                     </nav>
                 </header>
