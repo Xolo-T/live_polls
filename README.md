@@ -17,7 +17,25 @@ Live polls is a web based app that facilitates interaction between a presenter a
     * a link to the pole specific URL
     * a link to the general URL
     * A bar graph with the poll title, options on the horizontal axis and vote count on the vertical axis.
-    * Live updates as long a the poll is being viewed
+    * Live updates as long a the poll is being viewed. This was achieve with the code below.
+    ```
+    constructor(props) {
+        super(props);
+             this.refreshInterval = null:   
+    }
+    componentDidMount() {
+        this.props.fetchPoll(this.props.pollId)
+        this.props.fetchOptions(this.props.pollId)
+        this.refreshInterval = setInterval(this.handleRefresh, 250)
+        setTimeout(() => clearInterval(this.refreshInterval), 120000);
+    }
+    componentWillUnmount(){
+        // console.log('Component saying bye')
+        // debugger
+        clearInterval(this.refreshInterval)
+    }
+    ```
+    `this.refreshInterval` is first set in the constructor as null just to me assigned as an interval funtion when the component mounts. When the commponent unmounts this interval is cleared to prevent further database queries. 
     ![Poll show page](https://github.com/Solomon-T/live_polls/blob/master/images/poll_show.png)
 ### Voting pages
    * #### Full voting page
