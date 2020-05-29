@@ -28,8 +28,8 @@ a.poll-show-back-link {
     padding-top: 20px;
 }
 
-h4.poll-voting-link {
-    color: #007aac;
+a.poll-voting-link {
+    color: #007aac !important;
 }
 
 .options-div {

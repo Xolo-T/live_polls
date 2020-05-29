@@ -56,10 +56,9 @@ class PollShow extends React.Component {
                             </div>
                         </div>
                         <div className='header-nav'>
-                            <a className='header-nav-link' href='https://www.polleverywhere.com/' >Real site</a>
-                            <a className='header-nav-link' href='https://github.com/Solomon-T/live_polls/wiki' >Github repo</a>
-                            <a className='header-nav-link' >Stack</a>
-                            <a className='header-nav-link'>Developer</a>
+                            <a className='header-nav-link' href='https://github.com/Solomon-T/live_polls' target="_blank">Github repo</a>
+                            <a className='header-nav-link' href="https://www.linkedin.com/in/solomon-timothy-manyaga-305a51b4/" target="_blank">LinkedIn</a>
+                            <a className='header-nav-link' href="https://solomon-t.github.io/" target="_blank">Developer</a>
                         </div>
                     </div>
                     <nav className="logout-nav">
@@ -79,10 +78,16 @@ class PollShow extends React.Component {
                     <div className='poll-live-instructions'>
                         <p> To vote please visit: </p>
                         <h4 className='poll-voting-link'>
-                            {`https://live-polls.herokuapp.com/#/vote/${this.props.pollId}`}
+                                <a className='poll-voting-link' href={`https://live-polls.herokuapp.com/#/vote/${this.props.pollId}`}>
+                                    {`https://live-polls.herokuapp.com/#/vote/${this.props.pollId}`}
+                                </a>
                         </h4>
                         {/* <p> to vote using option id visite the link</p>  */}
-                        <p>OR: https://live-polls.herokuapp.com/#/text/vote</p>
+                        <p>OR</p>
+                        <p><a className='poll-voting-link' href="https://live-polls.herokuapp.com/#/text/vote">
+                                    https://live-polls.herokuapp.com/#/text/vote
+                            </a>
+                        </p>
                     </div>
                         
                     <div className='showPoll-title-div'>
