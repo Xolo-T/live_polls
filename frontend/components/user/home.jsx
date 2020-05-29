@@ -49,25 +49,28 @@ const UserHomePage = ({ currentUser, logout }) => {
                             </button>
                         </Link>
                         {/* <hr/> */}
-                        <button className='home-main-body-extra-button'>  
-                            <a href="https://solomon-t.github.io/" target="_blank"> About the developer </a>
-                        </button>
-                        <button className='home-main-body-extra-button'>
-                            <a href="https://www.linkedin.com/in/solomon-timothy-manyaga-305a51b4/" target="_blank"> LinkedIn </a>
-                        </button>
-                        <button className='home-main-body-extra-button'> 
-                            <a href="https://github.com/Solomon-T/live_polls" target="_blank"> Project repo </a>
-                        </button>
+                          
+                            <a href="https://solomon-t.github.io/" target="_blank">
+                                <button className='home-main-body-extra-button'> About the developer</button>
+                            </a>
+                        <a href="https://www.linkedin.com/in/solomon-timothy-manyaga-305a51b4/" target="_blank"> 
+                            <button className='home-main-body-extra-button'>
+                                LinkedIn 
+                            </button>
+                        </a>
+                        <a href="https://github.com/Solomon-T/live_polls" target="_blank"> 
+                            <button className='home-main-body-extra-button'> 
+                                Project repo 
+                            </button>
+                        </a>
                         
                         <div id='home-main-nav-footer'>
-                            <p><strong>Download the app</strong></p>
-                            <p> Use the app to embed polls in your slides. </p>
-                            <p> Select your presentation software to start the download </p>
-                            <ul>
-                                <li>PowerPoint</li>
-                                <li>Keynote</li>
-                                <li>Google Slides</li>
-                            </ul>
+                            <h3><strong>Instructions</strong></h3>
+                            <p><strong>-</strong> Click the create button to create a new poll on submission
+                                 your latest poll withh be on top of the list</p>
+                            <p><strong>-</strong> To view the poll just click on it</p>
+                            <p><strong>-</strong> To vote click the link on the poll show and choose an answer</p>
+                            <p><strong>-</strong> To vote by id just visit the link and put in the id next to the option</p>
                         </div>
                     </nav>
 
@@ -78,7 +81,7 @@ const UserHomePage = ({ currentUser, logout }) => {
                 </div>
                 
                 
-                <div className='home-the-rest-div'>
+                {/* <div className='home-the-rest-div'>
                     <div className='last-logo'>
                         <h1> Live Polls </h1>
                     </div>
@@ -106,7 +109,7 @@ const UserHomePage = ({ currentUser, logout }) => {
                             <p>Webinars</p>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </main>
             <footer className='footer'>
                 <div>

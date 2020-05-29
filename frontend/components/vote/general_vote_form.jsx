@@ -60,6 +60,8 @@ class GenrralVoteForm extends React.Component {
             <div className="vote-form- div">
                 <form onSubmit={this.handleSubmit} className="general-vote-form">
                     <h1 className='vote-form-header' >Please submit the id of your choice</h1>
+                    <p className='vote-form-header'>The id is the number next to the option title </p>
+                    <br/>
                     <input type="text"
                         onChange={this.updatePoll('pollId')}
                         className="vote-form-input "
