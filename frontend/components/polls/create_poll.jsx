@@ -139,12 +139,12 @@ class CreatePoll extends React.Component {
                                 </Link>
                             </div>
                         </div>
-                        <div className='header-nav'>
+                        {/* <div className='header-nav'>
                             <Link to='/polls' className='header-nav-link'>Polls</Link>
                             <Link to='/polls' className='header-nav-link'>Participants</Link>
                             <Link to='/polls' className='header-nav-link'>Reports</Link>
                             <Link to='/polls' className='header-nav-link'>More</Link>
-                        </div>
+                        </div> */}
                     </div>
                     <nav className="logout-nav">
                         {/* <button className="header-button" onClick={logout}>Log Out</button> */}
